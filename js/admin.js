@@ -236,7 +236,7 @@ class AdminPanel {
                 },
                 body: JSON.stringify({
                     message: 'Update users data via admin panel',
-                    content: btoa(content),
+                    content: btoa(unescape(encodeURIComponent(content))),
                     sha: '' // Нужно будет получить текущий SHA файла
                 })
             });
