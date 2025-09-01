@@ -4,7 +4,7 @@ const users = {
         discord: 'ЕЕнот / RRaccoon',
         discordid: '794675642037567498',
         gamename: 'eenot',
-        awards: ['test1'],
+        awards: ['test'],
         events: 5,
     },
     trid: {

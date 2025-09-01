@@ -228,7 +228,7 @@ class AdminPanel {
                           `const awards = ${JSON.stringify(this.currentData.awards, null, 4)};\n\n` +
                           `const types = ${JSON.stringify(this.currentData.types, null, 4)};\n`;
 
-            const response = await fetch('https://api.github.com/repos/OWNER/REPO/contents/users.js', {
+            const response = await fetch('https://api.github.com/repos/Saturn-winner-s-table/Saturn-winner-s-table.github.io/contents/users.js', {
                 method: 'PUT',
                 headers: {
                     'Authorization': `token ${this.token}`,
