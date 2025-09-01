@@ -80,7 +80,7 @@ class AdminPanel {
                             onchange="admin.handleAwardCheckbox('${id}', '${awardId}', this.checked)"
                         >
                         <label for="${id}_${awardId}">
-                            <img src="img/${award.img}" alt="${award.name}" class="award-icon">
+                            <img src="img/award/${award.img}" alt="${award.name}" class="award-icon">
                             ${award.name} (${award.type})
                         </label>
                     </div>
@@ -119,7 +119,7 @@ class AdminPanel {
             card.className = 'item-card';
             card.innerHTML = `
                 <div class="award-preview">
-                    <img src="img/${award.img}" alt="${award.name}">
+                    <img src="img/award/${award.img}" alt="${award.name}">
                     <div>
                         <input type="text" value="${award.name}" placeholder="Name" onchange="admin.updateAward('${id}', 'name', this.value)">
                         <input type="text" value="${award.img}" placeholder="Image" onchange="admin.updateAward('${id}', 'img', this.value)">

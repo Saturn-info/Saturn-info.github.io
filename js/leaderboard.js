@@ -51,7 +51,7 @@ class leaderboard {
                 const award = awards[awardKey];
                 if (award) {
                     const img = document.createElement('img');
-                    img.src = `img/${award.img}`;
+                    img.src = `img/award/${award.img}`;
                     img.title = award.name;
                     tdAwards.appendChild(img);
                 }
