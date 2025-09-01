@@ -14,6 +14,26 @@ const users = {
         "gamename": "3d",
         "awards": [],
         "events": "0"
+    },
+    "new_user_1756746940677": {
+        "id": "totoska",
+        "discord": "Totoska",
+        "discordid": "820194328201920524",
+        "gamename": "totoska",
+        "awards": [
+            "new_award_1756746887541"
+        ],
+        "events": "1"
+    },
+    "new_user_1756746991765": {
+        "id": "talant",
+        "discord": "TaLanT",
+        "discordid": "837001706902126632",
+        "gamename": "",
+        "awards": [
+            "new_award_1756747057901"
+        ],
+        "events": "1"
     }
 };
 
@@ -22,6 +42,16 @@ const awards = {
         "name": "Тест",
         "img": "test.png",
         "type": "winer"
+    },
+    "new_award_1756746887541": {
+        "name": "euam1799 Winner",
+        "img": "winner.png",
+        "type": "winer"
+    },
+    "new_award_1756747057901": {
+        "name": "euam1799 France Defender",
+        "img": "france.png",
+        "type": "strong defender"
     }
 };
 
