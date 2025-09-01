@@ -68,18 +68,39 @@ class AdminPanel {
         Object.entries(this.currentData.users).forEach(([id, user]) => {
             const card = document.createElement('div');
             card.className = 'item-card';
+            
+            // Create awards checkboxes HTML
+            const awardsHTML = Object.entries(this.currentData.awards)
+                .map(([awardId, award]) => `
+                    <div class="award-checkbox">
+                        <input type="checkbox" 
+                            id="${id}_${awardId}" 
+                            value="${awardId}" 
+                            ${user.awards.includes(awardId) ? 'checked' : ''}
+                            onchange="admin.handleAwardCheckbox('${id}', '${awardId}', this.checked)"
+                        >
+                        <label for="${id}_${awardId}">
+                            <img src="img/${award.img}" alt="${award.name}" class="award-icon">
+                            ${award.name} (${award.type})
+                        </label>
+                    </div>
+                `).join('');
+
             card.innerHTML = `
                 <div>
-                    <input type="text" value="${user.id}" placeholder="ID" onchange="admin.updateUser('${id}', 'id', this.value)">
-                    <input type="text" value="${user.discord}" placeholder="Discord" onchange="admin.updateUser('${id}', 'discord', this.value)">
-                    <input type="text" value="${user.discordid}" placeholder="Discord ID" onchange="admin.updateUser('${id}', 'discordid', this.value)">
-                    <input type="text" value="${user.gamename}" placeholder="Game Name" onchange="admin.updateUser('${id}', 'gamename', this.value)">
-                    <input type="number" value="${user.events}" placeholder="Events" onchange="admin.updateUser('${id}', 'events', this.value)">
-                    <select multiple onchange="admin.updateUserAwards('${id}', Array.from(this.selectedOptions).map(opt => opt.value))">
-                        ${Object.keys(this.currentData.awards).map(award => 
-                            `<option value="${award}" ${user.awards.includes(award) ? 'selected' : ''}>${this.currentData.awards[award].name}</option>`
-                        ).join('')}
-                    </select>
+                    <div class="user-info">
+                        <input type="text" value="${user.id}" placeholder="ID" onchange="admin.updateUser('${id}', 'id', this.value)">
+                        <input type="text" value="${user.discord}" placeholder="Discord" onchange="admin.updateUser('${id}', 'discord', this.value)">
+                        <input type="text" value="${user.discordid}" placeholder="Discord ID" onchange="admin.updateUser('${id}', 'discordid', this.value)">
+                        <input type="text" value="${user.gamename}" placeholder="Game Name" onchange="admin.updateUser('${id}', 'gamename', this.value)">
+                        <input type="number" value="${user.events}" placeholder="Events" onchange="admin.updateUser('${id}', 'events', this.value)">
+                    </div>
+                    <div class="awards-section">
+                        <h4>Награды:</h4>
+                        <div class="awards-grid">
+                            ${awardsHTML}
+                        </div>
+                    </div>
                 </div>
                 <div class="item-controls">
                     <button class="delete-btn" onclick="admin.deleteUser('${id}')">Удалить</button>
@@ -171,6 +192,21 @@ class AdminPanel {
         this.currentData.users[id][field] = value;
     }
 
+    handleAwardCheckbox(userId, awardId, checked) {
+        if (!this.currentData.users[userId]) return;
+        
+        if (checked) {
+            // Add award if not already present
+            if (!this.currentData.users[userId].awards.includes(awardId)) {
+                this.currentData.users[userId].awards.push(awardId);
+            }
+        } else {
+            // Remove award
+            this.currentData.users[userId].awards = 
+                this.currentData.users[userId].awards.filter(id => id !== awardId);
+        }
+    }
+
     updateUserAwards(id, awards) {
         if (!this.currentData.users[id]) return;
         this.currentData.users[id].awards = awards;
@@ -224,6 +260,18 @@ class AdminPanel {
 
     async saveChanges() {
         try {
+            // First, get the current file's SHA
+            const getFileResponse = await fetch('https://api.github.com/repos/Saturn-winner-s-table/Saturn-winner-s-table.github.io/contents/users.js', {
+                headers: {
+                    'Authorization': `token ${this.token}`,
+                }
+            });
+            
+            if (!getFileResponse.ok) {
+                throw new Error('Failed to get current file version');
+            }
+            
+            const fileData = await getFileResponse.json();
             const content = `const users = ${JSON.stringify(this.currentData.users, null, 4)};\n\n` +
                           `const awards = ${JSON.stringify(this.currentData.awards, null, 4)};\n\n` +
                           `const types = ${JSON.stringify(this.currentData.types, null, 4)};\n`;
@@ -237,7 +285,7 @@ class AdminPanel {
                 body: JSON.stringify({
                     message: 'Update users data via admin panel',
                     content: btoa(unescape(encodeURIComponent(content))),
-                    sha: '' // Нужно будет получить текущий SHA файла
+                    sha: fileData.sha
                 })
             });
 
