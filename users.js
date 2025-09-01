@@ -4,28 +4,16 @@ const users = {
         "discord": "ЕЕнот / RRaccoon",
         "discordid": "794675642037567498",
         "gamename": "eenot",
-        "awards": [
-            "test1"
-        ],
-        "events": 5
+        "awards": [],
+        "events": "1"
     },
     "trid": {
         "id": "trid",
         "discord": "Trid",
         "discordid": "993585215358386306",
         "gamename": "3d",
-        "awards": [
-            "test1"
-        ],
-        "events": 10
-    },
-    "new_user_1756739180782": {
-        "id": "new_user_1756739180782",
-        "discord": "testuser",
-        "discordid": "00000000",
-        "gamename": "gamename",
         "awards": [],
-        "events": "999"
+        "events": "0"
     }
 };
 
@@ -33,12 +21,14 @@ const awards = {
     "test1": {
         "name": "Тест",
         "img": "test.png",
-        "type": "best"
+        "type": "winer"
     }
 };
 
 const types = {
-    "best": 5,
-    "great": 3,
-    "small": 1
+    "winer": 10,
+    "great power": 7,
+    "win side": 5,
+    "strong defender": 4,
+    "part of winner": 1
 };
