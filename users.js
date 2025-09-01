@@ -4,7 +4,7 @@ const users = {
         discord: 'ЕЕнот / RRaccoon',
         discordid: '794675642037567498',
         gamename: 'eenot',
-        awards: ['test1', 'tipanagrada'],
+        awards: ['test1'],
         events: 5,
     },
     trid: {
@@ -12,26 +12,16 @@ const users = {
         discord: 'Trid',
         discordid: '993585215358386306',
         gamename: '3d',
-        awards: ['test1', 'eschionagrada'],
+        awards: ['test'],
         events: 10,
     },
 };
 
 const awards = {
     test1: {
-        name: 'тест ван',
-        img: 'test1.png',
+        name: 'Тест',
+        img: 'test.png',
         type: 'best',
-    },
-    tipanagrada: {
-        name: 'Типа награда',
-        img: 'flag.png',
-        type: 'great',
-    },
-    eschionagrada: {
-        name: 'Эсчо какая-то награда',
-        img: 'eschionagrada.png',
-        type: 'great',
     },
 };
 
