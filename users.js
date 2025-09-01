@@ -24,9 +24,7 @@ const users = {
         "discord": "testuser",
         "discordid": "00000000",
         "gamename": "gamename",
-        "awards": [
-            "test1"
-        ],
+        "awards": [],
         "events": "999"
     }
 };
