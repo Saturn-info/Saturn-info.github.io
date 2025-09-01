@@ -1,0 +1,16 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+.navpanel {
+    background-color: #242424;
+}
+
+.navbtn {
+    background-color: #6b31ac3d;
+}
+
+.list-table tbody tr.userThisIs td,
+.list-table tbody tr.userThisIs th {
+    background: #6a31ac29 !important;
+}

@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navpanel {
+    display: flex;
+    padding: 8px;
+    border-radius: 0 0 8px 8px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.leftnav {
+    display: flex;
+    gap: 8px;
+}
+
+.rightnav {
+    display: flex;
+    gap: 8px;
+}
+
+.navbtn {
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+.accountico{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 40%;
+}
+
+.leaderstable {
+    width: 100%;
+}
+
+.list-table img {
+    width: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #b62fe8;
+}
