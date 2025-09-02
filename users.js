@@ -29,7 +29,7 @@ const users = {
         "id": "talant",
         "discord": "TaLanT",
         "discordid": "837001706902126632",
-        "gamename": "",
+        "gamename": "TaLanT",
         "awards": [
             "new_award_1756747057901"
         ],
