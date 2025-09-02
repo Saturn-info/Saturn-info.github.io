@@ -34,6 +34,30 @@ const users = {
             "new_award_1756747057901"
         ],
         "events": "1"
+    },
+    "new_user_1756800910976": {
+        "id": "kastro",
+        "discord": "Kastro",
+        "discordid": "1355854912654938183",
+        "gamename": "kastrofernant",
+        "awards": [],
+        "events": "1"
+    },
+    "new_user_1756800995632": {
+        "id": "mgebratok",
+        "discord": "Mge bratok",
+        "discordid": "1405253359857963018",
+        "gamename": "",
+        "awards": [],
+        "events": "1"
+    },
+    "new_user_1756801025992": {
+        "id": "souro",
+        "discord": "Souro",
+        "discordid": "743434309565677568",
+        "gamename": "Souro",
+        "awards": [],
+        "events": "1"
     }
 };
 
