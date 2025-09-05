@@ -84,6 +84,22 @@ const users = {
             "new_award_1757105088619"
         ],
         "events": "1"
+    },
+    "new_user_1757106874850": {
+        "id": "zachary",
+        "discord": "Zachary",
+        "discordid": "804839006403428423",
+        "gamename": "zachary",
+        "awards": [],
+        "events": "2"
+    },
+    "new_user_1757106875434": {
+        "id": "new_user_1757106875434",
+        "discord": "",
+        "discordid": "",
+        "gamename": "",
+        "awards": [],
+        "events": 0
     }
 };
 
@@ -127,6 +143,21 @@ const awards = {
         "name": "Kaiserreich Frontline Defender",
         "img": "kaisershield.png",
         "type": "strong defender"
+    },
+    "new_award_1757106970450": {
+        "name": "euam2025 Russia",
+        "img": "russiaempire.png",
+        "type": "great power"
+    },
+    "new_award_1757107066666": {
+        "name": "euam2025 Ukraine",
+        "img": "ukraine91.png",
+        "type": "strong defender"
+    },
+    "new_award_1757107243402": {
+        "name": "euam2025 America",
+        "img": "americagreat.png",
+        "type": "great power"
     }
 };
 
