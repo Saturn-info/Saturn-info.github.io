@@ -117,52 +117,52 @@ const awards = {
         "type": "winer"
     },
     "new_award_1756746887541": {
-        "name": "euam1799 Winner",
+        "name": "euam1799 | Winner",
         "img": "winner.png",
         "type": "winer"
     },
     "new_award_1756747057901": {
-        "name": "euam1799 France Defender",
+        "name": "euam1799 | France Defender",
         "img": "france.png",
         "type": "strong defender"
     },
     "new_award_1757104969189": {
-        "name": "Kaiserreich winner",
+        "name": "Kaiserreich | Winner",
         "img": "winner.png",
         "type": "winer"
     },
     "new_award_1757104991830": {
-        "name": "Kaiserreich Union's Part",
+        "name": "Kaiserreich | Union's Part",
         "img": "kaiserunion.png",
         "type": "part of winner"
     },
     "new_award_1757105042808": {
-        "name": "Kaiserreich Roman Empire",
+        "name": "Kaiserreich | Roman Empire",
         "img": "kaiserroman.png",
         "type": "great power"
     },
     "new_award_1757105065828": {
-        "name": "Kaiserreich German Emire",
+        "name": "Kaiserreich | German Emire",
         "img": "kaisergerman.png",
         "type": "great power"
     },
     "new_award_1757105088619": {
-        "name": "Kaiserreich Frontline Defender",
+        "name": "Kaiserreich | Frontline Defender",
         "img": "kaisershield.png",
         "type": "strong defender"
     },
     "new_award_1757106970450": {
-        "name": "euam2025 Russia",
+        "name": "euam2025 | Russian Empire",
         "img": "russiaempire.png",
         "type": "great power"
     },
     "new_award_1757107066666": {
-        "name": "euam2025 Ukraine",
+        "name": "euam2025 | Free Ukraine",
         "img": "ukraine91.png",
         "type": "strong defender"
     },
     "new_award_1757107243402": {
-        "name": "euam2025 America",
+        "name": "euam2025 | Made America Great Again",
         "img": "americagreat.png",
         "type": "great power"
     }
