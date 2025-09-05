@@ -76,6 +76,31 @@ const awards = {
         "name": "euam1799 France Defender",
         "img": "france.png",
         "type": "strong defender"
+    },
+    "new_award_1757104969189": {
+        "name": "Kaiserreich winner",
+        "img": "winner.png",
+        "type": "winer"
+    },
+    "new_award_1757104991830": {
+        "name": "Kaiserreich Union's Part",
+        "img": "kaiserunion.png",
+        "type": "part of winner"
+    },
+    "new_award_1757105042808": {
+        "name": "Kaiserreich Roman Empire",
+        "img": "kaiserroman.png",
+        "type": "great power"
+    },
+    "new_award_1757105065828": {
+        "name": "Kaiserreich German Emire",
+        "img": "kaisergerman.png",
+        "type": "great power"
+    },
+    "new_award_1757105088619": {
+        "name": "Kaiserreich Frontline Defender",
+        "img": "kaisershield.png",
+        "type": "strong defender"
     }
 };
 
