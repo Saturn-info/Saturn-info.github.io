@@ -5,7 +5,8 @@ const users = {
         "discordid": "794675642037567498",
         "gamename": "eenot",
         "awards": [
-            "new_award_1757104969189"
+            "new_award_1757104969189",
+            "new_award_1757107066666"
         ],
         "events": "2"
     },
@@ -26,7 +27,8 @@ const users = {
         "gamename": "totoska",
         "awards": [
             "new_award_1756746887541",
-            "new_award_1757105042808"
+            "new_award_1757105042808",
+            "new_award_1757107243402"
         ],
         "events": "2"
     },
@@ -66,22 +68,43 @@ const users = {
     },
     "new_user_1757105453235": {
         "id": "ottomanism",
-        "discord": "Mr Void",
+        "discord": "Ottomanism",
         "discordid": "1283840564839579701",
-        "gamename": "ottomanism",
+        "gamename": "mrvoid",
         "awards": [
             "new_award_1757105065828"
         ],
         "events": "2"
     },
     "new_user_1757105518059": {
-        "id": "namexxx",
+        "id": "namexxxx",
         "discord": "",
         "discordid": "",
-        "gamename": "namexxx",
+        "gamename": "namexxxx",
         "awards": [
             "new_award_1757104991830",
             "new_award_1757105088619"
+        ],
+        "events": "1"
+    },
+    "new_user_1757106874850": {
+        "id": "zachary",
+        "discord": "Zachary",
+        "discordid": "804839006403428423",
+        "gamename": "zachary",
+        "awards": [
+            "new_award_1757106970450"
+        ],
+        "events": "2"
+    },
+    "new_user_1757106875434": {
+        "id": "derf11",
+        "discord": "",
+        "discordid": "",
+        "gamename": "Derf11",
+        "awards": [
+            "new_award_1757105088619",
+            "new_award_1757104991830"
         ],
         "events": "1"
     }
@@ -127,6 +150,21 @@ const awards = {
         "name": "Kaiserreich Frontline Defender",
         "img": "kaisershield.png",
         "type": "strong defender"
+    },
+    "new_award_1757106970450": {
+        "name": "euam2025 Russia",
+        "img": "russiaempire.png",
+        "type": "great power"
+    },
+    "new_award_1757107066666": {
+        "name": "euam2025 Ukraine",
+        "img": "ukraine91.png",
+        "type": "strong defender"
+    },
+    "new_award_1757107243402": {
+        "name": "euam2025 America",
+        "img": "americagreat.png",
+        "type": "great power"
     }
 };
 
