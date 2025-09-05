@@ -4,16 +4,20 @@ const users = {
         "discord": "ЕЕнот / RRaccoon",
         "discordid": "794675642037567498",
         "gamename": "eenot",
-        "awards": [],
-        "events": "1"
+        "awards": [
+            "new_award_1757104969189"
+        ],
+        "events": "2"
     },
     "trid": {
         "id": "trid",
         "discord": "Trid",
         "discordid": "993585215358386306",
         "gamename": "3d",
-        "awards": [],
-        "events": "0"
+        "awards": [
+            "new_award_1757104991830"
+        ],
+        "events": "1"
     },
     "new_user_1756746940677": {
         "id": "totoska",
@@ -21,9 +25,10 @@ const users = {
         "discordid": "820194328201920524",
         "gamename": "totoska",
         "awards": [
-            "new_award_1756746887541"
+            "new_award_1756746887541",
+            "new_award_1757105042808"
         ],
-        "events": "1"
+        "events": "2"
     },
     "new_user_1756746991765": {
         "id": "talant",
@@ -57,6 +62,27 @@ const users = {
         "discordid": "743434309565677568",
         "gamename": "Souro",
         "awards": [],
+        "events": "1"
+    },
+    "new_user_1757105453235": {
+        "id": "ottomanism",
+        "discord": "Mr Void",
+        "discordid": "1283840564839579701",
+        "gamename": "ottomanism",
+        "awards": [
+            "new_award_1757105065828"
+        ],
+        "events": "2"
+    },
+    "new_user_1757105518059": {
+        "id": "namexxx",
+        "discord": "",
+        "discordid": "",
+        "gamename": "namexxx",
+        "awards": [
+            "new_award_1757104991830",
+            "new_award_1757105088619"
+        ],
         "events": "1"
     }
 };
