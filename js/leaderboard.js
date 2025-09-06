@@ -45,18 +45,19 @@ class leaderboard {
             tdGame.textContent = user.gamename;
             tr.appendChild(tdGame);
 
-            // Awards column
-            const tdAwards = document.createElement('th');
-            user.awards.forEach(awardKey => {
-                const award = awards[awardKey];
-                if (award) {
-                    const img = document.createElement('img');
-                    img.src = `img/award/${award.img}`;
-                    img.title = award.name;
-                    tdAwards.appendChild(img);
-                }
-            });
-            tr.appendChild(tdAwards);
+        // Awards column
+        const tdAwards = document.createElement('th');
+        user.awards.forEach(awardKey => {
+            const award = awards[awardKey];
+            if (award) {
+                const img = document.createElement('img');
+                img.src = `img/award/${award.img}`;
+                img.title = `${award.event} ${award.name}`;
+                img.onclick = () => window.leaderboard.showAward(awardKey); // функция, а не строка
+                tdAwards.appendChild(img);
+            }
+        });
+        tr.appendChild(tdAwards);
 
             // Events column (placeholder for now)
             const tdEvents = document.createElement('th');
@@ -65,6 +66,28 @@ class leaderboard {
 
             tbody.appendChild(tr);
         });
+    }
+
+    showAward(id) {
+        const modalElemetn = document.getElementById('modal');
+        modalElemetn.classList.add('active');
+        modalElemetn.innerHTML = `
+        <div><p>Слава Советскому Союзу!</p>
+            <div class="stroke">
+                <b>Название: </b><p>${awards[id].name}</p>
+            </div>
+            <div class="stroke">
+                <b>Ивент: </b><p>${awards[id].event}</p>
+            </div>
+            <div class="stroke">
+                <b>Тип: </b><p>${awards[id].type}</p>
+            </div>
+            <div class="stroke">
+                <b>Очки: </b><p>${types[awards[id].type]}</p>
+            </div>
+        <button onclick="document.getElementById('modal').classList.remove('active')">×</button></div>
+        `;
+
     }
 }
 

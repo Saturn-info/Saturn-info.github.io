@@ -14,3 +14,7 @@ body {
 .list-table tbody tr.userThisIs th {
     background: #6a31ac29 !important;
 }
+
+p {
+    margin: 0;
+}
