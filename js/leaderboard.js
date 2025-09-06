@@ -72,7 +72,10 @@ class leaderboard {
         const modalElemetn = document.getElementById('modal');
         modalElemetn.classList.add('active');
         modalElemetn.innerHTML = `
-        <div><p>Слава Советскому Союзу!</p>
+        <div class="modalcontent">
+            <div style="justify-self: right;">
+                <button onclick="document.getElementById('modal').classList.remove('active')" class="modalClose">×</button>
+            </div>
             <div class="stroke">
                 <b>Название: </b><p>${awards[id].name}</p>
             </div>
@@ -85,7 +88,7 @@ class leaderboard {
             <div class="stroke">
                 <b>Очки: </b><p>${types[awards[id].type]}</p>
             </div>
-        <button onclick="document.getElementById('modal').classList.remove('active')">×</button></div>
+        </div>
         `;
 
     }

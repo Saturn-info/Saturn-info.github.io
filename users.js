@@ -117,52 +117,62 @@ const awards = {
         "type": "winer"
     },
     "new_award_1756746887541": {
-        "name": "euam1799 | Winner",
+        "event": "euam1799",
+        "name": "Winner",
         "img": "winner.png",
         "type": "winer"
     },
     "new_award_1756747057901": {
-        "name": "euam1799 | France Defender",
+        "event": "euam1799",
+        "name": "France Defender",
         "img": "france.png",
         "type": "strong defender"
     },
     "new_award_1757104969189": {
-        "name": "Kaiserreich | Winner",
+        "event": "Kaiserreich",
+        "name": "winner",
         "img": "winner.png",
         "type": "winer"
     },
     "new_award_1757104991830": {
-        "name": "Kaiserreich | Union's Part",
+        "event": "Kaiserreich",
+        "name": "Union's Part",
         "img": "kaiserunion.png",
         "type": "part of winner"
     },
     "new_award_1757105042808": {
-        "name": "Kaiserreich | Roman Empire",
+        "event": "Kaiserreich",
+        "name": "Roman Empire",
         "img": "kaiserroman.png",
         "type": "great power"
     },
     "new_award_1757105065828": {
-        "name": "Kaiserreich | German Emire",
+        "event": "Kaiserreich",
+        "name": "German Emire",
         "img": "kaisergerman.png",
         "type": "great power"
     },
     "new_award_1757105088619": {
-        "name": "Kaiserreich | Frontline Defender",
+        "event": "Kaiserreich",
+        "name": "Frontline Defender",
         "img": "kaisershield.png",
         "type": "strong defender"
     },
     "new_award_1757106970450": {
-        "name": "euam2025 | Russian Empire",
+        "event": "euam2025",
+        "name": "Russia",
         "img": "russiaempire.png",
         "type": "great power"
     },
     "new_award_1757107066666": {
-        "name": "euam2025 | Free Ukraine",
+        "event": "euam2025",
+        "name": "Ukraine 1991",
         "img": "ukraine91.png",
         "type": "strong defender"
     },
     "new_award_1757107243402": {
-        "name": "euam2025 | Made America Great Again",
+        "event": "euam2025",
+        "name": "Made America Great Again",
         "img": "americagreat.png",
         "type": "great power"
     }
