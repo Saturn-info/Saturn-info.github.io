@@ -42,3 +42,12 @@
     width: 50vw;
     min-width: 300px;
 }
+
+.imageDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.imageDiv img {
+    width: 75%;
+}

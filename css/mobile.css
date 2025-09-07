@@ -1,0 +1,38 @@
+@media (orientation: portrait) {
+    .list-table tbody td {
+        font-size: 2rem;
+    }
+
+    .list-table thead th {
+        font-size: 2.25rem;
+    }
+
+    .list-table img {
+        width: 75px;
+    }
+
+    .awardslist {
+        display: inline-flex;
+    }
+
+    .modalcontent button {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+    }
+
+    .modalcontent p {
+        font-size: 2rem;
+    }
+
+    .modalcontent b {
+        font-size: 2rem;
+    }
+
+    .navbtn {
+        width: 10rem;
+        font-size: 1.5rem;
+        height: 2rem;
+        text-align: center;
+    }
+}

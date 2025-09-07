@@ -18,3 +18,20 @@ body {
 p {
     margin: 0;
 }
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) #242424;
+}
+
+button {
+    border: 0;
+}
+
+.langBtn {
+    background-color: #6b31aca3;
+}
+
+.langBtn :hover {
+    background-color: #924edea3;
+}

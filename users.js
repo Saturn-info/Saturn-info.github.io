@@ -5,8 +5,8 @@ const users = {
         "discordid": "794675642037567498",
         "gamename": "eenot",
         "awards": [
-            "new_award_1757104969189",
-            "new_award_1757107066666"
+            "kaiserreich_win",
+            "euam2025_ukraine"
         ],
         "events": "2"
     },
@@ -16,33 +16,33 @@ const users = {
         "discordid": "993585215358386306",
         "gamename": "3d",
         "awards": [
-            "new_award_1757104991830"
+            "kaiserreich_ruvassal"
         ],
         "events": "1"
     },
-    "new_user_1756746940677": {
+    "totoska": {
         "id": "totoska",
         "discord": "Totoska",
         "discordid": "820194328201920524",
         "gamename": "totoska",
         "awards": [
-            "new_award_1756746887541",
-            "new_award_1757105042808",
-            "new_award_1757107243402"
+            "euam1799_win",
+            "kaiserreich_italy",
+            "euam2025_america"
         ],
         "events": "2"
     },
-    "new_user_1756746991765": {
+    "talant": {
         "id": "talant",
         "discord": "TaLanT",
         "discordid": "837001706902126632",
         "gamename": "TaLanT",
         "awards": [
-            "new_award_1756747057901"
+            "euam1799_france"
         ],
         "events": "1"
     },
-    "new_user_1756800910976": {
+    "kastro": {
         "id": "kastro",
         "discord": "Kastro",
         "discordid": "1355854912654938183",
@@ -50,7 +50,7 @@ const users = {
         "awards": [],
         "events": "1"
     },
-    "new_user_1756800995632": {
+    "mgebratok": {
         "id": "mgebratok",
         "discord": "Mge bratok",
         "discordid": "1405253359857963018",
@@ -58,7 +58,7 @@ const users = {
         "awards": [],
         "events": "1"
     },
-    "new_user_1756801025992": {
+    "souro": {
         "id": "souro",
         "discord": "Souro",
         "discordid": "743434309565677568",
@@ -66,45 +66,55 @@ const users = {
         "awards": [],
         "events": "1"
     },
-    "new_user_1757105453235": {
+    "ottomanism": {
         "id": "ottomanism",
         "discord": "Ottomanism",
         "discordid": "1283840564839579701",
         "gamename": "mrvoid",
         "awards": [
-            "new_award_1757105065828"
+            "kaiserreich_german"
         ],
         "events": "2"
     },
-    "new_user_1757105518059": {
+    "namexxxx": {
         "id": "namexxxx",
         "discord": "",
         "discordid": "",
         "gamename": "namexxxx",
         "awards": [
-            "new_award_1757104991830",
-            "new_award_1757105088619"
+            "kaiserreich_ruvassal",
+            "kaiserreich_westrussia"
         ],
         "events": "1"
     },
-    "new_user_1757106874850": {
+    "zachary": {
         "id": "zachary",
         "discord": "Zachary",
         "discordid": "804839006403428423",
         "gamename": "zachary",
         "awards": [
-            "new_award_1757106970450"
+            "euam2025_russia"
         ],
         "events": "2"
     },
-    "new_user_1757106875434": {
+    "derf11": {
         "id": "derf11",
         "discord": "",
         "discordid": "",
         "gamename": "Derf11",
         "awards": [
-            "new_award_1757105088619",
-            "new_award_1757104991830"
+            "kaiserreich_ruvassal",
+            "kaiserreich_westrussia",
+        ],
+        "events": "1"
+    },
+    "penguin": {
+        "id": "penguin",
+        "discord": "Great Leader Penguin of the DPRP",
+        "discordid": "1260611002240860202",
+        "gamename": "",
+        "awards": [
+            "euam2025_belarus"
         ],
         "events": "1"
     }
@@ -114,72 +124,78 @@ const awards = {
     "test1": {
         "name": "Тест",
         "img": "test.png",
-        "type": "winer"
+        "type": "winner"
     },
-    "new_award_1756746887541": {
+    "euam1799_win": {
         "event": "euam1799",
         "name": "Winner",
         "img": "winner.png",
-        "type": "winer"
+        "type": "winner"
     },
-    "new_award_1756747057901": {
+    "euam1799_france": {
         "event": "euam1799",
         "name": "France Defender",
         "img": "france.png",
         "type": "strong defender"
     },
-    "new_award_1757104969189": {
-        "event": "Kaiserreich",
-        "name": "winner",
+    "kaiserreich_win": {
+        "event": "Kaiserreich Part 1",
+        "name": "Winner",
         "img": "winner.png",
-        "type": "winer"
+        "type": "winner"
     },
-    "new_award_1757104991830": {
+    "kaiserreich_ruvassal": {
         "event": "Kaiserreich",
         "name": "Union's Part",
         "img": "kaiserunion.png",
         "type": "part of winner"
     },
-    "new_award_1757105042808": {
+    "kaiserreich_italy": {
         "event": "Kaiserreich",
         "name": "Roman Empire",
         "img": "kaiserroman.png",
         "type": "great power"
     },
-    "new_award_1757105065828": {
+    "kaiserreich_german": {
         "event": "Kaiserreich",
         "name": "German Emire",
         "img": "kaisergerman.png",
         "type": "great power"
     },
-    "new_award_1757105088619": {
+    "kaiserreich_westrussia": {
         "event": "Kaiserreich",
         "name": "Frontline Defender",
         "img": "kaisershield.png",
         "type": "strong defender"
     },
-    "new_award_1757106970450": {
+    "euam2025_russia": {
         "event": "euam2025",
         "name": "Russia",
         "img": "russiaempire.png",
         "type": "great power"
     },
-    "new_award_1757107066666": {
+    "euam2025_ukraine": {
         "event": "euam2025",
         "name": "Ukraine 1991",
         "img": "ukraine91.png",
         "type": "strong defender"
     },
-    "new_award_1757107243402": {
+    "euam2025_america": {
         "event": "euam2025",
         "name": "Made America Great Again",
         "img": "americagreat.png",
         "type": "great power"
-    }
+    },
+    "euam2025_belarus": {
+        "event": "euam2025",
+        "name": "Belarus-Bastion",
+        "img": "belarusshield.png",
+        "type": "strong defender"
+    },
 };
 
 const types = {
-    "winer": 10,
+    "winner": 10,
     "great power": 7,
     "win side": 5,
     "strong defender": 4,

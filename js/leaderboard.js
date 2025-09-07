@@ -27,12 +27,12 @@ class leaderboard {
             }
             
             // Score column
-            const tdScore = document.createElement('th');
+            const tdScore = document.createElement('td');
             tdScore.textContent = user.score;
             tr.appendChild(tdScore);
 
             // Discord name column
-            const tdDiscord = document.createElement('th');
+            const tdDiscord = document.createElement('td');
             const discordLink = document.createElement('a');
             discordLink.href = `https://discord.com/users/${user.discordid}`;
             discordLink.textContent = user.discord;
@@ -41,12 +41,13 @@ class leaderboard {
             tr.appendChild(tdDiscord);
 
             // Game name column
-            const tdGame = document.createElement('th');
+            const tdGame = document.createElement('td');
             tdGame.textContent = user.gamename;
             tr.appendChild(tdGame);
 
         // Awards column
-        const tdAwards = document.createElement('th');
+        const tdAwards = document.createElement('td');
+        tdAwards.classList.add('awardslist');
         user.awards.forEach(awardKey => {
             const award = awards[awardKey];
             if (award) {
@@ -60,7 +61,7 @@ class leaderboard {
         tr.appendChild(tdAwards);
 
             // Events column (placeholder for now)
-            const tdEvents = document.createElement('th');
+            const tdEvents = document.createElement('td');
             tdEvents.textContent = user.events;
             tr.appendChild(tdEvents);
 
@@ -77,17 +78,18 @@ class leaderboard {
                 <button onclick="document.getElementById('modal').classList.remove('active')" class="modalClose">×</button>
             </div>
             <div class="stroke">
-                <b>Название: </b><p>${awards[id].name}</p>
+                <b data-translate="nameDT">${window.langMgr.trs('nameDT')}</b><p>${awards[id].name}</p>
             </div>
             <div class="stroke">
-                <b>Ивент: </b><p>${awards[id].event}</p>
+                <b data-translate="eventDT">${window.langMgr.trs('eventDT')}</b><p>${awards[id].event}</p>
             </div>
             <div class="stroke">
-                <b>Тип: </b><p>${awards[id].type}</p>
+                <b data-translate="typeDT">${window.langMgr.trs('typeDT')}</b><p data-translate="${awards[id].type}">${window.langMgr.trs(awards[id].type)}</p>
             </div>
             <div class="stroke">
-                <b>Очки: </b><p>${types[awards[id].type]}</p>
+                <b data-translate="scoreDT">${window.langMgr.trs('scoreDT')}</b><p>${types[awards[id].type]}</p>
             </div>
+            <div class="imageDiv"><img src="img/award/${awards[id].img}"></div>
         </div>
         `;
 
