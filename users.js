@@ -6,7 +6,8 @@ const users = {
         "gamename": "eenot",
         "awards": [
             "kaiserreich_win",
-            "euam2025_ukraine"
+            "euam2025_ukraine",
+            "kaiserreich2_soviet"
         ],
         "events": "3"
     },
@@ -16,7 +17,9 @@ const users = {
         "discordid": "993585215358386306",
         "gamename": "3d",
         "awards": [
-            "kaiserreich_ruvassal"
+            "kaiserreich_ruvassal",
+            "kaiserreich2_frontline",
+            "kaiserreich2_ukraine"
         ],
         "events": "2"
     },
@@ -27,8 +30,9 @@ const users = {
         "gamename": "totoska",
         "awards": [
             "euam1799_win",
+            "euam2025_america",
             "kaiserreich_italy",
-            "euam2025_america"
+            "kaiserreich2_rome"
         ],
         "events": "3"
     },
@@ -93,7 +97,8 @@ const users = {
         "discordid": "804839006403428423",
         "gamename": "zachary",
         "awards": [
-            "euam2025_russia"
+            "euam2025_russia",
+            "kaiserreich2_poland"
         ],
         "events": "3"
     },
@@ -128,14 +133,13 @@ const users = {
         ],
         "events": "1"
     },
-    "nameopop": {
+    "shelzyy": {
         "id": "nameopop",
-        "discord": "",
-        "discordid": "",
+        "discord": "shelzyy1",
+        "discordid": "1389220098010775704",
         "gamename": "nameopop",
         "awards": [
-            "kaiserreich2_rupart",
-            "kaiserreich2_rufront"
+            "kaiserreich2_frontline"
         ],
         "events": "1"
     },
@@ -218,6 +222,37 @@ const awards = {
         "name": "Belarus-Bastion",
         "img": "belarusshield.png",
         "type": "strong defender"
+    },
+    "kaiserreich2_poland": {
+        "event": "kaiserreich2",
+        "name": "Polish Bastion",
+        "img": "polandshield.png",
+        "type": "strong defender",
+        "score": 6
+    },
+    "kaiserreich2_soviet": {
+        "event": "kaiserreich2",
+        "name": "Союз Нерушимый...",
+        "img": "kaiser2su.png",
+        "type": "winner"
+    },
+    "kaiserreich2_rome": {
+        "event": "kaiserreich2",
+        "name": "Greatest Roman Empire",
+        "img": "kaiser2ro.png",
+        "type": "winner"
+    },
+    "kaiserreich2_frontline": {
+        "event": "kaiserreich2",
+        "name": "Bastion of Soviets",
+        "img": "kaiser2bastionsu.png",
+        "type": "strong defender"
+    },
+    "kaiserreich2_ukraine": {
+        "event": "kaiserreich2",
+        "name": "Ukrainian Utopia",
+        "img": "kaiser2ukraine.png",
+        "type": "win side"
     },
 };
 

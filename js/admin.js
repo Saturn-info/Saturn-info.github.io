@@ -259,6 +259,11 @@ class AdminPanel {
     }
 
     async saveChanges() {
+        if (document.location.href.includes('.html')) {
+            navigator.clipboard.writeText(`const users = ${JSON.stringify(this.currentData.users, null, 4)};\n\n` +
+                          `const awards = ${JSON.stringify(this.currentData.awards, null, 4)};\n\n` +
+                          `const types = ${JSON.stringify(this.currentData.types, null, 4)};\n`);
+        } else {
         try {
             // First, get the current file's SHA
             const getFileResponse = await fetch('https://api.github.com/repos/Saturn-winner-s-table/Saturn-winner-s-table.github.io/contents/users.js', {
@@ -297,6 +302,7 @@ class AdminPanel {
             }
         } catch (error) {
             this.showMessage('Ошибка при сохранении изменений: ' + error.message, 'error');
+        }
         }
     }
 

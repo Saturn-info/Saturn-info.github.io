@@ -1,4 +1,13 @@
 class leaderboard {
+
+    calcScoreAward(id) {
+        if (awards[id].score) {
+            return awards[id].score
+        } else {
+            return types[awards[id].type]
+        }
+    }
+
     update() {
         const tbody = document.getElementById('leadertablebody');
         tbody.innerHTML = '';
@@ -10,7 +19,7 @@ class leaderboard {
             user.awards.forEach(award => {
                 const awardInfo = awards[award];
                 if (awardInfo && types[awardInfo.type]) {
-                    score += types[awardInfo.type];
+                    score += window.leaderboard.calcScoreAward(award);
                 }
             });
             return { ...user, score };
