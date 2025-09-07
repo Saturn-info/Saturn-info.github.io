@@ -117,7 +117,17 @@ const users = {
             "euam2025_belarus"
         ],
         "events": "1"
-    }
+    },
+    "moad": {
+        "id": "moad",
+        "discord": "Moād",
+        "discordid": "846351504730619925",
+        "gamename": "moaad",
+        "awards": [
+            "kaiserreich_sweden"
+        ],
+        "events": "1"
+    },
 };
 
 const awards = {
@@ -167,6 +177,12 @@ const awards = {
         "name": "Frontline Defender",
         "img": "kaisershield.png",
         "type": "strong defender"
+    },
+    "kaiserreich_sweden": {
+        "event": "Kaiserreich",
+        "name": "Great Sweden",
+        "img": "kaisersweden.png",
+        "type": "great power"
     },
     "euam2025_russia": {
         "event": "euam2025",
