@@ -8,7 +8,7 @@ const users = {
             "kaiserreich_win",
             "euam2025_ukraine"
         ],
-        "events": "2"
+        "events": "3"
     },
     "trid": {
         "id": "trid",
@@ -18,7 +18,7 @@ const users = {
         "awards": [
             "kaiserreich_ruvassal"
         ],
-        "events": "1"
+        "events": "2"
     },
     "totoska": {
         "id": "totoska",
@@ -30,7 +30,7 @@ const users = {
             "kaiserreich_italy",
             "euam2025_america"
         ],
-        "events": "2"
+        "events": "3"
     },
     "talant": {
         "id": "talant",
@@ -74,7 +74,7 @@ const users = {
         "awards": [
             "kaiserreich_german"
         ],
-        "events": "2"
+        "events": "3"
     },
     "namexxxx": {
         "id": "namexxxx",
@@ -95,7 +95,7 @@ const users = {
         "awards": [
             "euam2025_russia"
         ],
-        "events": "2"
+        "events": "3"
     },
     "derf11": {
         "id": "derf11",
@@ -125,6 +125,17 @@ const users = {
         "gamename": "moaad",
         "awards": [
             "kaiserreich_sweden"
+        ],
+        "events": "1"
+    },
+    "nameopop": {
+        "id": "nameopop",
+        "discord": "",
+        "discordid": "",
+        "gamename": "nameopop",
+        "awards": [
+            "kaiserreich2_rupart",
+            "kaiserreich2_rufront"
         ],
         "events": "1"
     },
