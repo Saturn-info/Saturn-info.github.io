@@ -6,7 +6,7 @@
         <link rel="icon" href="img/ico.png">
         <script src="users.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/leaderboard.js"></script>
+        <script src="js/donate.js"></script>
 
         <script src="js/lang.js"></script>
         <script src="js/translator.js"></script>
@@ -16,13 +16,14 @@
         <link rel="stylesheet" href="css/list.css">
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/donate.css">
     </head>
     <body>
         <nav class="navpanel">
             <div class="leftnav">
-                <a class="navbtn" style="background-color: #6b31aca8;" data-lang="leaderboard">Leaderboard</a>
+                <a class="navbtn" href="index.html" data-lang="leaderboard">Leaderboard</a>
                 <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y" data-lang="discord">Discord</a>
-                <a class="navbtn" href="donate.html" data-lang="donate">Donate-info</a>
+                <a class="navbtn" style="background-color: #6b31aca8;" href="donate.html" data-lang="donate">Donate-info</a>
             </div>
             <div class="rightnav">
                 <!--div class="accountico">
@@ -35,20 +36,11 @@
                 <button class="langBtn navbtn" onclick="if (localStorage.getItem('SaturnLang') === 'ru') { window.langMgr.setLang('en') } else { window.langMgr.setLang('ru') }">EN / RU</button>
             </div>
         </nav>
-        <div class="content">
-            <div class="list-container" id="leadertable"><table class="list-table">
-                <thead>
-                    <tr>
-                        <th data-lang="score">Score</th>
-                        <th data-lang="discord">Discord</th>
-                        <th data-lang="game">Game</th>
-                        <th data-lang="awards">Awards</th>
-                        <th data-lang="events">Events</th>
-                    </tr>
-                </thead>
-                <tbody id="leadertablebody">
-                </tbody>
-            </table></div>
+        <div class="content" id="donateru">
+            <p data-lang="donatetext"></p>
+        </div>
+        <div class="content" id="donateoptions">
+            <p data-lang="donateoptions"></p>
         </div>
         <div id="modal">
 
