@@ -263,3 +263,10 @@ const types = {
     "strong defender": 4,
     "part of winner": 1
 };
+
+const events = {
+    euam1799: '31.08.2025',
+    euam2025: '04.09.2025',
+    kaiserreich: '05.09.2025',
+    kaiserreich2: '07.09.2025',
+}

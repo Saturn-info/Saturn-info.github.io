@@ -54,20 +54,28 @@ class leaderboard {
             tdGame.textContent = user.gamename;
             tr.appendChild(tdGame);
 
-        // Awards column
-        const tdAwards = document.createElement('td');
-        tdAwards.classList.add('awardslist');
-        user.awards.forEach(awardKey => {
-            const award = awards[awardKey];
-            if (award) {
-                const img = document.createElement('img');
-                img.src = `img/award/${award.img}`;
-                img.title = `${award.event} ${award.name}`;
-                img.onclick = () => window.leaderboard.showAward(awardKey); // функция, а не строка
-                tdAwards.appendChild(img);
-            }
-        });
-        tr.appendChild(tdAwards);
+            // Awards column
+            const tdAwards = document.createElement('td');
+            tdAwards.classList.add('awardslist');
+
+            // сортируем награды: от большего веса к меньшему
+            const sortedAwards = [...user.awards].sort((a, b) => {
+                const scoreA = window.leaderboard.calcScoreAward(a);
+                const scoreB = window.leaderboard.calcScoreAward(b);
+                return scoreB - scoreA; // от большего к меньшему
+            });
+
+            sortedAwards.forEach(awardKey => {
+                const award = awards[awardKey];
+                if (award) {
+                    const img = document.createElement('img');
+                    img.src = `img/award/${award.img}`;
+                    img.title = `${award.event} ${award.name}`;
+                    img.onclick = () => window.leaderboard.showAward(awardKey); // функция, а не строка
+                    tdAwards.appendChild(img);
+                }
+            });
+            tr.appendChild(tdAwards);
 
             // Events column (placeholder for now)
             const tdEvents = document.createElement('td');
@@ -96,7 +104,10 @@ class leaderboard {
                 <b data-translate="typeDT">${window.langMgr.trs('typeDT')}</b><p data-translate="${awards[id].type}">${window.langMgr.trs(awards[id].type)}</p>
             </div>
             <div class="stroke">
-                <b data-translate="scoreDT">${window.langMgr.trs('scoreDT')}</b><p>${types[awards[id].type]}</p>
+                <b data-translate="scoreDT">${window.langMgr.trs('scoreDT')}</b><p>${window.leaderboard.calcScoreAward(id)}</p>
+            </div>
+            <div class="stroke">
+                <b data-translate="dateDT">${window.langMgr.trs('dateDT')}</b><p>${events[awards[id].event]}</p>
             </div>
             <div class="imageDiv"><img src="img/award/${awards[id].img}"></div>
         </div>

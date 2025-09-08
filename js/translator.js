@@ -27,6 +27,8 @@ class LangMgr {
                 "eventDT": "Event:",
                 "typeDT": "Type:",
                 "scoreDT": "Score:",
+                "dateDT": "Date:",
+
                 "donatetext": "<div style='display: inline-flex'><p>Not anavible now for Western cards. For read about how to pay using Russian card <i onclick='window.langMgr.setLang(`ru`)' style='color: #b62fe8; cursor: pointer;'>change language</i></p></div>",
                 "donateoptions": `
 <h2>Elite</h2>
@@ -64,6 +66,7 @@ class LangMgr {
                 "eventDT": "Ивент:",
                 "typeDT": "Тип:",
                 "scoreDT": "Ценность:",
+                "dateDT": "Дата:",
 
                 "donatetext": `
 <h2> Информация по заказу и оплате доната</h2>
