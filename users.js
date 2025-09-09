@@ -5,11 +5,12 @@ const users = {
         "discordid": "794675642037567498",
         "gamename": "eenot",
         "awards": [
-            "kaiserreich_win",
-            "euam2025_ukraine",
-            "kaiserreich2_soviet"
+            "kaiserreich_e1_p1_win",
+            "euam2025_e1_ukraine",
+            "kaiserreich_e1_p2_soviet",
+            "kaiserreich_e2_p1_ukraine",
         ],
-        "events": "3"
+        "events": "4"
     },
     "trid": {
         "id": "trid",
@@ -17,11 +18,12 @@ const users = {
         "discordid": "993585215358386306",
         "gamename": "3d",
         "awards": [
-            "kaiserreich_ruvassal",
-            "kaiserreich2_frontline",
-            "kaiserreich2_ukraine"
+            "kaiserreich_e1_p1_ruvassal",
+            "kaiserreich_e1_p2_frontline",
+            "kaiserreich_e1_p2_ukraine",
+            "kaiserreich_e2_p1_scandinavia",
         ],
-        "events": "2"
+        "events": "3"
     },
     "totoska": {
         "id": "totoska",
@@ -29,10 +31,10 @@ const users = {
         "discordid": "820194328201920524",
         "gamename": "totoska",
         "awards": [
-            "euam1799_win",
-            "euam2025_america",
-            "kaiserreich_italy",
-            "kaiserreich2_rome"
+            "euam1799_e1_win",
+            "euam2025_e1_america",
+            "kaiserreich_e1_p1_italy",
+            "kaiserreich_e1_p2_rome"
         ],
         "events": "3"
     },
@@ -42,7 +44,7 @@ const users = {
         "discordid": "837001706902126632",
         "gamename": "TaLanT",
         "awards": [
-            "euam1799_france"
+            "euam1799_e1_france"
         ],
         "events": "1"
     },
@@ -76,9 +78,9 @@ const users = {
         "discordid": "1283840564839579701",
         "gamename": "mrvoid",
         "awards": [
-            "kaiserreich_german"
+            "kaiserreich_e1_p1_german"
         ],
-        "events": "3"
+        "events": "4"
     },
     "namexxxx": {
         "id": "namexxxx",
@@ -86,8 +88,8 @@ const users = {
         "discordid": "",
         "gamename": "namexxxx",
         "awards": [
-            "kaiserreich_ruvassal",
-            "kaiserreich_westrussia"
+            "kaiserreich_e1_p1_ruvassal",
+            "kaiserreich_e1_p1_westrussia"
         ],
         "events": "1"
     },
@@ -97,8 +99,8 @@ const users = {
         "discordid": "804839006403428423",
         "gamename": "zachary",
         "awards": [
-            "euam2025_russia",
-            "kaiserreich2_poland"
+            "euam2025_e1_russia",
+            "kaiserreich_e1_p2_poland"
         ],
         "events": "3"
     },
@@ -108,8 +110,8 @@ const users = {
         "discordid": "",
         "gamename": "Derf11",
         "awards": [
-            "kaiserreich_ruvassal",
-            "kaiserreich_westrussia",
+            "kaiserreich_e1_p1_ruvassal",
+            "kaiserreich_e1_p1_westrussia",
         ],
         "events": "1"
     },
@@ -119,7 +121,7 @@ const users = {
         "discordid": "1260611002240860202",
         "gamename": "",
         "awards": [
-            "euam2025_belarus"
+            "euam2025_e1_belarus"
         ],
         "events": "1"
     },
@@ -129,9 +131,10 @@ const users = {
         "discordid": "846351504730619925",
         "gamename": "moaad",
         "awards": [
-            "kaiserreich_sweden"
+            "kaiserreich_e1_p1_sweden",
+            "kaiserreich_e2_p1_win",
         ],
-        "events": "1"
+        "events": "2"
     },
     "shelzyy": {
         "id": "nameopop",
@@ -139,7 +142,27 @@ const users = {
         "discordid": "1389220098010775704",
         "gamename": "nameopop",
         "awards": [
-            "kaiserreich2_frontline"
+            "kaiserreich_e1_p2_frontline"
+        ],
+        "events": "2"
+    },
+    "khan": {
+        "id": "khan",
+        "discord": "Khan",
+        "discordid": "832210310735462431",
+        "gamename": "khan",
+        "awards": [
+            "kaiserreich_e2_p1_galicia",
+        ],
+        "events": "1"
+    },
+    "lioha": {
+        "id": "lioha",
+        "discord": "",
+        "discordid": "",
+        "gamename": "lioha",
+        "awards": [
+            "kaiserreich_e2_p1_scandinavia",
         ],
         "events": "1"
     },
@@ -151,108 +174,133 @@ const awards = {
         "img": "test.png",
         "type": "winner"
     },
-    "euam1799_win": {
-        "event": "euam1799",
+    "euam1799_e1_win": {
+        "event": "euam1799_e1",
         "name": "Winner",
         "img": "winner.png",
         "type": "winner"
     },
-    "euam1799_france": {
-        "event": "euam1799",
+    "euam1799_e1_france": {
+        "event": "euam1799_e1",
         "name": "France Defender",
         "img": "france.png",
         "type": "strong defender"
     },
-    "kaiserreich_win": {
+    "kaiserreich_e1_p1_win": {
         "event": "Kaiserreich Part 1",
         "name": "Winner",
         "img": "winner.png",
         "type": "winner"
     },
-    "kaiserreich_ruvassal": {
+    "kaiserreich_e1_p1_ruvassal": {
         "event": "Kaiserreich",
         "name": "Union's Part",
         "img": "kaiserunion.png",
         "type": "part of winner"
     },
-    "kaiserreich_italy": {
+    "kaiserreich_e1_p1_italy": {
         "event": "Kaiserreich",
         "name": "Roman Empire",
         "img": "kaiserroman.png",
         "type": "great power"
     },
-    "kaiserreich_german": {
+    "kaiserreich_e1_p1_german": {
         "event": "Kaiserreich",
         "name": "German Emire",
         "img": "kaisergerman.png",
         "type": "great power"
     },
-    "kaiserreich_westrussia": {
+    "kaiserreich_e1_p1_westrussia": {
         "event": "Kaiserreich",
         "name": "Frontline Defender",
         "img": "kaisershield.png",
         "type": "strong defender"
     },
-    "kaiserreich_sweden": {
+    "kaiserreich_e1_p1_sweden": {
         "event": "Kaiserreich",
         "name": "Great Sweden",
         "img": "kaisersweden.png",
         "type": "great power"
     },
-    "euam2025_russia": {
-        "event": "euam2025",
+    "euam2025_e1_russia": {
+        "event": "euam2025_e1",
         "name": "Russia",
         "img": "russiaempire.png",
         "type": "great power"
     },
-    "euam2025_ukraine": {
-        "event": "euam2025",
+    "euam2025_e1_ukraine": {
+        "event": "euam2025_e1",
         "name": "Ukraine 1991",
         "img": "ukraine91.png",
         "type": "strong defender"
     },
-    "euam2025_america": {
-        "event": "euam2025",
+    "euam2025_e1_america": {
+        "event": "euam2025_e1",
         "name": "Made America Great Again",
         "img": "americagreat.png",
         "type": "great power"
     },
-    "euam2025_belarus": {
-        "event": "euam2025",
+    "euam2025_e1_belarus": {
+        "event": "euam2025_e1",
         "name": "Belarus-Bastion",
         "img": "belarusshield.png",
         "type": "strong defender"
     },
-    "kaiserreich2_poland": {
-        "event": "kaiserreich2",
+    "kaiserreich_e1_p2_poland": {
+        "event": "kaiserreich_e1_p2",
         "name": "Polish Bastion",
         "img": "polandshield.png",
         "type": "strong defender",
         "score": 6
     },
-    "kaiserreich2_soviet": {
-        "event": "kaiserreich2",
+    "kaiserreich_e1_p2_soviet": {
+        "event": "kaiserreich_e1_p2",
         "name": "Союз Нерушимый...",
         "img": "kaiser2su.png",
         "type": "winner"
     },
-    "kaiserreich2_rome": {
-        "event": "kaiserreich2",
+    "kaiserreich_e1_p2_rome": {
+        "event": "kaiserreich_e1_p2",
         "name": "Greatest Roman Empire",
         "img": "kaiser2ro.png",
         "type": "winner"
     },
-    "kaiserreich2_frontline": {
-        "event": "kaiserreich2",
+    "kaiserreich_e1_p2_frontline": {
+        "event": "kaiserreich_e1_p2",
         "name": "Bastion of Soviets",
         "img": "kaiser2bastionsu.png",
         "type": "strong defender"
     },
-    "kaiserreich2_ukraine": {
-        "event": "kaiserreich2",
+    "kaiserreich_e1_p2_ukraine": {
+        "event": "kaiserreich_e1_p2",
         "name": "Ukrainian Utopia",
         "img": "kaiser2ukraine.png",
         "type": "win side"
+    },
+    "kaiserreich_e2_p1_ukraine": {
+        "event": "kaiserreich_e2_p1",
+        "name": "Great Ukraine",
+        "img": "kaiser21ukraine.png",
+        "type": "win side"
+    },
+    "kaiserreich_e2_p1_scandinavia": {
+        "event": "kaiserreich_e2_p1",
+        "name": "United Scandinavia",
+        "img": "kaiser21scandinavia.png",
+        "type": "win side"
+    },
+    "kaiserreich_e2_p1_win": {
+        "event": "kaiserreich_e2_p1",
+        "name": "Kaiserreich2 Winner",
+        //"img": "kaiser21ottoman.png",
+        "img": "winner.png",
+        "type": "winner"
+    },
+    "kaiserreich_e2_p1_galicia": {
+        "event": "kaiserreich_e2_p1",
+        "name": "Carpatian Bastion",
+        "img": "kaiser21galicia.png",
+        "type": "strong defender"
     },
 };
 
@@ -265,8 +313,9 @@ const types = {
 };
 
 const events = {
-    euam1799: '31.08.2025',
-    euam2025: '04.09.2025',
-    kaiserreich: '05.09.2025',
-    kaiserreich2: '07.09.2025',
+    euam1799_e1: '31.08.2025',
+    euam2025_e1: '04.09.2025',
+    kaiserreich_e1_p1: '05.09.2025',
+    kaiserreich_e1_p2: '07.09.2025',
+    kaiserreich_e2_p1: '09.09.2025',
 }
