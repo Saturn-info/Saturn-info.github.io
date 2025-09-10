@@ -78,7 +78,8 @@ const users = {
         "discordid": "1283840564839579701",
         "gamename": "mrvoid",
         "awards": [
-            "kaiserreich_e1_p1_german"
+            "kaiserreich_e1_p1_german",
+            "kaiserreich_e2_p1_germany"
         ],
         "events": "4"
     },
@@ -142,7 +143,8 @@ const users = {
         "discordid": "1389220098010775704",
         "gamename": "nameopop",
         "awards": [
-            "kaiserreich_e1_p2_frontline"
+            "kaiserreich_e1_p2_frontline",
+"kaiserreich_e2_p1_russia",
         ],
         "events": "2"
     },
@@ -302,10 +304,23 @@ const awards = {
         "img": "kaiser21galicia.png",
         "type": "strong defender"
     },
+    "kaiserreich_e2_p1_germany": {
+        "event": "kaiserreich_e2_p1",
+        "name": "German Conqueror",
+        "img": "kaiser21germany.png",
+        "type": "conqueror",
+        "score": 9
+    },
+    "kaiserreich_e2_p1_russia": {
+        "event": "kaiserreich_e2_p1",
+        "name": "Russian Bastion",
+        "img": "kaiser21russia",
+        "type": "great power"
 };
 
 const types = {
     "winner": 10,
+    "conqueror": 8,
     "great power": 7,
     "win side": 5,
     "strong defender": 4,
