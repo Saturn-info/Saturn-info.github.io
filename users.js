@@ -316,6 +316,7 @@ const awards = {
         "name": "Russian Bastion",
         "img": "kaiser21russia",
         "type": "great power"
+    }
 };
 
 const types = {
