@@ -141,7 +141,7 @@ const users = {
         "id": "nameopop",
         "discord": "shelzyy1",
         "discordid": "1389220098010775704",
-        "gamename": "nameopop",
+        "gamename": "nameopop, shelzyy",
         "awards": [
             "kaiserreich_e1_p2_frontline",
 "kaiserreich_e2_p1_russia",
@@ -314,7 +314,7 @@ const awards = {
     "kaiserreich_e2_p1_russia": {
         "event": "kaiserreich_e2_p1",
         "name": "Russian Bastion",
-        "img": "kaiser21russia",
+        "img": "kaiser21russia.png",
         "type": "great power"
     }
 };

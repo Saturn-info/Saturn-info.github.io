@@ -26,7 +26,13 @@ class leaderboard {
         });
 
         // Sort users by score (highest first)
-        usersArray.sort((a, b) => b.score - a.score);
+        //usersArray.sort((a, b) => b.score - a.score);
+        // Sort users by ratio (highest first)
+        usersArray.sort((a, b) => {
+            const ratioA = a.events > 0 ? a.score / a.events : 0;
+            const ratioB = b.events > 0 ? b.score / b.events : 0;
+            return ratioB - ratioA; // от большего к меньшему
+        });
 
         // Create table rows
         usersArray.forEach(user => {
@@ -39,6 +45,11 @@ class leaderboard {
             const tdScore = document.createElement('td');
             tdScore.textContent = user.score;
             tr.appendChild(tdScore);
+            
+            // Ratio column
+            const tdRatio = document.createElement('td');
+            tdRatio.textContent = Math.round((user.score / user.events) * 1);
+            tr.appendChild(tdRatio);
 
             // Discord name column
             const tdDiscord = document.createElement('td');
