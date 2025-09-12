@@ -82,6 +82,7 @@ const users = {
             "kaiserreich_e1_p1_german",
             "kaiserreich_e2_p1_germany",
             "eusat2014_e1_winner",
+            "twosides_e1_germany",
         ],
         "events": "6"
     },
@@ -137,7 +138,8 @@ const users = {
         "awards": [
             "kaiserreich_e1_p1_sweden",
             "kaiserreich_e2_p1_win",
-            "eusat2014_e1_winner"
+            "eusat2014_e1_winner",
+            "twosides_e1_british",
         ],
         "events": "4"
     },
@@ -159,6 +161,7 @@ const users = {
         "gamename": "khan",
         "awards": [
             "kaiserreich_e2_p1_galicia",
+            "twosides_e1_china",
         ],
         "events": "2"
     },
