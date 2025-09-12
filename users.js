@@ -9,8 +9,9 @@ const users = {
             "euam2025_e1_ukraine",
             "kaiserreich_e1_p2_soviet",
             "kaiserreich_e2_p1_ukraine",
+            "eusat2014_e1_defender",
         ],
-        "events": "4"
+        "events": "6"
     },
     "trid": {
         "id": "trid",
@@ -23,7 +24,7 @@ const users = {
             "kaiserreich_e1_p2_ukraine",
             "kaiserreich_e2_p1_scandinavia",
         ],
-        "events": "3"
+        "events": "5"
     },
     "totoska": {
         "id": "totoska",
@@ -36,7 +37,7 @@ const users = {
             "kaiserreich_e1_p1_italy",
             "kaiserreich_e1_p2_rome"
         ],
-        "events": "3"
+        "events": "4"
     },
     "talant": {
         "id": "talant",
@@ -54,7 +55,7 @@ const users = {
         "discordid": "1355854912654938183",
         "gamename": "kastrofernant",
         "awards": [],
-        "events": "1"
+        "events": "2"
     },
     "mgebratok": {
         "id": "mgebratok",
@@ -79,9 +80,10 @@ const users = {
         "gamename": "mrvoid",
         "awards": [
             "kaiserreich_e1_p1_german",
-            "kaiserreich_e2_p1_germany"
+            "kaiserreich_e2_p1_germany",
+            "eusat2014_e1_winner",
         ],
-        "events": "4"
+        "events": "6"
     },
     "namexxxx": {
         "id": "namexxxx",
@@ -101,9 +103,10 @@ const users = {
         "gamename": "zachary",
         "awards": [
             "euam2025_e1_russia",
-            "kaiserreich_e1_p2_poland"
+            "kaiserreich_e1_p2_poland",
+            "eusat2014_e1_defender"
         ],
-        "events": "3"
+        "events": "4"
     },
     "derf11": {
         "id": "derf11",
@@ -134,8 +137,9 @@ const users = {
         "awards": [
             "kaiserreich_e1_p1_sweden",
             "kaiserreich_e2_p1_win",
+            "eusat2014_e1_winner"
         ],
-        "events": "2"
+        "events": "4"
     },
     "shelzyy": {
         "id": "nameopop",
@@ -156,7 +160,7 @@ const users = {
         "awards": [
             "kaiserreich_e2_p1_galicia",
         ],
-        "events": "1"
+        "events": "2"
     },
     "lioha": {
         "id": "lioha",
@@ -166,7 +170,7 @@ const users = {
         "awards": [
             "kaiserreich_e2_p1_scandinavia",
         ],
-        "events": "1"
+        "events": "2"
     },
 };
 
@@ -321,13 +325,21 @@ const awards = {
         "event": "eusat2014_e1",
         "name": "Eusat2014 Winner",
         "img": "winner.png",
-        "type": "winner"
+        "type": "winner",
+        "score": 8
     },
     "eusat2014_e1_russia": {
         "event": "eusat2014_e1",
         "name": "Eastern Center",
-        "img": "odkb",
+        "img": "odkb.png",
         "type": "great power"
+    },
+    "eusat2014_e1_defender": {
+        "event": "eusat2014_e1",
+        "name": "East's Defender",
+        "img": "shield.png",
+        "type": "great defender"
+    }
 };
 
 const types = {
