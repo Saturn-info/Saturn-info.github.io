@@ -316,7 +316,18 @@ const awards = {
         "name": "Russian Bastion",
         "img": "kaiser21russia.png",
         "type": "great power"
-    }
+    },
+    "eusat2014_e1_winner": {
+        "event": "eusat2014_e1",
+        "name": "Eusat2014 Winner",
+        "img": "winner.png",
+        "type": "winner"
+    },
+    "eusat2014_e1_russia": {
+        "event": "eusat2014_e1",
+        "name": "Eastern Center",
+        "img": "odkb",
+        "type": "great power"
 };
 
 const types = {
@@ -334,4 +345,6 @@ const events = {
     kaiserreich_e1_p1: '05.09.2025',
     kaiserreich_e1_p2: '07.09.2025',
     kaiserreich_e2_p1: '09.09.2025',
+    eusat2014_e1: '12.09.2025',
+    twosides_e1: '12.09.2025',
 }
