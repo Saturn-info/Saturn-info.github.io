@@ -35,7 +35,7 @@ const users = {
             "euam1799_e1_win",
             "euam2025_e1_america",
             "kaiserreich_e1_p1_italy",
-            "kaiserreich_e1_p2_rome"
+            "kaiserreich_e1_p2_rome",
         ],
         "events": "4"
     },
@@ -105,7 +105,7 @@ const users = {
         "awards": [
             "euam2025_e1_russia",
             "kaiserreich_e1_p2_poland",
-            "eusat2014_e1_defender"
+            "eusat2014_e1_defender",
         ],
         "events": "4"
     },
@@ -126,7 +126,7 @@ const users = {
         "discordid": "1260611002240860202",
         "gamename": "",
         "awards": [
-            "euam2025_e1_belarus"
+            "euam2025_e1_belarus",
         ],
         "events": "1"
     },
