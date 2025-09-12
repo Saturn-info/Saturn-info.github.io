@@ -338,8 +338,26 @@ const awards = {
         "event": "eusat2014_e1",
         "name": "East's Defender",
         "img": "shield.png",
-        "type": "great defender"
-    }
+        "type": "strong defender"
+    },
+    "twosides_e1_germany": {
+        "event": "twosides_e1",
+        "name": "Alternative Alternative History",
+        "img": "ts_germany.png",
+        "type": "winner"
+    },
+    "twosides_e1_british": {
+        "event": "twosides_e1",
+        "name": "Greater British Colonial Empire",
+        "img": "ts_british.png",
+        "type": "great power"
+    },
+    "twosides_e1_china": {
+        "event": "twosides_e1",
+        "name": "United China",
+        "img": "ts_china.png",
+        "type": "win side"
+    },
 };
 
 const types = {
