@@ -29,8 +29,8 @@ class leaderboard {
         //usersArray.sort((a, b) => b.score - a.score);
         // Sort users by ratio (highest first)
         usersArray.sort((a, b) => {
-            const ratioA = a.events > 0 ? a.score / a.events : 0;
-            const ratioB = b.events > 0 ? b.score / b.events : 0;
+            const ratioA = a.events.length > 0 ? a.score / a.events.length : 0;
+            const ratioB = b.events.length > 0 ? b.score / b.events.length : 0;
             return ratioB - ratioA; // от большего к меньшему
         });
 
@@ -48,7 +48,7 @@ class leaderboard {
             
             // Ratio column
             const tdRatio = document.createElement('td');
-            tdRatio.textContent = Math.round((user.score / user.events) * 1);
+            tdRatio.textContent = Math.round((user.score / user.events.length) * 1);
             tr.appendChild(tdRatio);
 
             // Discord name column
@@ -90,7 +90,7 @@ class leaderboard {
 
             // Events column (placeholder for now)
             const tdEvents = document.createElement('td');
-            tdEvents.textContent = user.events;
+            tdEvents.textContent = user.events.length;
             tr.appendChild(tdEvents);
 
             tbody.appendChild(tr);

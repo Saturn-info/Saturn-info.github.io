@@ -11,7 +11,15 @@ const users = {
             "kaiserreich_e2_p1_ukraine",
             "eusat2014_e1_defender",
         ],
-        "events": "6"
+        "events": [
+            "euam1799_e1",
+            "euam2025_e1",
+            "kaiserreich_e1_p1",
+            "kaiserreich_e1_p2",
+            "kaiserreich_e2_p1",
+            "eusat2014_e1",
+            "twosides_e1",
+        ]
     },
     "trid": {
         "id": "trid",
@@ -24,7 +32,13 @@ const users = {
             "kaiserreich_e1_p2_ukraine",
             "kaiserreich_e2_p1_scandinavia",
         ],
-        "events": "5"
+        "events": [
+            "kaiserreich_e1_p1",
+            "kaiserreich_e1_p2",
+            "kaiserreich_e2_p1",
+            "eusat2014_e1",
+            "twosides_e1",
+        ]
     },
     "totoska": {
         "id": "totoska",
@@ -37,7 +51,12 @@ const users = {
             "kaiserreich_e1_p1_italy",
             "kaiserreich_e1_p2_rome",
         ],
-        "events": "4"
+        "events": [
+            "euam1799_e1",
+            "euam2025_e1",
+            "kaiserreich_e1_p1",
+            "kaiserreich_e1_p2",
+        ]
     },
     "talant": {
         "id": "talant",
@@ -47,7 +66,9 @@ const users = {
         "awards": [
             "euam1799_e1_france"
         ],
-        "events": "1"
+        "events": [
+            "euam1799_e1",
+        ]
     },
     "kastro": {
         "id": "kastro",
@@ -55,7 +76,10 @@ const users = {
         "discordid": "1355854912654938183",
         "gamename": "kastrofernant",
         "awards": [],
-        "events": "2"
+        "events": [
+            "euam1799_e1",
+            "eusat2014_e1",
+        ]
     },
     "mgebratok": {
         "id": "mgebratok",
@@ -63,7 +87,9 @@ const users = {
         "discordid": "1405253359857963018",
         "gamename": "",
         "awards": [],
-        "events": "1"
+        "events": [
+            "euam1799_e1",
+        ]
     },
     "souro": {
         "id": "souro",
@@ -71,7 +97,9 @@ const users = {
         "discordid": "743434309565677568",
         "gamename": "Souro",
         "awards": [],
-        "events": "1"
+        "events": [
+            "euam1799_e1",
+        ]
     },
     "ottomanism": {
         "id": "ottomanism",
@@ -84,7 +112,14 @@ const users = {
             "eusat2014_e1_winner",
             "twosides_e1_germany",
         ],
-        "events": "6"
+        "events": [
+            "euam2025_e1",
+            "kaiserreich_e1_p1",
+            "kaiserreich_e1_p2",
+            "kaiserreich_e2_p1",
+            "eusat2014_e1",
+            "twosides_e1",
+        ]
     },
     "namexxxx": {
         "id": "namexxxx",
@@ -95,7 +130,9 @@ const users = {
             "kaiserreich_e1_p1_ruvassal",
             "kaiserreich_e1_p1_westrussia"
         ],
-        "events": "1"
+        "events": [
+            "kaiserreich_e1_p1",
+        ]
     },
     "zachary": {
         "id": "zachary",
@@ -107,7 +144,12 @@ const users = {
             "kaiserreich_e1_p2_poland",
             "eusat2014_e1_defender",
         ],
-        "events": "4"
+        "events": [
+            "kaiserreich_e1_p1",
+            "kaiserreich_e1_p2",
+            "kaiserreich_e2_p1",
+            "eusat2014_e1",
+        ]
     },
     "derf11": {
         "id": "derf11",
@@ -118,7 +160,9 @@ const users = {
             "kaiserreich_e1_p1_ruvassal",
             "kaiserreich_e1_p1_westrussia",
         ],
-        "events": "1"
+        "events": [
+            "kaiserreich_e1_p1",
+        ]
     },
     "penguin": {
         "id": "penguin",
@@ -128,7 +172,9 @@ const users = {
         "awards": [
             "euam2025_e1_belarus",
         ],
-        "events": "1"
+        "events": [
+            "euam2025_e1",
+        ]
     },
     "moad": {
         "id": "moad",
@@ -141,7 +187,12 @@ const users = {
             "eusat2014_e1_winner",
             "twosides_e1_british",
         ],
-        "events": "4"
+        "events": [
+            "kaiserreich_e1_p1",
+            "kaiserreich_e2_p1",
+            "eusat2014_e1",
+            "twosides_e1",
+        ]
     },
     "shelzyy": {
         "id": "nameopop",
@@ -150,9 +201,12 @@ const users = {
         "gamename": "nameopop, shelzyy",
         "awards": [
             "kaiserreich_e1_p2_frontline",
-"kaiserreich_e2_p1_russia",
+            "kaiserreich_e2_p1_russia",
         ],
-        "events": "2"
+        "events": [
+            "kaiserreich_e1_p2",
+            "kaiserreich_e2_p1",
+        ]
     },
     "khan": {
         "id": "khan",
@@ -163,7 +217,10 @@ const users = {
             "kaiserreich_e2_p1_galicia",
             "twosides_e1_china",
         ],
-        "events": "2"
+        "events": [
+            "kaiserreich_e2_p1",
+            "twosides_e1",
+        ]
     },
     "lioha": {
         "id": "lioha",
@@ -173,7 +230,10 @@ const users = {
         "awards": [
             "kaiserreich_e2_p1_scandinavia",
         ],
-        "events": "2"
+        "events": [
+            "kaiserreich_e1_p2",
+            "twosides_e1",
+        ]
     },
 };
 
