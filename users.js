@@ -369,7 +369,7 @@ const types = {
     "great power": 7,
     "win side": 5,
     "strong defender": 4,
-    "part of winner": 1
+    "part of winner": 3
 };
 
 const events = {
