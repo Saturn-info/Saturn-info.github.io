@@ -3,5 +3,5 @@ function showTypesInfo() {
     modal.innerHTML = `
 <div>enot</div>
 `;
-    modal.claasList.add('active');
+    modal.classList.add('active');
 }
