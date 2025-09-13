@@ -13,8 +13,9 @@ class LangMgr {
                 "donate": "Donate Info",
 
                 "score": "Score",
+                "ratio": "Ratio",
                 "game": "Game-name",
-                "awards": "Awards",
+                "awards": "Medals",
                 "events": "Events",
                 
                 "winner": "Winner",
@@ -63,6 +64,7 @@ class LangMgr {
                 "donate": "Информация о Донате",
 
                 "score": "Счёт",
+                "ratio": "Соотношение",
                 "game": "Ник в игре",
                 "awards": "Медальки",
                 "events": "Ивенты",
