@@ -265,7 +265,7 @@ const awards = {
         "event": "Kaiserreich",
         "name": "Union's Part",
         "img": "kaiserunion.png",
-        "type": "part of winner"
+        "type": "win side"
     },
     "kaiserreich_e1_p1_italy": {
         "event": "Kaiserreich",
@@ -429,7 +429,7 @@ const types = {
     "great power": 7,
     "win side": 5,
     "strong defender": 4,
-    "part of winner": 3
+    "part of winner": 1
 };
 
 const events = {

@@ -45,6 +45,17 @@ class LangMgr {
 8. Access to the great server archive<br>
 <br>
 <i>Pay using western cards coming soon... All information about payment from Russian cards here: <a href="#donateru" onclick="document.getElementById('donateru').classList.add('active')">click</a></i>`,
+
+                "medals_wintitle":   "Winner",
+                "medals_conqtitle":  "Conqueror",
+                "medals_greattitle": "Great Power",
+                "medals_sidetitle":  "Winner Side",
+                "medals_deftitle":   "Strong Defender",
+                "medals_wininfo": "Top 1 in the leaderboard, winner of the largest war, or one of the two/three largest +- equally strong countries that do not have open (sanctions/war) confrontation with each other",
+                "medals_conqinfo": "A country that does not fulfill the Winner conditions, but at least briefly conquered significant territories (a third of the map's land, or 2/3 of the world)",
+                "medals_greatinfo": "Top 2/3 in the leaderboard, or a country directly or through vassalage controls +-1/3 of the map's land",
+                "medals_sideinfo": "Winner's ally or vassal",
+                "medals_definfo": "A country that held a very strong/long defense",
             },
             "ru": {
                 "leaderboard": "Доска лидеров",
@@ -100,6 +111,17 @@ class LangMgr {
 8. Доступ к большому архиву сервера<br>
 <br>
 <i>Вся информация об оплате с российских карт здесь: <a href="#donateru" onclick="document.getElementById('donateru').classList.add('active')">click</a></i>`,
+
+                "medals_wintitle":   "Победитель",
+                "medals_conqtitle":  "Завоеватель",
+                "medals_greattitle": "Великая Сила",
+                "medals_sidetitle":  "Сторона Победы",
+                "medals_deftitle":   "Сильный Защитник",
+                "medals_wininfo":    "Топ-1 в таблице лидеров, победитель в крупнейшей войне, или одна из двух/трёх крупнейших +-одинаково сильных стран, не имеющих между собой открытого (санкции/война) противостояния",
+                "medals_conqinfo":   "Страна, не выполняющая условия для Победителя, но хотя бы кратковременно завоевавшая значительные территории (треть земли карты, или 2/3 части света)",
+                "medals_greatinfo":  "Топ-2/3 в таблице лидеров, или страна прямо или через вассалитет контролирует +-1/3 земли карты",
+                "medals_sideinfo":   "Союзник или вассал Победителя",
+                "medals_definfo":    "Страна, державшая очень сильную/долгую оборону",
             },
         };
         if (localStorage.getItem('SaturnLang')) {
@@ -141,7 +163,12 @@ class LangMgr {
     }
 
     trs(text) {
-        return this.translations[this.currentLang][text];
+        const ret = this.translations[this.currentLang][text];
+        if (ret === undefined) {
+            return text;
+        } else {
+            return ret;
+        }
     }
 }
 
