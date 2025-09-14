@@ -10,6 +10,8 @@ const users = {
             "kaiserreich_e1_p2_soviet",
             "kaiserreich_e2_p1_ukraine",
             "eusat2014_e1_defender",
+            "ukraine_e1_soviet",
+            "ukraine_e1_defenders",
         ],
         "events": [
             "euam1799_e1",
@@ -19,6 +21,7 @@ const users = {
             "kaiserreich_e2_p1",
             "eusat2014_e1",
             "twosides_e1",
+            "ukraine_e1",
         ]
     },
     "trid": {
@@ -38,6 +41,7 @@ const users = {
             "kaiserreich_e2_p1",
             "eusat2014_e1",
             "twosides_e1",
+            "ukraine_e1",
         ]
     },
     "totoska": {
@@ -64,10 +68,12 @@ const users = {
         "discordid": "837001706902126632",
         "gamename": "TaLanT",
         "awards": [
-            "euam1799_e1_france"
+            "euam1799_e1_france",
+            "ukraine_e1_defenders",
         ],
         "events": [
             "euam1799_e1",
+            "ukraine_e1",
         ]
     },
     "kastro": {
@@ -111,6 +117,7 @@ const users = {
             "kaiserreich_e2_p1_germany",
             "eusat2014_e1_winner",
             "twosides_e1_germany",
+            "ukraine_e1_zhitomir",
         ],
         "events": [
             "euam2025_e1",
@@ -119,6 +126,7 @@ const users = {
             "kaiserreich_e2_p1",
             "eusat2014_e1",
             "twosides_e1",
+            "ukraine_e1",
         ]
     },
     "namexxxx": {
@@ -132,6 +140,7 @@ const users = {
         ],
         "events": [
             "kaiserreich_e1_p1",
+            "ukraine_e1",
         ]
     },
     "zachary": {
@@ -143,12 +152,14 @@ const users = {
             "euam2025_e1_russia",
             "kaiserreich_e1_p2_poland",
             "eusat2014_e1_defender",
+            "ukraine_e1_ukraine",
         ],
         "events": [
             "kaiserreich_e1_p1",
             "kaiserreich_e1_p2",
             "kaiserreich_e2_p1",
             "eusat2014_e1",
+            "ukraine_e1",
         ]
     },
     "derf11": {
@@ -202,10 +213,12 @@ const users = {
         "awards": [
             "kaiserreich_e1_p2_frontline",
             "kaiserreich_e2_p1_russia",
+            "ukraine_e1_defenders",
         ],
         "events": [
             "kaiserreich_e1_p2",
             "kaiserreich_e2_p1",
+            "ukraine_e1",
         ]
     },
     "khan": {
@@ -216,10 +229,12 @@ const users = {
         "awards": [
             "kaiserreich_e2_p1_galicia",
             "twosides_e1_china",
+            "ukraine_e1_partisans",
         ],
         "events": [
             "kaiserreich_e2_p1",
             "twosides_e1",
+            "ukraine_e1",
         ]
     },
     "lioha": {
@@ -423,6 +438,39 @@ const awards = {
         "img": "ts_china.png",
         "type": "win side"
     },
+    "ukraine_e1_ukraine": {
+        "event": "ukraine_e1",
+        "name": "Wholemap-Ukraine",
+        "img": "ua_ukraine.png",
+        "type": "winner",
+        "score": 12
+    },
+    "ukraine_e1_soviet": {
+        "event": "ukraine_e1",
+        "name": "Soviet East",
+        "img": "ua_soviet.png",
+        "type": "conqueror",
+        "score": 10
+    },
+    "ukraine_e1_defenders": {
+        "event": "ukraine_e1",
+        "name": "Defenders",
+        "img": "ua_defenders.png",
+        "type": "strong defender"
+    },
+    "ukraine_e1_partisans": {
+        "event": "ukraine_e1",
+        "name": "Partisans - Defenders",
+        "img": "ua_defender.png",
+        "type": "strong defender",
+        "score": 6
+    },
+    "ukraine_e1_zhitomir": {
+        "event": "ukraine_e1",
+        "name": "Great Zhitomir",
+        "img": "ua_zhitomir.png",
+        "type": "conqueror"
+    },
 };
 
 const types = {
@@ -442,4 +490,5 @@ const events = {
     kaiserreich_e2_p1: '09.09.2025',
     eusat2014_e1: '12.09.2025',
     twosides_e1: '12.09.2025',
+    ukraine_e1: '14.09.2025',
 }
