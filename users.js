@@ -265,7 +265,8 @@ const awards = {
         "event": "Kaiserreich",
         "name": "Union's Part",
         "img": "kaiserunion.png",
-        "type": "win side"
+        "type": "win side",
+        "score": 4
     },
     "kaiserreich_e1_p1_italy": {
         "event": "Kaiserreich",
@@ -283,7 +284,8 @@ const awards = {
         "event": "Kaiserreich",
         "name": "Frontline Defender",
         "img": "kaisershield.png",
-        "type": "strong defender"
+        "type": "strong defender",
+        "score": 1
     },
     "kaiserreich_e1_p1_sweden": {
         "event": "Kaiserreich",
