@@ -48,7 +48,7 @@ class leaderboard {
             
             // Ratio column
             const tdRatio = document.createElement('td');
-            tdRatio.textContent = Math.round((user.score / user.events.length) * 1);
+            tdRatio.textContent = (user.score / user.events.length).toFixed(2);
             tr.appendChild(tdRatio);
 
             // Discord name column
