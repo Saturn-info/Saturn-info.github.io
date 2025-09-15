@@ -12,6 +12,7 @@ const users = {
             "eusat2014_e1_defender",
             "ukraine_e1_soviet",
             "ukraine_e1_defenders",
+            "ww2_e1_winner",
         ],
         "events": [
             "euam1799_e1",
@@ -22,6 +23,7 @@ const users = {
             "eusat2014_e1",
             "twosides_e1",
             "ukraine_e1",
+            "ww2_e1",
         ]
     },
     "trid": {
@@ -70,10 +72,12 @@ const users = {
         "awards": [
             "euam1799_e1_france",
             "ukraine_e1_defenders",
+            "ww2_e1_sweden"
         ],
         "events": [
             "euam1799_e1",
             "ukraine_e1",
+            "ww2_e1",
         ]
     },
     "kastro": {
@@ -118,6 +122,7 @@ const users = {
             "eusat2014_e1_winner",
             "twosides_e1_germany",
             "ukraine_e1_zhitomir",
+            "ww2_e1_mrvoid",
         ],
         "events": [
             "euam2025_e1",
@@ -127,6 +132,7 @@ const users = {
             "eusat2014_e1",
             "twosides_e1",
             "ukraine_e1",
+            "ww2_e1",
         ]
     },
     "namexxxx": {
@@ -197,12 +203,14 @@ const users = {
             "kaiserreich_e2_p1_win",
             "eusat2014_e1_winner",
             "twosides_e1_british",
+            "ww2_e1_france",
         ],
         "events": [
             "kaiserreich_e1_p1",
             "kaiserreich_e2_p1",
             "eusat2014_e1",
             "twosides_e1",
+            "ww2_e1",
         ]
     },
     "shelzyy": {
@@ -214,11 +222,13 @@ const users = {
             "kaiserreich_e1_p2_frontline",
             "kaiserreich_e2_p1_russia",
             "ukraine_e1_defenders",
+            "ww2_e1_winnerside",
         ],
         "events": [
             "kaiserreich_e1_p2",
             "kaiserreich_e2_p1",
             "ukraine_e1",
+            "ww2_e1",
         ]
     },
     "khan": {
@@ -248,6 +258,31 @@ const users = {
         "events": [
             "kaiserreich_e1_p2",
             "twosides_e1",
+        ]
+    },
+    "stalin": {
+        "id": "stalin",
+        "discord": "",
+        "discordid": "",
+        "gamename": "stalin",
+        "awards": [
+            "ww2_e1_winnerside",
+        ],
+        "events": [
+            "ww2_e1",
+        ]
+    },
+    "etoyaivan": {
+        "id": "etoyaivan",
+        "discord": "ЭтоЯИван",
+        "discordid": "1404175039229722744",
+        "gamename": "ETOYAIVAN",
+        "awards": [
+            "ww2_e1_winnerside",
+        ],
+        "events": [
+            "ukraine_e1",
+            "ww2_e1",
         ]
     },
 };
@@ -470,6 +505,38 @@ const awards = {
         "name": "Great Zhitomir",
         "img": "ua_zhitomir.png",
         "type": "conqueror"
+    },
+    "ww2_e1_winner": {
+        "event": "ww2_e1",
+        "name": "World of Soviets",
+        "img": "ww2_soviet.png",
+        "type": "winner"
+    },
+    "ww2_e1_france": {
+        "event": "ww2_e1",
+        "name": "Conqueror of Western Europe",
+        "img": "ww2_france.png",
+        "type": "conqueror"
+    },
+    "ww2_e1_winnerside": {
+        "event": "ww2_e1",
+        "name": "Organization of Warshaw Pact",
+        "img": "ww2_suallies.png",
+        "type": "win side"
+    },
+    "ww2_e1_mrvoid": {
+        "event": "ww2_e1",
+        "name": "Survived in Corsica",
+        "img": "ww2_mrvoid.png",
+        "type": "strong defender",
+        "score": 2
+    },
+    "ww2_e1_sweden": {
+        "event": "ww2_e1",
+        "name": "Sweden Will Not Fall!",
+        "img": "ww2_sweden.png",
+        "type": "strong defender",
+        "score": 5
     },
 };
 
