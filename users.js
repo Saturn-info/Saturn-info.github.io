@@ -285,6 +285,18 @@ const users = {
             "ww2_e1",
         ]
     },
+    "timur333": {
+        "id": "timur333",
+        "discord": "timur333",
+        "discordid": "1335614450643894295",
+        "gamename": "timur333",
+        "awards": [
+            "ww2_e1_winnerside",
+        ],
+        "events": [
+            "ww2_e1",
+        ]
+    },
 };
 
 const awards = {
