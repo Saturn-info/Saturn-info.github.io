@@ -46,11 +46,11 @@
 .list-table {
     /*width: 100%;*/
     border-collapse: collapse;
-    background-color: #242424;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow-y: scroll;
+    border-radius: 1.2rem
 }
 
 .list-table th,
@@ -89,57 +89,6 @@
     align-items: center;
 }
 
-.th-filter-input {
-    width: 100%;
-    min-width: 60px;
-    height: 24px;
-    padding: 0 8px;
-    background: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 4px;
-    color: #e0e0e0;
-    /*font-size: 12px;*/
-}
-
-.th-filter-input:focus {
-    outline: none;
-    border-color: var(--primary-color);
-}
-
-.th-filter-input::placeholder {
-    color: #666;
-}
-
-.th-filter {
-    background: none;
-    border: none;
-    padding: 4px;
-    color: #666;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 0.2s;
-    position: relative;
-}
-
-.th-filter:hover {
-    color: #e0e0e0;
-}
-
-.th-filter.active {
-    color: var(--primary-color);
-}
-
-.filter-badge {
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    width: 6px;
-    height: 6px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-}
-
 /* Обновляем стили для стрелок сортировки */
 .list-table th[data-sort] .th-title:after {
     content: '⇕';
@@ -165,10 +114,6 @@
 
 .list-table tbody tr {
     transition: background-color 0.2s ease;
-}
-
-.list-table tbody tr:hover {
-    background-color: #2a2a2a;
 }
 
 /* Информационная панель */

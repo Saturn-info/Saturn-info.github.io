@@ -13,6 +13,7 @@ const users = {
             "ukraine_e1_soviet",
             "ukraine_e1_defenders",
             "ww2_e1_winner",
+            "ukraine_e2_uasu",
         ],
         "events": [
             "euam1799_e1",
@@ -24,6 +25,7 @@ const users = {
             "twosides_e1",
             "ukraine_e1",
             "ww2_e1",
+            "ukraine_e2",
         ]
     },
     "trid": {
@@ -56,12 +58,14 @@ const users = {
             "euam2025_e1_america",
             "kaiserreich_e1_p1_italy",
             "kaiserreich_e1_p2_rome",
+            "ukraine_e2_totoska",
         ],
         "events": [
             "euam1799_e1",
             "euam2025_e1",
             "kaiserreich_e1_p1",
             "kaiserreich_e1_p2",
+            "ukraine_e2",
         ]
     },
     "talant": {
@@ -123,6 +127,7 @@ const users = {
             "twosides_e1_germany",
             "ukraine_e1_zhitomir",
             "ww2_e1_mrvoid",
+            "ukraine_e2_winside",
         ],
         "events": [
             "euam2025_e1",
@@ -133,6 +138,7 @@ const users = {
             "twosides_e1",
             "ukraine_e1",
             "ww2_e1",
+            "ukraine_e2",
         ]
     },
     "namexxxx": {
@@ -159,6 +165,7 @@ const users = {
             "kaiserreich_e1_p2_poland",
             "eusat2014_e1_defender",
             "ukraine_e1_ukraine",
+            "ukraine_e2_zachary",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -166,6 +173,7 @@ const users = {
             "kaiserreich_e2_p1",
             "eusat2014_e1",
             "ukraine_e1",
+            "ukraine_e2",
         ]
     },
     "derf11": {
@@ -204,6 +212,7 @@ const users = {
             "eusat2014_e1_winner",
             "twosides_e1_british",
             "ww2_e1_france",
+            "ukraine_e2_crimea",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -211,6 +220,7 @@ const users = {
             "eusat2014_e1",
             "twosides_e1",
             "ww2_e1",
+            "ukraine_e2",
         ]
     },
     "shelzyy": {
@@ -223,12 +233,14 @@ const users = {
             "kaiserreich_e2_p1_russia",
             "ukraine_e1_defenders",
             "ww2_e1_winnerside",
+            "ukraine_e2_winside",
         ],
         "events": [
             "kaiserreich_e1_p2",
             "kaiserreich_e2_p1",
             "ukraine_e1",
             "ww2_e1",
+            "ukraine_e2",
         ]
     },
     "khan": {
@@ -295,6 +307,17 @@ const users = {
         ],
         "events": [
             "ww2_e1",
+        ]
+    },
+    "goida": {
+        "id": "goida",
+        "discord": "",
+        "discordid": "",
+        "gamename": "Goida",
+        "awards": [
+        ],
+        "events": [
+            "ukraine_e2",
         ]
     },
 };
@@ -550,6 +573,39 @@ const awards = {
         "type": "strong defender",
         "score": 5
     },
+    // UKRAINE CIVIL WAR ukraine_e2
+    "ukraine_e2_uasu": {
+        "event": "ukraine_e2",
+        "name": "Soviet Ukraine",
+        "img": "ukraine_e2_uasu.png",
+        "type": "winner",
+        "score": 15
+    },
+    "ukraine_e2_crimea": {
+        "event": "ukraine_e2",
+        "name": "Crimia is His",
+        "img": "ukraine_e2_crimea.png",
+        "type": "winner"
+    },
+    "ukraine_e2_zachary": {
+        "event": "ukraine_e2",
+        "name": "УНР",
+        "img": "shield.png",
+        "type": "strong defender",
+        "score": 8
+    },
+    "ukraine_e2_totoska": {
+        "event": "ukraine_e2",
+        "name": "💪",
+        "img": "ukraine_e2_totoska.png",
+        "type": "strong defender"
+    },
+    "ukraine_e2_winside": {
+        "event": "ukraine_e2",
+        "name": "Soviet Side",
+        "img": "ukraine_e2_soviets.png",
+        "type": "win side"
+    },
 };
 
 const types = {
@@ -557,6 +613,7 @@ const types = {
     "conqueror": 8,
     "great power": 7,
     "win side": 5,
+    "ratio": 5,
     "strong defender": 4,
     "part of winner": 1
 };
@@ -571,4 +628,5 @@ const events = {
     twosides_e1: '12.09.2025',
     ukraine_e1: '14.09.2025',
     ww2_e1: '15.09.2025',
+    ukraine_e2: '17.09.2025',
 }

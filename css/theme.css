@@ -1,18 +1,26 @@
 body {
-    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #21211A, #1C2125, #1F2120);
     color: white;
 }
 .navpanel {
-    background-color: #242424;
+    background: linear-gradient(135deg, #1f212071);
 }
 
 .navbtn {
-    background-color: #6b31ac3d;
+    background: linear-gradient(135deg, #382f3c86, #4e53505f);
 }
 
 .list-table tbody tr.userThisIs td,
 .list-table tbody tr.userThisIs th {
     background: #6a31ac29 !important;
+}
+
+.list-table {
+    background-color: #a3a3a310;
+}
+
+.list-table tbody tr:hover {
+    background-color: #2a2a2a1f;
 }
 
 p {
@@ -21,7 +29,7 @@ p {
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.2) #242424;
+    scrollbar-color: rgba(255, 255, 255, 0.2) #2424246f;
 }
 
 button {
