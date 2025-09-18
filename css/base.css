@@ -6,10 +6,13 @@ body {
 .navpanel {
     display: flex;
     padding: 8px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 4px 4px;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    width: calc(100% - 16px);
+    position: sticky;
+    backdrop-filter: blur(20px);
 }
 
 .content {
@@ -32,6 +35,7 @@ body {
     padding: 8px;
     border-radius: 8px;
     color: white;
+    cursor: pointer
 }
 
 .accountico{
@@ -43,7 +47,6 @@ body {
 }
 
 .leaderstable {
-    width: 100%;
 }
 
 .list-table img {

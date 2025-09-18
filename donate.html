@@ -16,14 +16,15 @@
         <link rel="stylesheet" href="css/list.css">
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/desktop.css">
         <link rel="stylesheet" href="css/donate.css">
     </head>
     <body>
         <nav class="navpanel">
             <div class="leftnav">
-                <a class="navbtn" href="index.html" data-lang="leaderboard">Leaderboard</a>
-                <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y" data-lang="discord">Discord</a>
-                <a class="navbtn" style="background-color: #6b31aca8;" href="donate.html" data-lang="donate">Donate-info</a>
+                <a class="navbtn" href="index.html"><img src="img/icons/medal.svg"><p data-lang="leaderboard">Leaderboard</p></a>
+                <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><img src="img/icons/discord.svg"><p data-lang="discord">Discord</p></a>
+                <a class="navbtn active"><img src="img/icons/money.svg"><p data-lang="donate">Donate-info</p></a>
             </div>
             <div class="rightnav">
                 <!--div class="accountico">
@@ -33,7 +34,7 @@
                         <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div-->
-                <button class="langBtn navbtn" onclick="if (localStorage.getItem('SaturnLang') === 'ru') { window.langMgr.setLang('en') } else { window.langMgr.setLang('ru') }">EN / RU</button>
+                <div class="langBtn navbtn" onclick="if (localStorage.getItem('SaturnLang') === 'ru') { window.langMgr.setLang('en') } else { window.langMgr.setLang('ru') }"><img src="img/icons/planet.svg"><p>Language</p></div>
             </div>
         </nav>
         <div class="content" id="donateru">

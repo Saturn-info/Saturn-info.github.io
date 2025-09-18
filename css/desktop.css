@@ -1,0 +1,60 @@
+@media (orientation: landscape) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navpanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 24px;
+        width: max-content;
+    }
+
+    .navbtn {
+        height: 2rem;
+        background-color: #00000000;
+        text-align: center;
+        background: none;
+        display: inline-flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        min-width: 200px;
+    }
+
+    .leftnav, .rightnav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .navbtn p {
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .navbtn img {
+        width: 20px;
+    }
+
+    .navbtn.active {
+        background: linear-gradient(135deg, #cad8d130, #81815a30)
+    }
+
+    .leftnav {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #90897b82;
+    }
+
+    .rightnav {
+        padding-top: 1rem;
+    }
+
+    .list-container {
+        height: calc(100dvh - 48px);
+    }
+}

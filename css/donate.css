@@ -10,3 +10,7 @@
 #donateru.active {
     background-color: #3a3a3a;
 }
+
+body {
+    min-height: 100dvh;
+}

@@ -36,4 +36,14 @@
         height: 2rem;
         text-align: center;
     }
+
+    .qustBtn {
+        /*height: 100%;*/
+        width: 40px;
+        background-color: #6b31aca3;
+    }
+
+    .navbtn img {
+        display: none;
+    }
 }

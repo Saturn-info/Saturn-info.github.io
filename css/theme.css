@@ -40,6 +40,10 @@ button {
     background-color: #6b31aca3;
 }
 
-.langBtn :hover {
-    background-color: #924edea3;
+.navbtn:hover {
+    background: linear-gradient(135deg, #cad8d110, #81815a10);
+}
+
+.langBtn:hover {
+    background: linear-gradient(135deg, #914ede24, #924ede10);
 }

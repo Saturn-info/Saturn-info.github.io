@@ -17,6 +17,7 @@ class LangMgr {
                 "game": "Game-name",
                 "awards": "Medals",
                 "events": "Events",
+                "medalsqe": "Medals",
                 
                 "winner": "Winner",
                 "great power": "Great Power",
@@ -59,15 +60,16 @@ class LangMgr {
                 "medals_definfo": "A country that held a very strong/long defense",
             },
             "ru": {
-                "leaderboard": "Доска лидеров",
+                "leaderboard": "Медали",
                 "discord": "Discord",
-                "donate": "Информация о Донате",
+                "donate": "Донат",
 
                 "score": "Счёт",
                 "ratio": "Соотношение",
                 "game": "Ник в игре",
                 "awards": "Медальки",
                 "events": "Ивенты",
+                "medalsqe": "Медали",
                 
                 "winner": "Победитель",
                 "great power": "Великая Держава",
@@ -151,7 +153,12 @@ class LangMgr {
         const elements = root.querySelectorAll("[data-lang]");
         elements.forEach(el => {
             const key = el.getAttribute("data-lang");
-            const translation = this.translations[this.currentLang]?.[key];
+            let translation;
+            if (key === 'medalsqe' && window.matchMedia("(orientation: portrait)").matches) {
+                translation = '?';
+            } else {
+                translation = this.translations[this.currentLang]?.[key];
+            }
             if (translation) {
                 if (translation.includes('<')) {
                     el.innerHTML = translation;
