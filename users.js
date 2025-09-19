@@ -14,6 +14,7 @@ const users = {
             "ukraine_e1_defenders",
             "ww2_e1_winner",
             "ukraine_e2_uasu",
+            "metromoscow_e1_eenot"
         ],
         "events": [
             "euam1799_e1",
@@ -26,6 +27,7 @@ const users = {
             "ukraine_e1",
             "ww2_e1",
             "ukraine_e2",
+            "metromoscow_e1",
         ]
     },
     "trid": {
@@ -38,6 +40,7 @@ const users = {
             "kaiserreich_e1_p2_frontline",
             "kaiserreich_e1_p2_ukraine",
             "kaiserreich_e2_p1_scandinavia",
+            "metromoscow_e1_ganza",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -46,6 +49,7 @@ const users = {
             "eusat2014_e1",
             "twosides_e1",
             "ukraine_e1",
+            "metromoscow_e1",
         ]
     },
     "totoska": {
@@ -59,6 +63,7 @@ const users = {
             "kaiserreich_e1_p1_italy",
             "kaiserreich_e1_p2_rome",
             "ukraine_e2_totoska",
+            "metromoscow_e1_def",
         ],
         "events": [
             "euam1799_e1",
@@ -66,6 +71,7 @@ const users = {
             "kaiserreich_e1_p1",
             "kaiserreich_e1_p2",
             "ukraine_e2",
+            "metromoscow_e1",
         ]
     },
     "talant": {
@@ -76,12 +82,14 @@ const users = {
         "awards": [
             "euam1799_e1_france",
             "ukraine_e1_defenders",
-            "ww2_e1_sweden"
+            "ww2_e1_sweden",
+            "metromoscow_e1_talant",
         ],
         "events": [
             "euam1799_e1",
             "ukraine_e1",
             "ww2_e1",
+            "metromoscow_e1",
         ]
     },
     "kastro": {
@@ -128,6 +136,7 @@ const users = {
             "ukraine_e1_zhitomir",
             "ww2_e1_mrvoid",
             "ukraine_e2_winside",
+            "metromoscow_e1_def",
         ],
         "events": [
             "euam2025_e1",
@@ -139,6 +148,7 @@ const users = {
             "ukraine_e1",
             "ww2_e1",
             "ukraine_e2",
+            "metromoscow_e1",
         ]
     },
     "namexxxx": {
@@ -153,6 +163,7 @@ const users = {
         "events": [
             "kaiserreich_e1_p1",
             "ukraine_e1",
+            "metromoscow_e1",
         ]
     },
     "zachary": {
@@ -166,6 +177,7 @@ const users = {
             "eusat2014_e1_defender",
             "ukraine_e1_ukraine",
             "ukraine_e2_zachary",
+            "metromoscow_e1_zachary",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -174,6 +186,7 @@ const users = {
             "eusat2014_e1",
             "ukraine_e1",
             "ukraine_e2",
+            "metromoscow_e1",
         ]
     },
     "derf11": {
@@ -213,6 +226,7 @@ const users = {
             "twosides_e1_british",
             "ww2_e1_france",
             "ukraine_e2_crimea",
+            "metromoscow_e1_def",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -221,6 +235,7 @@ const users = {
             "twosides_e1",
             "ww2_e1",
             "ukraine_e2",
+            "metromoscow_e1",
         ]
     },
     "shelzyy": {
@@ -252,24 +267,28 @@ const users = {
             "kaiserreich_e2_p1_galicia",
             "twosides_e1_china",
             "ukraine_e1_partisans",
+            "metromoscow_e1_khan",
         ],
         "events": [
             "kaiserreich_e2_p1",
             "twosides_e1",
             "ukraine_e1",
+            "metromoscow_e1",
         ]
     },
-    "lioha": {
-        "id": "lioha",
+    "vovka": {
+        "id": "vovka",
         "discord": "",
         "discordid": "",
         "gamename": "lioha",
         "awards": [
             "kaiserreich_e2_p1_scandinavia",
+            "metromoscow_e1_vovka",
         ],
         "events": [
             "kaiserreich_e1_p2",
             "twosides_e1",
+            "metromoscow_e1",
         ]
     },
     "stalin": {
@@ -282,6 +301,7 @@ const users = {
         ],
         "events": [
             "ww2_e1",
+            "metromoscow_e1",
         ]
     },
     "etoyaivan": {
@@ -318,6 +338,7 @@ const users = {
         ],
         "events": [
             "ukraine_e2",
+            "metromoscow_e1",
         ]
     },
 };
@@ -606,6 +627,51 @@ const awards = {
         "img": "ukraine_e2_soviets.png",
         "type": "win side"
     },
+    "metromoscow_e1_ganza": {
+        "event": "metromoscow_e1",
+        "name": "UN from Metro",
+        "img": "metromoscow_e1_ganza.png",
+        "type": "winner"
+    },
+    "metromoscow_e1_talant": {
+        "event": "metromoscow_e1",
+        "name": "Great West",
+        "img": "metromoscow_e1_west.png",
+        "type": "winner"
+    },
+    "metromoscow_e1_zachary": {
+        "event": "metromoscow_e1",
+        "name": "Great East",
+        "img": "metromoscow_e1_east.png",
+        "type": "conqueror"
+    },
+    "metromoscow_e1_eenot": {
+        "event": "metromoscow_e1",
+        "name": "Red Line",
+        "img": "metromoscow_e1_center.png",
+        "type": "conqueror",
+        "score": 6
+    },
+    "metromoscow_e1_khan": {
+        "event": "metromoscow_e1",
+        "name": "Great Yasnevskaya",
+        "img": "metromoscow_e1_south.png",
+        "type": "conqueror",
+        "score": 6
+    },
+    "metromoscow_e1_vovka": {
+        "event": "metromoscow_e1",
+        "name": "-",
+        "img": "metromoscow_e1_-.png",
+        "type": "win side"
+    },
+    "metromoscow_e1_def": {
+        "event": "metromoscow_e1",
+        "name": "Metro Defenders",
+        "img": "shield.png",
+        "type": "stronf defender",
+        "score": 3
+    },
 };
 
 const types = {
@@ -629,4 +695,5 @@ const events = {
     ukraine_e1: '14.09.2025',
     ww2_e1: '15.09.2025',
     ukraine_e2: '17.09.2025',
+    metromoscow_e1: '19.09.2025',
 }
