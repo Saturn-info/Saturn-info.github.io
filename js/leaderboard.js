@@ -118,7 +118,7 @@ class leaderboard {
                 <b data-translate="scoreDT">${window.langMgr.trs('scoreDT')}</b><p>${window.leaderboard.calcScoreAward(id)}</p>
             </div>
             <div class="stroke">
-                <b data-translate="dateDT">${window.langMgr.trs('dateDT')}</b><p>${events[awards[id].event]}</p>
+                <b data-translate="dateDT">${window.langMgr.trs('dateDT')}</b><p>${events[awards[id].event].date}</p>
             </div>
             <div class="imageDiv"><img src="img/award/${awards[id].img}"></div>
         </div>

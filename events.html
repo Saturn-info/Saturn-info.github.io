@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Donate Info | Saturn</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KNCHM5MNE"></script><script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9KNCHM5MNE');</script>
+
+        <title>Events | Saturn</title>
         <meta charset="UTF-8">
-        <link rel="icon" href="img/ico.png">
+        <link rel="icon" href="img/ico2e.png">
         <script src="users.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/donate.js"></script>
+        <script src="js/leaderboard.js"></script>
+        <script src="js/events.js"></script>
 
         <script src="js/lang.js"></script>
         <script src="js/translator.js"></script>
+        <script src="js/info.js"></script>
 
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/theme.css">
         <link rel="stylesheet" href="css/list.css">
         <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/events.css">
         <link rel="stylesheet" href="css/mobile.css">
         <link rel="stylesheet" href="css/desktop.css">
-        <link rel="stylesheet" href="css/donate.css">
     </head>
     <body>
         <nav class="navpanel">
             <div class="leftnav">
                 <a class="navbtn" href="index.html"><img src="img/icons/medal.svg"><p data-lang="leaderboard">Leaderboard</p></a>
                 <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><img src="img/icons/discord.svg"><p data-lang="discord">Discord</p></a>
-                <a class="navbtn active"><img src="img/icons/money.svg"><p data-lang="donate">Donate-info</p></a>
-                <a class="navbtn" href="events.html"><img src="img/icons/calendar.svg"><p data-lang="events">Events</p></a>
+                <a class="navbtn" href="donate.html"><img src="img/icons/money.svg"><p data-lang="donate">Donate-info</p></a>
+                <a class="navbtn active"><img src="img/icons/calendar.svg"><p data-lang="events">Events</p></a>
             </div>
             <div class="rightnav">
                 <!--div class="accountico">
@@ -35,14 +44,23 @@
                         <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div-->
+                <div class="qustBtn navbtn" onclick="showTypesInfo()"><img src="img/icons/info.svg"><p data-lang="medalsqe">Медали</p></div>
                 <div class="langBtn navbtn" onclick="if (localStorage.getItem('SaturnLang') === 'ru') { window.langMgr.setLang('en') } else { window.langMgr.setLang('ru') }"><img src="img/icons/planet.svg"><p>Language</p></div>
             </div>
         </nav>
-        <div class="content" id="donateru">
-            <p data-lang="donatetext"></p>
-        </div>
-        <div class="content" id="donateoptions">
-            <p data-lang="donateoptions"></p>
+        <div class="content">
+            <div class="list-container" id="eventstable"><table class="list-table">
+                <thead>
+                    <tr>
+                        <th data-lang="event" style="border-radius: 0.4rem 0 0 0;">Event</th>
+                        <th data-lang="date">Date</th>
+                        <th data-lang="medals">Medals</th>
+                        <th data-lang="players" style="border-radius: 0 0.4rem 0 0;">Players</th>
+                    </tr>
+                </thead>
+                <tbody id="eventstablebody">
+                </tbody>
+            </table></div>
         </div>
         <div id="modal">
 

@@ -34,7 +34,7 @@ const users = {
         "id": "trid",
         "discord": "Trid",
         "discordid": "993585215358386306",
-        "gamename": "3d",
+        "gamename": "3d, trid",
         "awards": [
             "kaiserreich_e1_p1_ruvassal",
             "kaiserreich_e1_p2_frontline",
@@ -327,6 +327,7 @@ const users = {
         ],
         "events": [
             "ww2_e1",
+            "metromoscow_e1",
         ]
     },
     "goida": {
@@ -685,15 +686,37 @@ const types = {
 };
 
 const events = {
-    euam1799_e1: '31.08.2025',
-    euam2025_e1: '04.09.2025',
-    kaiserreich_e1_p1: '05.09.2025',
-    kaiserreich_e1_p2: '07.09.2025',
-    kaiserreich_e2_p1: '09.09.2025',
-    eusat2014_e1: '12.09.2025',
-    twosides_e1: '12.09.2025',
-    ukraine_e1: '14.09.2025',
-    ww2_e1: '15.09.2025',
-    ukraine_e2: '17.09.2025',
-    metromoscow_e1: '19.09.2025',
+    euam1799_e1: {
+        date: '31.08.2025'
+    },
+    euam2025_e1: {
+        date: '04.09.2025',
+    },
+    kaiserreich_e1_p1: {
+        date: '05.09.2025',
+    },
+    kaiserreich_e1_p2: {
+        date: '07.09.2025',
+    },
+    kaiserreich_e2_p1: {
+        date: '09.09.2025',
+    },
+    eusat2014_e1: {
+        date: '12.09.2025',
+    },
+    twosides_e1: {
+        date: '12.09.2025',
+    },
+    ukraine_e1: {
+        date: '14.09.2025',
+    },
+    ww2_e1: {
+        date: '15.09.2025',
+    },
+    ukraine_e2: {
+        date: '17.09.2025',
+    },
+    metromoscow_e1: {
+        date: '19.09.2025',
+    },
 }
