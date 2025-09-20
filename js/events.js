@@ -202,7 +202,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const divider = document.createElement("div");
         divider.innerHTML = `
             <div style="padding: 1rem; margin: 1rem 0; background: #333; color: #fff; text-align: center; border-radius: 0.5rem;">
-                🌟 Here will be advertion of <a href="https://eeditor-ws.github.io/">EEditor - best scenario editor for Warnament</a> 🌟
+                🌟 Here will be advertising of <a href="https://eeditor-ws.github.io/">EEditor - best scenario editor for Warnament</a> 🌟
+                <br>
+                <br>
+                🌟 Тут должна быть реклама <a href="https://eeditor-ws.github.io/">EEditor'а - лучшего редактора сценариев для Warnament</a> 🌟
             </div>
         `;
         container.appendChild(divider);
