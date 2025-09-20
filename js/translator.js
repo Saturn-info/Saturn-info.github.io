@@ -54,7 +54,7 @@ class LangMgr {
                 "medals_sidetitle":  "Winner Side",
                 "medals_deftitle":   "Strong Defender",
                 "medals_wininfo": "Top 1 in the leaderboard, winner of the largest war, or one of the two/three largest +- equally strong countries that do not have open (sanctions/war) confrontation with each other",
-                "medals_conqinfo": "A country that does not fulfill the Winner conditions, but at least briefly conquered significant territories (a third of the map's land, or 2/3 of the world)",
+                "medals_conqinfo": "A country that does not fulfill the Winner conditions, or controlled large territories at one point",
                 "medals_greatinfo": "Top 2/3 in the leaderboard, or a country directly or through vassalage controls +-1/3 of the map's land",
                 "medals_sideinfo": "Winner's ally or vassal",
                 "medals_definfo": "A country that held a very strong/long defense",
