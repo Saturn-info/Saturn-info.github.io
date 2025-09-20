@@ -1,0 +1,60 @@
+.event-card {
+    position: relative;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    overflow: hidden;
+
+    /* минимальная высота, чтобы карточка не схлопывалась */
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* текст внизу */
+}
+
+/* фон с блюром */
+.event-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--event-bg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    transform: scale(1.1); /* чтобы края не резались */
+    z-index: 0;
+}
+
+/* затемнение */
+.event-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+/* всё содержимое поверх */
+.event-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.list-container {
+    overflow-x: hidden;
+    display: grid;
+}
+
+@media (min-width: 1000px) {
+    .list-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1300px) {
+    .list-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

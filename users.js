@@ -3,7 +3,7 @@ const users = {
         "id": "eenot",
         "discord": "ЕЕнот / RRaccoon",
         "discordid": "794675642037567498",
-        "gamename": "eenot",
+        "gamename": "eenot (rracc)",
         "awards": [
             "kaiserreich_e1_p1_win",
             "euam2025_e1_ukraine",
@@ -34,7 +34,7 @@ const users = {
         "id": "trid",
         "discord": "Trid",
         "discordid": "993585215358386306",
-        "gamename": "3d, trid",
+        "gamename": "trid (3d)",
         "awards": [
             "kaiserreich_e1_p1_ruvassal",
             "kaiserreich_e1_p2_frontline",
@@ -687,36 +687,63 @@ const types = {
 
 const events = {
     euam1799_e1: {
-        date: '31.08.2025'
+        date: '31.08.2025',
+        img: 'euam_1799.png',
     },
     euam2025_e1: {
         date: '04.09.2025',
+        img: 'euam_modern.png',
     },
     kaiserreich_e1_p1: {
         date: '05.09.2025',
+        img: 'euro4_kaiserreich.png',
     },
     kaiserreich_e1_p2: {
         date: '07.09.2025',
+        img: 'euro4_kaiserreich.png',
     },
     kaiserreich_e2_p1: {
         date: '09.09.2025',
+        img: 'euro4_kaiserreich.png',
     },
     eusat2014_e1: {
         date: '12.09.2025',
+        img: 'eusat_modern.png',
     },
     twosides_e1: {
         date: '12.09.2025',
+        img: 'world_twosides.png',
     },
     ukraine_e1: {
         date: '14.09.2025',
+        img: 'ukraine_sluga.png',
     },
     ww2_e1: {
         date: '15.09.2025',
+        img: 'euoe_ww2.png',
     },
     ukraine_e2: {
         date: '17.09.2025',
+        img: 'ukraine_civilwar.png',
     },
     metromoscow_e1: {
         date: '19.09.2025',
+        img: 'metro_moscow.png',
+    },
+    ww1_e1: {
+        date: '22.09.2025',
+        img: 'world_ww1.png',
+    },
+    yugoslavia_e1: {
+        date: '24.09.2025',
+        img: 'yugoslavia_1944.png',
+    },
+    metromoscow_e2: {
+        date: '26.09.2025',
+        img: 'metro_moscow.png',
+    },
+    ancient_e1_p1: {
+        date: '28.09.2025',
+        img: 'ancient_e1_p1.png',
     },
 }
