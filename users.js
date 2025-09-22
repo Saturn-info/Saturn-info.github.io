@@ -14,7 +14,8 @@ const users = {
             "ukraine_e1_defenders",
             "ww2_e1_winner",
             "ukraine_e2_uasu",
-            "metromoscow_e1_eenot"
+            "metromoscow_e1_eenot",
+            "ww1_e1_ingsoc",
         ],
         "events": [
             "euam1799_e1",
@@ -28,6 +29,7 @@ const users = {
             "ww2_e1",
             "ukraine_e2",
             "metromoscow_e1",
+            "ww1_e1",
         ]
     },
     "trid": {
@@ -50,6 +52,7 @@ const users = {
             "twosides_e1",
             "ukraine_e1",
             "metromoscow_e1",
+            "ww1_e1",
         ]
     },
     "totoska": {
@@ -64,6 +67,7 @@ const users = {
             "kaiserreich_e1_p2_rome",
             "ukraine_e2_totoska",
             "metromoscow_e1_def",
+            "ww1_e1_winner",
         ],
         "events": [
             "euam1799_e1",
@@ -72,6 +76,7 @@ const users = {
             "kaiserreich_e1_p2",
             "ukraine_e2",
             "metromoscow_e1",
+            "ww1_e1",
         ]
     },
     "talant": {
@@ -149,6 +154,7 @@ const users = {
             "ww2_e1",
             "ukraine_e2",
             "metromoscow_e1",
+            "ww1_e1",
         ]
     },
     "namexxxx": {
@@ -178,6 +184,7 @@ const users = {
             "ukraine_e1_ukraine",
             "ukraine_e2_zachary",
             "metromoscow_e1_zachary",
+            "ww1_e1_germany",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -187,6 +194,7 @@ const users = {
             "ukraine_e1",
             "ukraine_e2",
             "metromoscow_e1",
+            "ww1_e1",
         ]
     },
     "derf11": {
@@ -227,6 +235,7 @@ const users = {
             "ww2_e1_france",
             "ukraine_e2_crimea",
             "metromoscow_e1_def",
+            "ww1_e1_ingsoc",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -236,6 +245,7 @@ const users = {
             "ww2_e1",
             "ukraine_e2",
             "metromoscow_e1",
+            "ww1_e1",
         ]
     },
     "shelzyy": {
@@ -249,6 +259,7 @@ const users = {
             "ukraine_e1_defenders",
             "ww2_e1_winnerside",
             "ukraine_e2_winside",
+            "ww1_e1_brazil",
         ],
         "events": [
             "kaiserreich_e1_p2",
@@ -256,6 +267,7 @@ const users = {
             "ukraine_e1",
             "ww2_e1",
             "ukraine_e2",
+            "ww1_e1",
         ]
     },
     "khan": {
@@ -289,6 +301,7 @@ const users = {
             "kaiserreich_e1_p2",
             "twosides_e1",
             "metromoscow_e1",
+            "ww1_e1",
         ]
     },
     "stalin": {
@@ -672,6 +685,34 @@ const awards = {
         "img": "shield.png",
         "type": "stronf defender",
         "score": 3
+    },
+    "ww1_e1_winner": {
+        "event": "ww1_e1",
+        "name": "Great Asian Federation",
+        "img": "ww1_e1_russia.png",
+        "type": "winner",
+        "score": 12
+    },
+    "ww1_e1_ingsoc": {
+        "event": "ww1_e1",
+        "name": "INGSOC",
+        "img": "ww1_e1_ingsoc.png",
+        "type": "conqueror",
+        "score": 7
+    },
+    "ww1_e1_germany": {
+        "event": "ww1_e1",
+        "name": "German Colonial Empire",
+        "img": "ww1_e1_germany.png",
+        "type": "conqueror",
+        "score": 9
+    },
+    "ww1_e1_brazil": {
+        "event": "ww1_e1",
+        "name": "South American Union",
+        "img": "ww1_e1_brazil.png",
+        "type": "great power",
+        "score": 5
     },
 };
 
