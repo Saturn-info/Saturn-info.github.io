@@ -16,6 +16,7 @@ const users = {
             "ukraine_e2_uasu",
             "metromoscow_e1_eenot",
             "ww1_e1_ingsoc",
+            "tigerland_e2_east",
         ],
         "events": [
             "euam1799_e1",
@@ -30,6 +31,7 @@ const users = {
             "ukraine_e2",
             "metromoscow_e1",
             "ww1_e1",
+            "tigerland_e2",
         ]
     },
     "trid": {
@@ -68,6 +70,7 @@ const users = {
             "ukraine_e2_totoska",
             "metromoscow_e1_def",
             "ww1_e1_winner",
+            "tigerland_e2_west",
         ],
         "events": [
             "euam1799_e1",
@@ -77,6 +80,7 @@ const users = {
             "ukraine_e2",
             "metromoscow_e1",
             "ww1_e1",
+            "tigerland_e2",
         ]
     },
     "talant": {
@@ -142,6 +146,7 @@ const users = {
             "ww2_e1_mrvoid",
             "ukraine_e2_winside",
             "metromoscow_e1_def",
+            "tigerland_e2_empire",
         ],
         "events": [
             "euam2025_e1",
@@ -155,6 +160,7 @@ const users = {
             "ukraine_e2",
             "metromoscow_e1",
             "ww1_e1",
+            "tigerland_e2",
         ]
     },
     "namexxxx": {
@@ -353,6 +359,30 @@ const users = {
         "events": [
             "ukraine_e2",
             "metromoscow_e1",
+        ]
+    },
+    "rooog": {
+        "id": "rooog",
+        "discord": "",
+        "discordid": "",
+        "gamename": "rooog",
+        "awards": [
+            "tigerland_e2_winside",
+        ],
+        "events": [
+            "tigerland_e2",
+        ]
+    },
+    "noname2": {
+        "id": "noname2",
+        "discord": "",
+        "discordid": "",
+        "gamename": "NoName2",
+        "awards": [
+            "tigerland_e2_winside",
+        ],
+        "events": [
+            "tigerland_e2",
         ]
     },
 };
@@ -714,6 +744,31 @@ const awards = {
         "type": "great power",
         "score": 5
     },
+    "tigerland_e2_west": {
+        "event": "tigerland_e2",
+        "name": "Western Tigerland",
+        "img": "tigerland_e2_west.png",
+        "type": "winner"
+    },
+    "tigerland_e2_east": {
+        "event": "tigerland_e2",
+        "name": "Eastern Tigerland",
+        "img": "tigerland_e2_east.png",
+        "type": "conqueror"
+    },
+    "tigerland_e2_empire": {
+        "event": "tigerland_e2",
+        "name": "Empire of Tigerland",
+        "img": "tigerland_e2_empire.png",
+        "type": "strong defender",
+        "score": 8
+    },
+    "tigerland_e2_winside": {
+        "event": "tigerland_e2",
+        "name": "Tigerland Winnerside",
+        "img": "tigerland_e2_winside.png",
+        "type": "win side"
+    },
 };
 
 const types = {
@@ -775,9 +830,9 @@ const events = {
         date: '22.09.2025',
         img: 'world_ww1.png',
     },
-    yugoslavia_e1: {
+    tigerland_e2: {
         date: '24.09.2025',
-        img: 'yugoslavia_1944.png',
+        img: 'tigerland.png',
     },
     metromoscow_e2: {
         date: '26.09.2025',
