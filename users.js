@@ -17,6 +17,7 @@ const users = {
             "metromoscow_e1_eenot",
             "ww1_e1_ingsoc",
             "tigerland_e2_east",
+            "metromoscow_e2_cool",
         ],
         "events": [
             "euam1799_e1",
@@ -68,9 +69,10 @@ const users = {
             "kaiserreich_e1_p1_italy",
             "kaiserreich_e1_p2_rome",
             "ukraine_e2_totoska",
-            "metromoscow_e1_def",
+            //"metromoscow_e1_def",
             "ww1_e1_winner",
             "tigerland_e2_west",
+            "metromoscow_e2_cool",
         ],
         "events": [
             "euam1799_e1",
@@ -78,7 +80,7 @@ const users = {
             "kaiserreich_e1_p1",
             "kaiserreich_e1_p2",
             "ukraine_e2",
-            "metromoscow_e1",
+            //"metromoscow_e1",
             "ww1_e1",
             "tigerland_e2",
         ]
@@ -147,6 +149,7 @@ const users = {
             "ukraine_e2_winside",
             "metromoscow_e1_def",
             "tigerland_e2_empire",
+            "metromoscow_e2_cool",
         ],
         "events": [
             "euam2025_e1",
@@ -240,7 +243,7 @@ const users = {
             "twosides_e1_british",
             "ww2_e1_france",
             "ukraine_e2_crimea",
-            "metromoscow_e1_def",
+            //"metromoscow_e1_def",
             "ww1_e1_ingsoc",
         ],
         "events": [
@@ -250,7 +253,7 @@ const users = {
             "twosides_e1",
             "ww2_e1",
             "ukraine_e2",
-            "metromoscow_e1",
+            //"metromoscow_e1",
             "ww1_e1",
         ]
     },
@@ -286,12 +289,14 @@ const users = {
             "twosides_e1_china",
             "ukraine_e1_partisans",
             "metromoscow_e1_khan",
+            "metromoscow_e2_khan",
         ],
         "events": [
             "kaiserreich_e2_p1",
             "twosides_e1",
             "ukraine_e1",
             "metromoscow_e1",
+            "metromoscow_e2",
         ]
     },
     "vovka": {
@@ -702,6 +707,20 @@ const awards = {
         "img": "metromoscow_e1_south.png",
         "type": "conqueror",
         "score": 6
+    },
+    "metromoscow_e2_khan": {
+        "event": "metromoscow_e2",
+        "name": "Great Yasnevskaya",
+        "img": "metromoscow_e2_khan.png",
+        "type": "conqueror",
+        "score": 10
+    },
+    "metromoscow_e2_cool": {
+        "event": "metromoscow_e2",
+        "name": "",
+        "img": "metromoscow_e2_cool.png",
+        "type": "great power",
+        "score": 3
     },
     "metromoscow_e1_vovka": {
         "event": "metromoscow_e1",
