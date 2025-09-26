@@ -720,7 +720,7 @@ const awards = {
         "name": "",
         "img": "metromoscow_e2_cool.png",
         "type": "great power",
-        "score": 3
+        "score": 2
     },
     "metromoscow_e1_vovka": {
         "event": "metromoscow_e1",
