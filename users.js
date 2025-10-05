@@ -18,6 +18,7 @@ const users = {
             "ww1_e1_ingsoc",
             "tigerland_e2_east",
             "metromoscow_e2_cool",
+            "twosided_e3_winnerside",
         ],
         "events": [
             "euam1799_e1",
@@ -33,6 +34,7 @@ const users = {
             "metromoscow_e1",
             "ww1_e1",
             "tigerland_e2",
+            "twosided_e3",
         ]
     },
     "trid": {
@@ -46,6 +48,7 @@ const users = {
             "kaiserreich_e1_p2_ukraine",
             "kaiserreich_e2_p1_scandinavia",
             "metromoscow_e1_ganza",
+            "twosided_e3_winnerside",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -56,6 +59,7 @@ const users = {
             "ukraine_e1",
             "metromoscow_e1",
             "ww1_e1",
+            "twosided_e3",
         ]
     },
     "totoska": {
@@ -73,6 +77,7 @@ const users = {
             "ww1_e1_winner",
             "tigerland_e2_west",
             "metromoscow_e2_cool",
+            "twosided_e3_winner",
         ],
         "events": [
             "euam1799_e1",
@@ -83,6 +88,7 @@ const users = {
             //"metromoscow_e1",
             "ww1_e1",
             "tigerland_e2",
+            "twosided_e3",
         ]
     },
     "talant": {
@@ -194,6 +200,7 @@ const users = {
             "ukraine_e2_zachary",
             "metromoscow_e1_zachary",
             "ww1_e1_germany",
+            "twosided_e3_france",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -204,6 +211,7 @@ const users = {
             "ukraine_e2",
             "metromoscow_e1",
             "ww1_e1",
+            "twosided_e3",
         ]
     },
     "derf11": {
@@ -245,6 +253,7 @@ const users = {
             "ukraine_e2_crimea",
             //"metromoscow_e1_def",
             "ww1_e1_ingsoc",
+            "twosided_e3_germany",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -255,6 +264,7 @@ const users = {
             "ukraine_e2",
             //"metromoscow_e1",
             "ww1_e1",
+            "twosided_e3",
         ]
     },
     "shelzyy": {
@@ -788,6 +798,30 @@ const awards = {
         "img": "tigerland_e2_winside.png",
         "type": "win side"
     },
+    "twosided_e3_winner": {
+        "event": "twosided_e3",
+        "name": "Eurasian Confeseration",
+        "img": "twosided_e3_russia.png",
+        "type": "winner"
+    },
+    "twosided_e3_winnerside": {
+        "event": "twosided_e3",
+        "name": "Eurasian Powers",
+        "img": "twosided_e3_winnerside.png",
+        "type": "win side"
+    },
+    "twosided_e3_france": {
+        "event": "twosided_e3",
+        "name": "French Colonial Empire",
+        "img": "twosided_e3_france.png",
+        "type": "great power"
+    },
+    "twosided_e3_germany": {
+        "event": "twosided_e3",
+        "name": "German Colonial Empire",
+        "img": "twosided_e3_germany.png",
+        "type": "great power"
+    },
 };
 
 const types = {
@@ -860,5 +894,9 @@ const events = {
     ancient_e1_p1: {
         date: '28.09.2025',
         img: 'ancient_e1_p1.png',
+    },
+    twosided_e3: {
+        date: '05.10.2025',
+        img: 'world_twosides.png',
     },
 }
