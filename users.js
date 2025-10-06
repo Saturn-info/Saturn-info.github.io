@@ -836,67 +836,97 @@ const types = {
 
 const events = {
     euam1799_e1: {
+        name: 'Napoleonʼs Ries',
         date: '31.08.2025',
         img: 'euam_1799.png',
     },
     euam2025_e1: {
+        name: 'Modern Eu+Na',
         date: '04.09.2025',
         img: 'euam_modern.png',
     },
     kaiserreich_e1_p1: {
+        name: 'Kaiserreich Part 1',
         date: '05.09.2025',
         img: 'euro4_kaiserreich.png',
     },
     kaiserreich_e1_p2: {
+        name: 'Kaiserreich Part 2',
         date: '07.09.2025',
         img: 'euro4_kaiserreich.png',
     },
     kaiserreich_e2_p1: {
+        name: 'Kaiserreich 2',
         date: '09.09.2025',
         img: 'euro4_kaiserreich.png',
     },
     eusat2014_e1: {
+        name: 'Modern EuroSat',
         date: '12.09.2025',
         img: 'eusat_modern.png',
     },
     twosides_e1: {
+        name: 'TwoSides',
         date: '12.09.2025',
         img: 'world_twosides.png',
     },
     ukraine_e1: {
+        name: 'Ukraine: Слуга Народу',
         date: '14.09.2025',
         img: 'ukraine_sluga.png',
     },
     ww2_e1: {
+        name: 'World War II',
         date: '15.09.2025',
         img: 'euoe_ww2.png',
     },
     ukraine_e2: {
+        name: 'Ukraine Civil War',
         date: '17.09.2025',
         img: 'ukraine_civilwar.png',
     },
     metromoscow_e1: {
+        name: 'Moscow Metro2033',
         date: '19.09.2025',
         img: 'metro_moscow.png',
     },
     ww1_e1: {
+        name: 'World War I',
         date: '22.09.2025',
         img: 'world_ww1.png',
     },
     tigerland_e2: {
+        name: 'Tigerland 2',
         date: '24.09.2025',
         img: 'tigerland.png',
     },
     metromoscow_e2: {
+        name: 'Moscow Metro2033 2',
         date: '26.09.2025',
         img: 'metro_moscow.png',
     },
-    ancient_e1_p1: {
-        date: '28.09.2025',
-        img: 'ancient_e1_p1.png',
-    },
+//    ancient_e1_p1: {
+//        date: '28.09.2025',
+//        img: 'ancient_e1_p1.png',
+//    },
     twosided_e3: {
+        name: 'TwoSides 3',
         date: '05.10.2025',
         img: 'world_twosides.png',
+    },
+    euro4modern_e1: {
+        name: 'Modern Euro4',
+        date: '10.10.2025',
+        img: 'euro4_modern.png',
+    },
+    kaiserreich_e3: {
+        name: 'Kaiserreich: EuNa',
+        date: '07.10.2025',
+        img: 'euam_kaiserreich.png',
+    },
+    discord_e1: {
+        name: 'Unban Discord!!!',
+        date: '08.10.2025',
+        img: 'discordban.png',
     },
 }
