@@ -129,7 +129,12 @@ document.addEventListener("DOMContentLoaded", () => {
     function createCard({ eventId, data, info, dateObj }, time) {
         const card = document.createElement("div");
         card.className = "event-card";
-        if (info.img) card.style.backgroundImage = `url("img/events/${info.img}")`;
+        if (info.map) {
+            let mapId = info.map.replace(/^([^_]*_[^_]*)_.*$/, '$1');
+            mapId = mapId.replace(/_/g, '/');
+            card.style.backgroundImage = `url("http://192.168.100.18:8081/lib/${mapId}/${info.map}.png")`;
+            //card.style.backgroundImage = `url("http://raw.githubusercontent.com/EEditor-WS/eeditor-ws-data/refs/heads/main/lib/${mapId}/${info.map}.png")`;
+        } else if (info.img) card.style.backgroundImage = `url("img/events/${info.img}")`;
         card.style.backgroundSize = "cover";
         card.style.backgroundPosition = "center";
         card.style.borderRadius = "0.4rem";

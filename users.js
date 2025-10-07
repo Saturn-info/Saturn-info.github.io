@@ -421,39 +421,39 @@ const awards = {
         "type": "strong defender"
     },
     "kaiserreich_e1_p1_win": {
-        "event": "Kaiserreich Part 1",
+        "event": "kaiserreich_e1_p1",
         "name": "Winner",
         "img": "winner.png",
         "type": "winner"
     },
     "kaiserreich_e1_p1_ruvassal": {
-        "event": "Kaiserreich",
+        "event": "kaiserreich_e1_p1",
         "name": "Union's Part",
         "img": "kaiserunion.png",
         "type": "win side",
         "score": 4
     },
     "kaiserreich_e1_p1_italy": {
-        "event": "Kaiserreich",
+        "event": "kaiserreich_e1_p1",
         "name": "Roman Empire",
         "img": "kaiserroman.png",
         "type": "great power"
     },
     "kaiserreich_e1_p1_german": {
-        "event": "Kaiserreich",
+        "event": "kaiserreich_e1_p1",
         "name": "German Emire",
         "img": "kaisergerman.png",
         "type": "great power"
     },
     "kaiserreich_e1_p1_westrussia": {
-        "event": "Kaiserreich",
+        "event": "kaiserreich_e1_p1",
         "name": "Frontline Defender",
         "img": "kaisershield.png",
         "type": "strong defender",
         "score": 1
     },
     "kaiserreich_e1_p1_sweden": {
-        "event": "Kaiserreich",
+        "event": "kaiserreich_e1_p1",
         "name": "Great Sweden",
         "img": "kaisersweden.png",
         "type": "great power"
@@ -839,71 +839,85 @@ const events = {
         name: 'Napoleonʼs Ries',
         date: '31.08.2025',
         img: 'euam_1799.png',
+        map: 'pelo_euam_v2_1799',
     },
     euam2025_e1: {
         name: 'Modern Eu+Na',
         date: '04.09.2025',
         img: 'euam_modern.png',
+        map: 'pelo_euam_v2_modern-en',
     },
     kaiserreich_e1_p1: {
         name: 'Kaiserreich Part 1',
         date: '05.09.2025',
         img: 'euro4_kaiserreich.png',
+        map: 'parkourcat_euro4_vg_kaiserreich',
     },
     kaiserreich_e1_p2: {
         name: 'Kaiserreich Part 2',
         date: '07.09.2025',
         img: 'euro4_kaiserreich.png',
+        map: 'parkourcat_euro4_vg_kaiserreich',
     },
     kaiserreich_e2_p1: {
         name: 'Kaiserreich 2',
         date: '09.09.2025',
         img: 'euro4_kaiserreich.png',
+        map: 'parkourcat_euro4_vg_kaiserreich',
     },
     eusat2014_e1: {
         name: 'Modern EuroSat',
         date: '12.09.2025',
         img: 'eusat_modern.png',
+        map: 'trid_eurosat_v5_modern',
     },
     twosides_e1: {
         name: 'TwoSides',
         date: '12.09.2025',
         img: 'world_twosides.png',
+        map: 'chitterss_world_v3_twosides',
     },
     ukraine_e1: {
         name: 'Ukraine: Слуга Народу',
         date: '14.09.2025',
         img: 'ukraine_sluga.png',
+        map: 'trid_ukraine_v2_holoborodko',
     },
     ww2_e1: {
         name: 'World War II',
         date: '15.09.2025',
         img: 'euoe_ww2.png',
+        map: 'stewardconstruct_europe_v1_ww2',
     },
     ukraine_e2: {
         name: 'Ukraine Civil War',
         date: '17.09.2025',
         img: 'ukraine_civilwar.png',
+        map: 'trid_ukraine_v2_1919',
     },
     metromoscow_e1: {
         name: 'Moscow Metro2033',
         date: '19.09.2025',
         img: 'metro_moscow.png',
+        map: 'eenot_metro2033_v1_!',
     },
     ww1_e1: {
         name: 'World War I',
         date: '22.09.2025',
         img: 'world_ww1.png',
+        map: 'zachary_world_vg_ww1',
     },
     tigerland_e2: {
         name: 'Tigerland 2',
         date: '24.09.2025',
         img: 'tigerland.png',
+        map: 'chuckcha_tigerland_v3_civilwar-jalhund-en',
     },
     metromoscow_e2: {
         name: 'Moscow Metro2033 2',
         date: '26.09.2025',
         img: 'metro_moscow.png',
+        map: 'eenot_metro2033_v1_!',
     },
 //    ancient_e1_p1: {
 //        date: '28.09.2025',
@@ -913,20 +927,24 @@ const events = {
         name: 'TwoSides 3',
         date: '05.10.2025',
         img: 'world_twosides.png',
+        map: 'chitterss_world_v4_twosides',
     },
     euro4modern_e1: {
         name: 'Modern Euro4',
         date: '10.10.2025',
         img: 'euro4_modern.png',
+        map: 'parkourcat_euro4_vg_modernlurus',
     },
     kaiserreich_e3: {
         name: 'Kaiserreich: EuNa',
         date: '07.10.2025',
         img: 'euam_kaiserreich.png',
+        map: 'pelo_euam_v2_kaiserreich',
     },
     discord_e1: {
         name: 'Unban Discord!!!',
         date: '08.10.2025',
         img: 'discordban.png',
+        map: 'bluepum_su_v1_discordban',
     },
 }
