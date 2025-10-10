@@ -19,6 +19,7 @@ const users = {
             "tigerland_e2_east",
             "metromoscow_e2_cool",
             "twosided_e3_winnerside",
+            "euro4modern_e1_p1_germany",
         ],
         "events": [
             "euam1799_e1",
@@ -35,6 +36,7 @@ const users = {
             "ww1_e1",
             "tigerland_e2",
             "twosided_e3",
+            "euro4modern_e1_p1",
         ]
     },
     "trid": {
@@ -78,6 +80,7 @@ const users = {
             "tigerland_e2_west",
             "metromoscow_e2_cool",
             "twosided_e3_winner",
+            "euro4modern_e1_p1_winner",
         ],
         "events": [
             "euam1799_e1",
@@ -89,6 +92,7 @@ const users = {
             "ww1_e1",
             "tigerland_e2",
             "twosided_e3",
+            "euro4modern_e1_p1",
         ]
     },
     "talant": {
@@ -156,6 +160,7 @@ const users = {
             "metromoscow_e1_def",
             "tigerland_e2_empire",
             "metromoscow_e2_cool",
+            "euro4modern_e1_p1_turkey",
         ],
         "events": [
             "euam2025_e1",
@@ -170,6 +175,7 @@ const users = {
             "metromoscow_e1",
             "ww1_e1",
             "tigerland_e2",
+            "euro4modern_e1_p1",
         ]
     },
     "namexxxx": {
@@ -201,6 +207,7 @@ const users = {
             "metromoscow_e1_zachary",
             "ww1_e1_germany",
             "twosided_e3_france",
+            "euro4modern_e1_p1_poland",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -212,6 +219,7 @@ const users = {
             "metromoscow_e1",
             "ww1_e1",
             "twosided_e3",
+            "euro4modern_e1_p1",
         ]
     },
     "derf11": {
@@ -349,6 +357,7 @@ const users = {
         "events": [
             "ukraine_e1",
             "ww2_e1",
+            "euro4modern_e1_p1",
         ]
     },
     "timur333": {
@@ -398,6 +407,114 @@ const users = {
         ],
         "events": [
             "tigerland_e2",
+        ]
+    },
+    "inka": {
+        "id": "inka",
+        "discord": "Inka",
+        "discordid": "1050563653394505728",
+        "gamename": "Plagers2",
+        "awards": [
+            "euro4modern_e1_p1_algeria",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
+        ]
+    },
+    "psychopomp": {
+        "id": "nonpsychopompame2",
+        "discord": "PsychoPomp",
+        "discordid": "1314822053488230501",
+        "gamename": "PsychoPomp",
+        "awards": [
+            "euro4modern_e1_p1_italy",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
+        ]
+    },
+    "tungg": {
+        "id": "tungg",
+        "discord": "",
+        "discordid": "",
+        "gamename": "tungg",
+        "awards": [
+            "euro4modern_e1_p1_winside",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
+        ]
+    },
+    "trueruler": {
+        "id": "trueruler",
+        "discord": "",
+        "discordid": "",
+        "gamename": "TrueRuler",
+        "awards": [
+            "euro4modern_e1_p1_winside",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
+        ]
+    },
+    "negr1007": {
+        "id": "negr1007",
+        "discord": "",
+        "discordid": "",
+        "gamename": "Hegr1007",
+        "awards": [
+            "euro4modern_e1_p1_winside",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
+        ]
+    },
+    "strateg": {
+        "id": "strateg",
+        "discord": "",
+        "discordid": "",
+        "gamename": "StrateG",
+        "awards": [
+            "euro4modern_e1_p1_winside",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
+        ]
+    },
+    "erjar": {
+        "id": "erjar",
+        "discord": "",
+        "discordid": "",
+        "gamename": "ErJar",
+        "awards": [
+            "euro4modern_e1_p1_winside",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
+        ]
+    },
+    "lev": {
+        "id": "lev",
+        "discord": "",
+        "discordid": "",
+        "gamename": "lev",
+        "awards": [
+            "euro4modern_e1_p1_winside",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
+        ]
+    },
+    "lurus": {
+        "id": "lurus",
+        "discord": "Lurus",
+        "discordid": "764533673512927242",
+        "gamename": "lurus",
+        "awards": [
+            "euro4modern_e1_p1_france",
+        ],
+        "events": [
+            "euro4modern_e1_p1",
         ]
     },
 };
@@ -822,6 +939,58 @@ const awards = {
         "img": "twosided_e3_germany.png",
         "type": "great power"
     },
+    "euro4modern_e1_p1_winner": {
+        "event": "euro4modern_e1_p1",
+        "name": "Great Russian Empire",
+        "img": "euro4modern_e1_p1_russia.png",
+        "type": "winner"
+    },
+    "euro4modern_e1_p1_germany": {
+        "event": "euro4modern_e1_p1",
+        "name": "Great Germany",
+        "img": "euro4modern_e1_p1_germany.png",
+        "type": "great power"
+    },
+    "euro4modern_e1_p1_france": {
+        "event": "euro4modern_e1_p1",
+        "name": "Westeurope",
+        "img": "euro4modern_e1_p1_france.png",
+        "type": "great power"
+    },
+    "euro4modern_e1_p1_turkey": {
+        "event": "euro4modern_e1_p1",
+        "name": "New Ottoman Empire",
+        "img": "euro4modern_e1_p1_turkey.png",
+        "type": "conqueror",
+        "score": 5
+    },
+    "euro4modern_e1_p1_poland": {
+        "event": "euro4modern_e1_p1",
+        "name": "Poland - Beaver's Bastion",
+        "img": "euro4modern_e1_p1_poland.png",
+        "type": "strong defender",
+        "score": 6
+    },
+    "euro4modern_e1_p1_italy": {
+        "event": "euro4modern_e1_p1",
+        "name": "New Roman Empire",
+        "img": "euro4modern_e1_p1_italy.png",
+        "type": "conqueror",
+        "score": 4
+    },
+    "euro4modern_e1_p1_winside": {
+        "event": "euro4modern_e1_p1",
+        "name": "Central European Union",
+        "img": "euro4modern_e1_p1_winside.png",
+        "type": "win side"
+    },
+    "euro4modern_e1_p1_algeria": {
+        "event": "euro4modern_e1_p1",
+        "name": "Algeria",
+        "img": "euro4modern_e1_p1_algeria.png",
+        "type": "other",
+        "score": 2
+    },
 };
 
 const types = {
@@ -831,7 +1000,7 @@ const types = {
     "win side": 5,
     "ratio": 5,
     "strong defender": 4,
-    "part of winner": 1
+    "other": 1
 };
 
 const events = {
@@ -929,7 +1098,7 @@ const events = {
         img: 'world_twosides.png',
         map: 'chitterss_world_v4_twosides',
     },
-    euro4modern_e1: {
+    euro4modern_e1_p1: {
         name: 'Modern Euro4',
         date: '10.10.2025',
         img: 'euro4_modern.png',
@@ -941,10 +1110,16 @@ const events = {
         img: 'euam_kaiserreich.png',
         map: 'pelo_euam_v2_kaiserreich',
     },
-    discord_e1: {
+    /*discord_e1: {
         name: 'Unban Discord!!!',
         date: '08.10.2025',
         img: 'discordban.png',
         map: 'bluepum_su_v1_discordban',
+    },*/
+    euro4modern_e1_p2: {
+        name: 'Modern Euro4 Part 2',
+        date: '17.10.2025',
+        img: 'euro4_modern.png',
+        map: 'parkourcat_euro4_vg_modernlurus',
     },
 }
