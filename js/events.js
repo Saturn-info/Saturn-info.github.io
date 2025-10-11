@@ -151,7 +151,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const extrabtnsdiv = document.createElement("div");
         extrabtnsdiv.className = 'extrabtnsdiv';
         if (info.discord) extrabtnsdiv.innerHTML = `<button class="extrabtn discord" onclick="window.open('https://discord.com/channels/1194999547571744888/${info.discord}')"><img src="img/icons/discord-white.svg"></button>`;
-        extrabtnsdiv.innerHTML = extrabtnsdiv.innerHTML + `<button class="extrabtn" onclick="downloadScenario('${info.map}')"><img src="img/icons/download.svg"></button>`
+        // extrabtnsdiv.innerHTML = extrabtnsdiv.innerHTML + `<button class="extrabtn" onclick="downloadScenario('${info.map}')"><img src="img/icons/download.svg"></button>`
+        extrabtnsdiv.innerHTML = extrabtnsdiv.innerHTML + `<button class="extrabtn" onclick="window.open('https://eeditor-ws.github.io/page/library/download?fullid=${info.map}')"><img src="img/icons/download.svg"></button>`
         card.appendChild(extrabtnsdiv);
 
         const overlay = document.createElement("div");
