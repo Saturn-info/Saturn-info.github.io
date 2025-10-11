@@ -1120,6 +1120,6 @@ const events = {
         name: 'Modern Euro4 Part 2',
         date: '17.10.2025',
         img: 'euro4_modern.png',
-        map: 'parkourcat_euro4_vg_modernlurus',
+        map: 'parkourcat_euro4_vg_modernlurus-part2',
     },
 }
