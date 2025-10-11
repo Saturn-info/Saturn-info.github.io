@@ -1150,6 +1150,7 @@ const events = {
     cw_e1: {
         name: 'Cold War: Euro4',
         date: '31.10.2025',
+        time: '20:00',
         map: 'parkourcat_euro4_vg_1956',
     },
 }
