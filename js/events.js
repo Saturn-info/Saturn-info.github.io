@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (info.map) {
             let mapId = info.map.replace(/^([^_]*_[^_]*)_.*$/, '$1');
             mapId = mapId.replace(/_/g, '/');
-            if (document.location.href.includes('users')) {
+            if (document.location.href.includes('eenot')) {
             card.style.backgroundImage = `url("http://192.168.100.18:8081/lib/${mapId}/${info.map}.png")`;
             } else {
             card.style.backgroundImage = `url("http://raw.githubusercontent.com/EEditor-WS/eeditor-ws-data/refs/heads/main/lib/${mapId}/${info.map}.png")`;
