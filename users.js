@@ -1005,13 +1005,13 @@ const types = {
 
 const events = {
     euam1799_e1: {
-        name: 'Napoleonʼs Ries',
+        name: 'Napoleonʼs Ries: EuNa',
         date: '31.08.2025',
         img: 'euam_1799.png',
         map: 'pelo_euam_v2_1799',
     },
     euam2025_e1: {
-        name: 'Modern Eu+Na',
+        name: 'Modern: EuNa',
         date: '04.09.2025',
         img: 'euam_modern.png',
         map: 'pelo_euam_v2_modern-en',
@@ -1035,10 +1035,11 @@ const events = {
         map: 'parkourcat_euro4_vg_kaiserreich',
     },
     eusat2014_e1: {
-        name: 'Modern EuroSat',
+        name: 'Modern: EuroSat',
         date: '12.09.2025',
         img: 'eusat_modern.png',
         map: 'trid_eurosat_v5_modern',
+        discord: '1414664274688741416',
     },
     twosides_e1: {
         name: 'TwoSides',
@@ -1051,30 +1052,35 @@ const events = {
         date: '14.09.2025',
         img: 'ukraine_sluga.png',
         map: 'trid_ukraine_v2_holoborodko',
+        discord: '1416142131956944981',
     },
     ww2_e1: {
-        name: 'World War II',
+        name: 'World War II: Our Empire',
         date: '15.09.2025',
         img: 'euoe_ww2.png',
         map: 'stewardconstruct_europe_v1_ww2',
+        discord: '1417100701531635723',
     },
     ukraine_e2: {
         name: 'Ukraine Civil War',
         date: '17.09.2025',
         img: 'ukraine_civilwar.png',
         map: 'trid_ukraine_v2_1919',
+        discord: '1417146483668422819',
     },
     metromoscow_e1: {
         name: 'Moscow Metro2033',
         date: '19.09.2025',
         img: 'metro_moscow.png',
         map: 'eenot_metro2033_v1_!',
+        discord: '1415706783057580113',
     },
     ww1_e1: {
-        name: 'World War I',
+        name: 'Great War: World',
         date: '22.09.2025',
         img: 'world_ww1.png',
         map: 'zachary_world_vg_ww1',
+        discord: '1417982202095861840',
     },
     tigerland_e2: {
         name: 'Tigerland 2',
@@ -1087,6 +1093,8 @@ const events = {
         date: '26.09.2025',
         img: 'metro_moscow.png',
         map: 'eenot_metro2033_v1_!',
+        discord: '1418677088432554124',
+        canceled: true,
     },
 //    ancient_e1_p1: {
 //        date: '28.09.2025',
@@ -1097,18 +1105,22 @@ const events = {
         date: '05.10.2025',
         img: 'world_twosides.png',
         map: 'chitterss_world_v4_twosides',
+        discord: '1422609197547262064',
     },
     euro4modern_e1_p1: {
-        name: 'Modern Euro4',
+        name: 'Modern: Euro4',
         date: '10.10.2025',
         img: 'euro4_modern.png',
         map: 'parkourcat_euro4_vg_modernlurus',
+        discord: '1424738018924826715',
     },
     kaiserreich_e3: {
         name: 'Kaiserreich: EuNa',
         date: '07.10.2025',
         img: 'euam_kaiserreich.png',
         map: 'pelo_euam_v2_kaiserreich',
+        discord: '1424518368496717834',
+        canceled: true,
     },
     /*discord_e1: {
         name: 'Unban Discord!!!',
@@ -1117,9 +1129,27 @@ const events = {
         map: 'bluepum_su_v1_discordban',
     },*/
     euro4modern_e1_p2: {
-        name: 'Modern Euro4 Part 2',
+        name: 'Modern Part 2: Euro4',
         date: '17.10.2025',
-        img: 'euro4_modern.png',
+        img: 'euro4_modern2.png',
         map: 'parkourcat_euro4_vg_modernlurus-part2',
+        discord: '1426543022111461607',
+    },
+    ww1_e2: {
+        name: 'Great War: Our Empire',
+        date: '15.10.2025',
+        map: 'stewardconstruct_europe_v2_ww1',
+        discord: '1426561531490992221',
+    },
+    su_e1: {
+        name: 'EG Soviet Union',
+        date: '22.10.2025',
+        map: 'bluepum_su_v1_cw-eg',
+        discord: '1426570285372543106',
+    },
+    cw_e1: {
+        name: 'Cold War: Euro4',
+        date: '31.10.2025',
+        map: 'parkourcat_euro4_vg_1956',
     },
 }

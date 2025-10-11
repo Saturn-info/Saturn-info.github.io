@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (info.map) {
             let mapId = info.map.replace(/^([^_]*_[^_]*)_.*$/, '$1');
             mapId = mapId.replace(/_/g, '/');
-            if (document.location.href.includes('eenot')) {
+            if (window.location.href.includes('file:///')) {
             card.style.backgroundImage = `url("http://192.168.100.18:8081/lib/${mapId}/${info.map}.png")`;
             } else {
             card.style.backgroundImage = `url("http://raw.githubusercontent.com/EEditor-WS/eeditor-ws-data/refs/heads/main/lib/${mapId}/${info.map}.png")`;
@@ -146,6 +146,13 @@ document.addEventListener("DOMContentLoaded", () => {
         card.style.color = "#fff";
         card.style.boxShadow = "0 2px 8px rgba(0,0,0,0.4)";
         if (time === 'future') card.style.border = "5px solid #939347"; // желтая рамка для будущих событий
+        if (info.canceled) card.style.border = "5px solid #934747ff"; // желтая рамка для проваленных событий
+
+        const extrabtnsdiv = document.createElement("div");
+        extrabtnsdiv.className = 'extrabtnsdiv';
+        if (info.discord) extrabtnsdiv.innerHTML = `<button class="extrabtn discord" onclick="window.open('https://discord.com/channels/1194999547571744888/${info.discord}')"><img src="img/icons/discord-white.svg"></button>`;
+        extrabtnsdiv.innerHTML = extrabtnsdiv.innerHTML + `<button class="extrabtn" onclick="downloadScenario('${info.map}')"><img src="img/icons/download.svg"></button>`
+        card.appendChild(extrabtnsdiv);
 
         const overlay = document.createElement("div");
         // затемняющий фон, чтобы текст читался на ярком фоне
@@ -163,6 +170,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const players = document.createElement("p");
         players.textContent = "Players: " + (data.players.length ? data.players.join(", ") : "-");
+        players.style.maxHeight = '35px';
+        players.style.overflowY = 'auto';
         overlay.appendChild(players);
 
         const medals = document.createElement("div");
@@ -181,7 +190,8 @@ document.addEventListener("DOMContentLoaded", () => {
             img.style.cursor = "pointer";
 
             img.onclick = () => {
-                alert(`🏅 ${obj.award.name}\nПолучили: ${obj.players.join(", ")}`);
+                window.leaderboard.showAward(awardId);
+                //alert(`🏅 ${obj.award.name}\nПолучили: ${obj.players.join(", ")}`);
             };
 
             medals.appendChild(img);
@@ -209,8 +219,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (pastEvents.length && futureEvents.length) {
         const divider = document.createElement("div");
         divider.innerHTML = `
-            <div style="padding: 1rem; margin: 1rem 0; background: #333; color: #fff; text-align: center; border-radius: 0.5rem;">
-                🌟 Here will be advertising of <a href="https://eeditor-ws.github.io/">EEditor - best scenario editor for Warnament</a> 🌟
+            <div class="ads" style="padding: 1rem; background: #333; color: #fff; text-align: center; border-radius: 0.5rem;">
+                🌟 Here will be advertising of <a href="https://eeditor-ws.vercel.app/">EEditor - best scenario editor for Warnament</a> 🌟
                 <br>
                 <br>
                 🌟 Тут должна быть реклама <a href="https://eeditor-ws.github.io/">EEditor'а - лучшего редактора сценариев для Warnament</a> 🌟
@@ -235,3 +245,45 @@ document.addEventListener("DOMContentLoaded", () => {
     // console.log('Будущие:', futureEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
     // console.log('Прошедшие:', pastEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
 });
+
+async function downloadFile(url, fileName) {
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const contentType = response.headers.get('content-type') || 'application/octet-stream';
+    const blob = await response.blob();
+    const enhancedBlob = new Blob([blob], { type: contentType });
+
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(enhancedBlob);
+    link.download = fileName;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    URL.revokeObjectURL(link.href);
+    return new Promise(resolve => setTimeout(resolve, 100));
+}
+
+async function downloadScenario(id) {
+    // Разбиваем id на части, предполагая формат 'часть1_часть2_часть3_часть4'
+    const parts = id.split('_');
+
+    // Берем первые две части и соединяем их через '/'.
+    // Например, 'parkourcat_euro4_vg_1956' -> 'parkourcat/euro4'
+    const scenarioPath = parts.slice(0, 2).join('/');
+
+    // Формируем полный путь к файлу.
+    // Если id = 'parkourcat_euro4_vg_1956', то filePath будет:
+    // https://raw.githubusercontent.com/EEditor-WS/eeditor-ws-data/refs/heads/main/lib/parkourcat/euro4
+    const filePath = `https://raw.githubusercontent.com/EEditor-WS/eeditor-ws-data/refs/heads/main/lib/${scenarioPath}/${id}.json`;
+
+    // Используем последнюю часть id для имени файла
+    const fileName = `${id}.json`; 
+
+    // Загружаем файл
+    await downloadFile(filePath, fileName);
+}
