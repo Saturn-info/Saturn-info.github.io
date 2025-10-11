@@ -164,9 +164,32 @@ document.addEventListener("DOMContentLoaded", () => {
         title.textContent = info.name || eventId;
         overlay.appendChild(title);
 
+        // /--------------------------------------------\
+        let finaltime = '';
+        let moscowISOString;
+        const [day, month, year] = info.date.split('.'); 
+        const isoDatePart = `${year}-${month}-${day}`;
+        if (info.time)  { moscowISOString = `${isoDatePart}T${info.time}:00+03:00` }
+        else            { moscowISOString = `${isoDatePart}T${'19:00'}:00+03:00` };
+        const eventDate = new Date(moscowISOString);
+        const options = {
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+            timeZoneName: 'short'
+        };
+        finaltime = eventDate.toLocaleString(
+            navigator.language,
+            options
+        );
+
         const date = document.createElement("p");
-        date.textContent = info.date || formatDateDDMMYYYY(dateObj) || "";
+        date.textContent = finaltime || info.date || formatDateDDMMYYYY(dateObj) || "";
         overlay.appendChild(date);
+        // \--------------------------------------------/
 
         const players = document.createElement("p");
         players.textContent = "Players: " + (data.players.length ? data.players.join(", ") : "-");
