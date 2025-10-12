@@ -63,3 +63,16 @@ a {
 .langbtn {
     height: 100%;
 }
+
+#eventsCount {
+    border-radius: 50%;
+    width: 32px;
+    height: calc(32px - 5px);
+    padding: 0;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+#eventsCount.active {
+    background-color: #ff6a0067;
+}

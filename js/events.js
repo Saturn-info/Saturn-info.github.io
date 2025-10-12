@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector("#eventstable");
-    if (!container) return;
-
-    container.innerHTML = ""; // очищаем контейнер
+    console.log('Events инициализирован');
 
     // -------------------------
     // 1) Собираем данные о событиях из users (если пользователи есть)
@@ -115,6 +112,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    const eventsCountElement = document.getElementById('eventsCount');
+    const eventsCountLength = Object.keys(futureEvents).length;
+    if (eventsCountLength > 0) { 
+        eventsCountElement.classList.add('active');
+        eventsCountElement.innerText = eventsCountLength;
+    } else eventsCountElement.innerText = '';
+
     // -------------------------
     // 4) Сортировка
     // Требование: будущие над прошедшими, и внутри каждой секции более поздние события выше.
@@ -122,6 +126,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // -------------------------
     pastEvents.sort((a, b) => b.dateObj.getTime() - a.dateObj.getTime());
     futureEvents.sort((a, b) => b.dateObj.getTime() - a.dateObj.getTime());
+
+
+
+    const container = document.querySelector("#eventstable");
+    if (!container) return;
+
+    container.innerHTML = ""; // очищаем контейнер
+
+
 
     // -------------------------
     // 5) Создание карточки события
@@ -180,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
             hour: '2-digit',
             minute: '2-digit',
             hour12: false,
-            timeZoneName: 'short'
+            //timeZoneName: 'short'
         };
         finaltime = eventDate.toLocaleString(
             navigator.language,
