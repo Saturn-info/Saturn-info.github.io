@@ -1,7 +1,7 @@
 class AdminPanel {
     constructor() {
         this.token = localStorage.getItem('githubToken');
-        this.originalData = { users, awards, types };
+        this.originalData = { SatUsers, SatAwards, SatTypes };
         this.currentData = JSON.parse(JSON.stringify(this.originalData));
         this.setupEventListeners();
         this.checkAuth();
@@ -65,12 +65,12 @@ class AdminPanel {
         const container = document.getElementById('usersList');
         container.innerHTML = '';
         
-        Object.entries(this.currentData.users).forEach(([id, user]) => {
+        Object.entries(this.currentData.SatUsers).forEach(([id, user]) => {
             const card = document.createElement('div');
             card.className = 'item-card';
             
             // Create awards checkboxes HTML
-            const awardsHTML = Object.entries(this.currentData.awards)
+            const awardsHTML = Object.entries(this.currentData.SatAwards)
                 .map(([awardId, award]) => `
                     <div class="award-checkbox">
                         <input type="checkbox" 
@@ -114,7 +114,7 @@ class AdminPanel {
         const container = document.getElementById('awardsList');
         container.innerHTML = '';
         
-        Object.entries(this.currentData.awards).forEach(([id, award]) => {
+        Object.entries(this.currentData.SatAwards).forEach(([id, award]) => {
             const card = document.createElement('div');
             card.className = 'item-card';
             card.innerHTML = `
@@ -124,7 +124,7 @@ class AdminPanel {
                         <input type="text" value="${award.name}" placeholder="Name" onchange="admin.updateAward('${id}', 'name', this.value)">
                         <input type="text" value="${award.img}" placeholder="Image" onchange="admin.updateAward('${id}', 'img', this.value)">
                         <select onchange="admin.updateAward('${id}', 'type', this.value)">
-                            ${Object.keys(this.currentData.types).map(type => 
+                            ${Object.keys(this.currentData.SatTypes).map(type => 
                                 `<option value="${type}" ${award.type === type ? 'selected' : ''}>${type}</option>`
                             ).join('')}
                         </select>
@@ -142,7 +142,7 @@ class AdminPanel {
         const container = document.getElementById('typesList');
         container.innerHTML = '';
         
-        Object.entries(this.currentData.types).forEach(([type, score]) => {
+        Object.entries(this.currentData.SatTypes).forEach(([type, score]) => {
             const card = document.createElement('div');
             card.className = 'item-card';
             card.innerHTML = `
@@ -160,7 +160,7 @@ class AdminPanel {
 
     addUser() {
         const id = 'new_user_' + Date.now();
-        this.currentData.users[id] = {
+        this.currentData.SatUsers[id] = {
             id: id,
             discord: '',
             discordid: '',
@@ -173,86 +173,86 @@ class AdminPanel {
 
     addAward() {
         const id = 'new_award_' + Date.now();
-        this.currentData.awards[id] = {
+        this.currentData.SatAwards[id] = {
             name: '',
             img: '',
-            type: Object.keys(this.currentData.types)[0]
+            type: Object.keys(this.currentData.SatTypes)[0]
         };
         this.renderAwards();
     }
 
     addType() {
         const id = 'new_type_' + Date.now();
-        this.currentData.types[id] = 1;
+        this.currentData.SatTypes[id] = 1;
         this.renderTypes();
     }
 
     updateUser(id, field, value) {
-        if (!this.currentData.users[id]) return;
-        this.currentData.users[id][field] = value;
+        if (!this.currentData.SatUsers[id]) return;
+        this.currentData.SatUsers[id][field] = value;
     }
 
     handleAwardCheckbox(userId, awardId, checked) {
-        if (!this.currentData.users[userId]) return;
+        if (!this.currentData.SatUsers[userId]) return;
         
         if (checked) {
             // Add award if not already present
-            if (!this.currentData.users[userId].awards.includes(awardId)) {
-                this.currentData.users[userId].awards.push(awardId);
+            if (!this.currentData.SatUsers[userId].awards.includes(awardId)) {
+                this.currentData.SatUsers[userId].awards.push(awardId);
             }
         } else {
             // Remove award
-            this.currentData.users[userId].awards = 
-                this.currentData.users[userId].awards.filter(id => id !== awardId);
+            this.currentData.SatUsers[userId].awards = 
+                this.currentData.SatUsers[userId].awards.filter(id => id !== awardId);
         }
     }
 
     updateUserAwards(id, awards) {
-        if (!this.currentData.users[id]) return;
-        this.currentData.users[id].awards = awards;
+        if (!this.currentData.SatUsers[id]) return;
+        this.currentData.SatUsers[id].awards = awards;
     }
 
     updateAward(id, field, value) {
-        if (!this.currentData.awards[id]) return;
-        this.currentData.awards[id][field] = value;
+        if (!this.currentData.SatAwards[id]) return;
+        this.currentData.SatAwards[id][field] = value;
     }
 
     updateType(oldType, field, value) {
         if (field === 'name' && value !== oldType) {
-            this.currentData.types[value] = this.currentData.types[oldType];
-            delete this.currentData.types[oldType];
+            this.currentData.SatTypes[value] = this.currentData.SatTypes[oldType];
+            delete this.currentData.SatTypes[oldType];
             // Update award references
-            Object.values(this.currentData.awards).forEach(award => {
+            Object.values(this.currentData.SatAwards).forEach(award => {
                 if (award.type === oldType) {
                     award.type = value;
                 }
             });
         } else if (field === 'score') {
-            this.currentData.types[oldType] = parseInt(value) || 0;
+            this.currentData.SatTypes[oldType] = parseInt(value) || 0;
         }
         this.renderAll();
     }
 
     deleteUser(id) {
-        delete this.currentData.users[id];
+        delete this.currentData.SatUsers[id];
         this.renderUsers();
     }
 
     deleteAward(id) {
-        delete this.currentData.awards[id];
+        delete this.currentData.SatAwards[id];
         // Remove award from users
-        Object.values(this.currentData.users).forEach(user => {
+        Object.values(this.currentData.SatUsers).forEach(user => {
             user.awards = user.awards.filter(a => a !== id);
         });
         this.renderAll();
     }
 
     deleteType(type) {
-        delete this.currentData.types[type];
+        delete this.currentData.SatTypes[type];
         // Remove type from awards
-        Object.values(this.currentData.awards).forEach(award => {
+        Object.values(this.currentData.SatAwards).forEach(award => {
             if (award.type === type) {
-                award.type = Object.keys(this.currentData.types)[0] || '';
+                award.type = Object.keys(this.currentData.SatTypes)[0] || '';
             }
         });
         this.renderAll();
@@ -260,9 +260,9 @@ class AdminPanel {
 
     async saveChanges() {
         if (document.location.href.includes('.html')) {
-            navigator.clipboard.writeText(`const users = ${JSON.stringify(this.currentData.users, null, 4)};\n\n` +
-                          `const awards = ${JSON.stringify(this.currentData.awards, null, 4)};\n\n` +
-                          `const types = ${JSON.stringify(this.currentData.types, null, 4)};\n`);
+            navigator.clipboard.writeText(`const SatUsers = ${JSON.stringify(this.currentData.SatUsers, null, 4)};\n\n` +
+                          `const SatAwards = ${JSON.stringify(this.currentData.SatAwards, null, 4)};\n\n` +
+                          `const SatTypes = ${JSON.stringify(this.currentData.SatTypes, null, 4)};\n`);
         } else {
         try {
             // First, get the current file's SHA
@@ -277,9 +277,9 @@ class AdminPanel {
             }
             
             const fileData = await getFileResponse.json();
-            const content = `const users = ${JSON.stringify(this.currentData.users, null, 4)};\n\n` +
-                          `const awards = ${JSON.stringify(this.currentData.awards, null, 4)};\n\n` +
-                          `const types = ${JSON.stringify(this.currentData.types, null, 4)};\n`;
+            const content = `const SatUsers = ${JSON.stringify(this.currentData.SatUsers, null, 4)};\n\n` +
+                          `const SatAwards = ${JSON.stringify(this.currentData.SatAwards, null, 4)};\n\n` +
+                          `const SatTypes = ${JSON.stringify(this.currentData.SatTypes, null, 4)};\n`;
 
             const response = await fetch('https://api.github.com/repos/Saturn-winner-s-table/Saturn-winner-s-table.github.io/contents/users.js', {
                 method: 'PUT',

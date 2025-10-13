@@ -1,10 +1,10 @@
 class leaderboard {
 
     calcScoreAward(id) {
-        if (awards[id].score) {
-            return awards[id].score
+        if (SatAwards[id].score) {
+            return SatAwards[id].score
         } else {
-            return types[awards[id].type]
+            return SatTypes[SatAwards[id].type]
         }
     }
 
@@ -13,12 +13,12 @@ class leaderboard {
         tbody.innerHTML = '';
 
         // Convert users object to array and calculate scores
-        const usersArray = Object.entries(users).map(([key, user]) => {
+        const usersArray = Object.entries(SatUsers).map(([key, user]) => {
             let score = 0;
             // Calculate score based on awards
             user.awards.forEach(award => {
-                const awardInfo = awards[award];
-                if (awardInfo && types[awardInfo.type]) {
+                const awardInfo = SatAwards[award];
+                if (awardInfo && SatTypes[awardInfo.type]) {
                     score += window.leaderboard.calcScoreAward(award);
                 }
             });
@@ -77,7 +77,7 @@ class leaderboard {
             });
 
             sortedAwards.forEach(awardKey => {
-                const award = awards[awardKey];
+                const award = SatAwards[awardKey];
                 if (award) {
                     const img = document.createElement('img');
                     img.src = `img/award/${award.img}`;
@@ -106,21 +106,21 @@ class leaderboard {
                 <button onclick="document.getElementById('modal').classList.remove('active')" class="modalClose">×</button>
             </div>
             <div class="stroke">
-                <b data-translate="nameDT">${window.langMgr.trs('nameDT')}</b><p>${awards[id].name}</p>
+                <b data-translate="nameDT">${window.langMgr.trs('nameDT')}</b><p>${SatAwards[id].name}</p>
             </div>
             <div class="stroke">
-                <b data-translate="eventDT">${window.langMgr.trs('eventDT')}</b><p>${awards[id].event}</p>
+                <b data-translate="eventDT">${window.langMgr.trs('eventDT')}</b><p>${SatAwards[id].event}</p>
             </div>
             <div class="stroke">
-                <b data-translate="typeDT">${window.langMgr.trs('typeDT')}</b><p data-translate="${awards[id].type}">${window.langMgr.trs(awards[id].type)}</p>
+                <b data-translate="typeDT">${window.langMgr.trs('typeDT')}</b><p data-translate="${SatAwards[id].type}">${window.langMgr.trs(SatAwards[id].type)}</p>
             </div>
             <div class="stroke">
                 <b data-translate="scoreDT">${window.langMgr.trs('scoreDT')}</b><p>${window.leaderboard.calcScoreAward(id)}</p>
             </div>
             <div class="stroke">
-                <b data-translate="dateDT">${window.langMgr.trs('dateDT')}</b><p>${events[awards[id].event].date}</p>
+                <b data-translate="dateDT">${window.langMgr.trs('dateDT')}</b><p>${events[SatAwards[id].event].date}</p>
             </div>
-            <div class="imageDiv"><img src="img/award/${awards[id].img}"></div>
+            <div class="imageDiv"><img src="img/award/${SatAwards[id].img}"></div>
         </div>
         `;
 

@@ -5,21 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1) Собираем данные о событиях из users (если пользователи есть)
     // -------------------------
     const eventsMap = {};
-    for (const userId in users) {
-        const user = users[userId];
+    for (const userId in SatUsers) {
+        const user = SatUsers[userId];
         (user.events || []).forEach(eventId => {
             if (!eventsMap[eventId]) {
-                eventsMap[eventId] = { players: [], awards: {} };
+                eventsMap[eventId] = { players: [], SatAwards: {} };
             }
             eventsMap[eventId].players.push(user.gamename || user.id);
 
             (user.awards || []).forEach(awardId => {
-                const award = awards && awards[awardId];
+                const award = SatAwards && SatAwards[awardId];
                 if (award && award.event === eventId) {
-                    if (!eventsMap[eventId].awards[awardId]) {
-                        eventsMap[eventId].awards[awardId] = { award, players: [] };
+                    if (!eventsMap[eventId].SatAwards[awardId]) {
+                        eventsMap[eventId].SatAwards[awardId] = { award, players: [] };
                     }
-                    eventsMap[eventId].awards[awardId].players.push(user.gamename || user.id);
+                    eventsMap[eventId].SatAwards[awardId].players.push(user.gamename || user.id);
                 }
             });
         });
@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // -------------------------
     // 3) Строим eventsArray ПО ВСЕМ событиям (не только тем, где есть игроки)
     // -------------------------
-    const eventsArray = Object.keys(events).map(eventId => {
-        const info = events[eventId] || {};
+    const eventsArray = Object.keys(SatEvents).map(eventId => {
+        const info = SatEvents[eventId] || {};
         const mapData = eventsMap[eventId] || { players: [], awards: {} };
         const parsedDate = parseDateToDateObject(info.date); // Date или null
         return {
@@ -216,8 +216,8 @@ document.addEventListener("DOMContentLoaded", () => {
         medals.style.gap = "8px";
         medals.style.marginTop = "0.5rem";
 
-        for (const awardId in data.awards) {
-            const obj = data.awards[awardId];
+        for (const awardId in data.SatAwards) {
+            const obj = data.SatAwards[awardId];
             const img = document.createElement("img");
             img.src = "img/award/" + (obj.award.img || "noimg.png");
             img.alt = obj.award.name || "";
@@ -277,10 +277,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Если нужно — можно вывести лог для отладки
-    // console.log('Всего событий (events):', Object.keys(events).length);
-    // console.log('Событий с игроками (eventsMap):', Object.keys(eventsMap).length);
-    // console.log('Будущие:', futureEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
-    // console.log('Прошедшие:', pastEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
+    console.log('Всего событий (SatEvents):', Object.keys(SatEvents).length);
+    console.log('Событий с игроками (eventsMap):', Object.keys(eventsMap).length);
+    console.log('Будущие:', futureEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
+    console.log('Прошедшие:', pastEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
 });
 
 async function downloadFile(url, fileName) {

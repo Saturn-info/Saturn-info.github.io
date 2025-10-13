@@ -1,4 +1,4 @@
-const users = {
+const SatUsers = {
     "eenot": {
         "id": "eenot",
         "discord": "ЕЕнот / RRaccoon",
@@ -519,7 +519,7 @@ const users = {
     },
 };
 
-const awards = {
+const SatAwards = {
     "test1": {
         "name": "Тест",
         "img": "test.png",
@@ -993,7 +993,7 @@ const awards = {
     },
 };
 
-const types = {
+const SatTypes = {
     "winner": 10,
     "conqueror": 8,
     "great power": 7,
@@ -1003,7 +1003,7 @@ const types = {
     "other": 1
 };
 
-const events = {
+const SatEvents = {
     euam1799_e1: {
         name: 'Napoleonʼs Ries: EuNa',
         date: '31.08.2025',
