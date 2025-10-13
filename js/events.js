@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const eventsCountElement = document.getElementById('eventsCount');
     let eventsCountLength;
-    if (typeof futureNwfEvents !== 'undefined') eventsCountLength = futureSatEvents.length - futureNwfEvents.length
-    else eventsCountLength = futureSatEvents.length;
+    /*if (typeof futureNwfEvents !== 'undefined') eventsCountLength = futureSatEvents.length - futureNwfEvents.length
+    else*/ eventsCountLength = futureSatEvents.length;
     if (eventsCountLength > 0) { 
         eventsCountElement.classList.add('active');
         eventsCountElement.innerText = eventsCountLength;
