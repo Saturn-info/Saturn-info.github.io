@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Разбиваем на прошедшие / будущие
     const pastSatEvents = [];
     let futureSatEvents = [];
+    if (typeof futureNwfEvents !== 'undefined') futureSatEvents = futureNwfEvents;
     eventsArray.forEach(e => {
         // Если нет даты — можно выбрать показывать в отдельной секции или пропускать.
         // Сейчас: пропускаем события без даты
@@ -111,9 +112,16 @@ document.addEventListener("DOMContentLoaded", () => {
             futureSatEvents.push(e);
         }
     });
+    if (document.location.href.includes('nwf')) {
+        window.pastSatEvents = pastSatEvents;
+        window.futureSatEvents = futureSatEvents;
+        return 
+    }
 
     const eventsCountElement = document.getElementById('eventsCount');
-    const eventsCountLength = Object.keys(futureSatEvents).length;
+    let eventsCountLength;
+    if (typeof futureNwfEvents !== 'undefined') eventsCountLength = futureSatEvents.length - futureNwfEvents.length
+    else eventsCountLength = futureSatEvents.length;
     if (eventsCountLength > 0) { 
         eventsCountElement.classList.add('active');
         eventsCountElement.innerText = eventsCountLength;
@@ -131,11 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const container = document.querySelector("#eventstable");
     if (!container) return;
-    if (document.location.href.includes('nwf')) {
-        window.pastSatEvents = pastSatEvents;
-        window.futureSatEvents = futureSatEvents;
-        return 
-    }
 
     container.innerHTML = ""; // очищаем контейнер
 
@@ -155,7 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
             card.style.backgroundImage = `url("http://raw.githubusercontent.com/EEditor-WS/eeditor-ws-data/refs/heads/main/lib/${mapId}/${info.map}.png")`;
             }
-        } else if (info.img) card.style.backgroundImage = `url("img/events/${info.img}")`;
+        } else if (NwfEvents[eventId]) card.style.backgroundImage = `url("https://nwf-info.github.io/img/events/${info.img}")`
+        else if (info.img) card.style.backgroundImage = `url("img/events/${info.img}")`;
         card.style.backgroundSize = "cover";
         card.style.backgroundPosition = "center";
         card.style.borderRadius = "0.4rem";
@@ -172,6 +176,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // extrabtnsdiv.innerHTML = extrabtnsdiv.innerHTML + `<button class="extrabtn" onclick="downloadScenario('${info.map}')"><img src="img/icons/download.svg"></button>`
         extrabtnsdiv.innerHTML = extrabtnsdiv.innerHTML + `<button class="extrabtn" onclick="window.open('https://eeditor-ws.github.io/page/library/download?fullid=${info.map}')"><img src="img/icons/download.svg"></button>`
         card.appendChild(extrabtnsdiv);
+
+        const sourceOfEventDiv = document.createElement("div");
+        sourceOfEventDiv.className = 'sourceOfEventDiv';
+        if (typeof NwfEvents !== 'undefined') {
+            if (NwfEvents[eventId]) sourceOfEventDiv.innerHTML = `<img src='img/icons/nwf.png' class='sourceOfEventImg' />`;
+            if (NwfEvents[eventId]) card.appendChild(sourceOfEventDiv);
+        };
 
         const overlay = document.createElement("div");
         // затемняющий фон, чтобы текст читался на ярком фоне
