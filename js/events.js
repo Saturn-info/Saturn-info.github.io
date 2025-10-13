@@ -179,9 +179,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const sourceOfEventDiv = document.createElement("div");
         sourceOfEventDiv.className = 'sourceOfEventDiv';
-        if (typeof NwfEvents !== 'undefined') {
+        if (typeof NwfEvents !== 'undefined' && NwfEvents[eventId]) {
             if (NwfEvents[eventId]) sourceOfEventDiv.innerHTML = `<img src='img/icons/nwf.png' class='sourceOfEventImg' />`;
             if (NwfEvents[eventId]) card.appendChild(sourceOfEventDiv);
+            card.style.filter = "sepia(0.75)";
         };
 
         const overlay = document.createElement("div");
