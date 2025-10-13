@@ -99,21 +99,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Разбиваем на прошедшие / будущие
-    const pastEvents = [];
-    const futureEvents = [];
+    const pastSatEvents = [];
+    let futureSatEvents = [];
     eventsArray.forEach(e => {
         // Если нет даты — можно выбрать показывать в отдельной секции или пропускать.
         // Сейчас: пропускаем события без даты
         if (!e.dateObj) return;
         if (isPast(e.dateObj)) {
-            pastEvents.push(e);
+            pastSatEvents.push(e);
         } else {
-            futureEvents.push(e);
+            futureSatEvents.push(e);
         }
     });
 
     const eventsCountElement = document.getElementById('eventsCount');
-    const eventsCountLength = Object.keys(futureEvents).length;
+    const eventsCountLength = Object.keys(futureSatEvents).length;
     if (eventsCountLength > 0) { 
         eventsCountElement.classList.add('active');
         eventsCountElement.innerText = eventsCountLength;
@@ -124,13 +124,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // Требование: будущие над прошедшими, и внутри каждой секции более поздние события выше.
     // Значит: сортируем по убыванию даты (b - a)
     // -------------------------
-    pastEvents.sort((a, b) => b.dateObj.getTime() - a.dateObj.getTime());
-    futureEvents.sort((a, b) => b.dateObj.getTime() - a.dateObj.getTime());
+    pastSatEvents.sort((a, b) => b.dateObj.getTime() - a.dateObj.getTime());
+    futureSatEvents.sort((a, b) => b.dateObj.getTime() - a.dateObj.getTime());
 
 
 
     const container = document.querySelector("#eventstable");
     if (!container) return;
+    if (document.location.href.includes('nwf')) {
+        window.pastSatEvents = pastSatEvents;
+        window.futureSatEvents = futureSatEvents;
+        return 
+    }
 
     container.innerHTML = ""; // очищаем контейнер
 
@@ -243,17 +248,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // 6) Рендер: сначала будущие, затем разделитель, затем прошедшие
     // -------------------------
     // будущее
-    if (futureEvents.length) {
+    if (futureSatEvents.length) {
         /*const futureTitle = document.createElement("h3");
         futureTitle.textContent = "Будущие события:";
         futureTitle.style.margin = "0.5rem 0 1rem 0";
         container.appendChild(futureTitle);*/
 
-        futureEvents.forEach(e => container.appendChild(createCard(e, 'future')));
+        futureSatEvents.forEach(e => container.appendChild(createCard(e, 'future')));
     }
 
     // разделитель (если есть и те, и другие)
-    if (pastEvents.length && futureEvents.length) {
+    if (pastSatEvents.length && futureSatEvents.length) {
         const divider = document.createElement("div");
         divider.innerHTML = `
             <div class="ads" style="padding: 1rem; background: #333; color: #fff; text-align: center; border-radius: 0.5rem;">
@@ -267,20 +272,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // прошедшие
-    if (pastEvents.length) {
+    if (pastSatEvents.length) {
         const pastTitle = document.createElement("h3");
         /*pastTitle.textContent = "Прошедшие события:";
         pastTitle.style.margin = "1rem 0 0.5rem 0";
         container.appendChild(pastTitle);*/
 
-        pastEvents.forEach(e => container.appendChild(createCard(e)));
+        pastSatEvents.forEach(e => container.appendChild(createCard(e)));
     }
 
     // Если нужно — можно вывести лог для отладки
     console.log('Всего событий (SatEvents):', Object.keys(SatEvents).length);
     console.log('Событий с игроками (eventsMap):', Object.keys(eventsMap).length);
-    console.log('Будущие:', futureEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
-    console.log('Прошедшие:', pastEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
+    console.log('Будущие:', futureSatEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
+    console.log('Прошедшие:', pastSatEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
 });
 
 async function downloadFile(url, fileName) {
