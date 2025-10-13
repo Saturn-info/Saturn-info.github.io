@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Разбиваем на прошедшие / будущие
     const pastSatEvents = [];
+    const futureSatEvents2 = [];
     let futureSatEvents = [];
     if (typeof futureNwfEvents !== 'undefined') futureSatEvents = futureNwfEvents;
     eventsArray.forEach(e => {
@@ -110,6 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
             pastSatEvents.push(e);
         } else {
             futureSatEvents.push(e);
+            futureSatEvents2.push(e);
         }
     });
     if (document.location.href.includes('nwf')) {
@@ -121,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const eventsCountElement = document.getElementById('eventsCount');
     let eventsCountLength;
     /*if (typeof futureNwfEvents !== 'undefined') eventsCountLength = futureSatEvents.length - futureNwfEvents.length
-    else*/ eventsCountLength = futureSatEvents.length;
+    else*/ eventsCountLength = futureSatEvents2.length;
     if (eventsCountLength > 0) { 
         eventsCountElement.classList.add('active');
         eventsCountElement.innerText = eventsCountLength;
