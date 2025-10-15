@@ -20,6 +20,7 @@ const SatUsers = {
             "metromoscow_e2_cool",
             "twosided_e3_winnerside",
             "euro4modern_e1_p1_germany",
+            "ww1_e2_france",
         ],
         "events": [
             "euam1799_e1",
@@ -37,6 +38,7 @@ const SatUsers = {
             "tigerland_e2",
             "twosided_e3",
             "euro4modern_e1_p1",
+            "ww1_e2",
         ]
     },
     "trid": {
@@ -161,6 +163,7 @@ const SatUsers = {
             "tigerland_e2_empire",
             "metromoscow_e2_cool",
             "euro4modern_e1_p1_turkey",
+            "ww1_e2_winner",
         ],
         "events": [
             "euam2025_e1",
@@ -176,6 +179,7 @@ const SatUsers = {
             "ww1_e1",
             "tigerland_e2",
             "euro4modern_e1_p1",
+            "ww1_e2",
         ]
     },
     "namexxxx": {
@@ -220,6 +224,7 @@ const SatUsers = {
             "ww1_e1",
             "twosided_e3",
             "euro4modern_e1_p1",
+            "ww1_e2",
         ]
     },
     "derf11": {
@@ -395,6 +400,7 @@ const SatUsers = {
         ],
         "events": [
             "tigerland_e2",
+            "ww1_e2",
         ]
     },
     "noname2": {
@@ -515,6 +521,42 @@ const SatUsers = {
         ],
         "events": [
             "euro4modern_e1_p1",
+        ]
+    },
+    "honse": {
+        "id": "honse",
+        "discord": "Honse",
+        "discordid": "938218628170522694",
+        "gamename": "honser",
+        "awards": [
+            "ww1_e2_turkey",
+        ],
+        "events": [
+            "ww1_e2",
+        ]
+    },
+    "stewardconstruct": {
+        "id": "stewardconstruct",
+        "discord": "Public nuisance",
+        "discordid": "1114590604668706927",
+        "gamename": "Public",
+        "awards": [
+            "ww1_e2_winside",
+        ],
+        "events": [
+            "ww1_e2",
+        ]
+    },
+    "rooog22": {
+        "id": "rooog22",
+        "discord": "",
+        "discordid": "",
+        "gamename": "rooog22",
+        "awards": [
+            "ww1_e2_scandinavia",
+        ],
+        "events": [
+            "ww1_e2",
         ]
     },
 };
@@ -990,6 +1032,37 @@ const SatAwards = {
         "img": "euro4modern_e1_p1_algeria.png",
         "type": "other",
         "score": 2
+    },
+    "ww1_e2_winner": {
+        "event": "ww1_e2",
+        "name": "Russian Empire",
+        "img": "ww1_e2_p1_russia.png",
+        "type": "winner"
+    },
+    "ww1_e2_france": {
+        "event": "ww1_e2",
+        "name": "Crazy France",
+        "img": "ww1_e2_p1_france.png",
+        "type": "great power"
+    },
+    "ww1_e2_turkey": {
+        "event": "ww1_e2",
+        "name": "Great Turkey",
+        "img": "ww1_e2_p1_turkey.png",
+        "type": "great power"
+    },
+    "ww1_e2_scandinavia": {
+        "event": "ww1_e2",
+        "name": "Scandinavia",
+        "img": "ww1_e2_p1_scandinavia.png",
+        "type": "conqueror",
+        "score": 5
+    },
+    "ww1_e2_winside": {
+        "event": "ww1_e2",
+        "name": "Italian Empire",
+        "img": "ww1_e2_p1_italy.png",
+        "type": "win side"
     },
 };
 

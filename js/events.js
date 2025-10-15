@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    try{
     console.log('Events инициализирован');
 
     // -------------------------
@@ -300,6 +301,9 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log('Событий с игроками (eventsMap):', Object.keys(eventsMap).length);
     console.log('Будущие:', futureSatEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
     console.log('Прошедшие:', pastSatEvents.map(e => ({ id: e.eventId, date: formatDateDDMMYYYY(e.dateObj) })));
+    } catch(e) {
+        alert(e);
+    }
 });
 
 async function downloadFile(url, fileName) {
