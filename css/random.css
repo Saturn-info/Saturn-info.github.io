@@ -1,0 +1,34 @@
+.leftnavicons {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: space-around;
+    max-width: 224px;
+}
+
+.leftnavicons .navbtn img {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--br);
+}
+
+.leftnavicons .navbtn {
+    width: 32px;
+    height: 32px;
+    min-width: 0;
+    padding: 8px;
+    transition: width 0.5s ease;
+}
+
+.leftnavicons .navbtn p {
+    display: none;
+}
+
+.leftnavicons .navbtn:hover {
+    width: 100%;
+}
+
+.leftnavicons .navbtn:hover p {
+    display: block;
+}
