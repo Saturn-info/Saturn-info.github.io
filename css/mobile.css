@@ -30,11 +30,22 @@
         font-size: 2rem;
     }
 
-    .navbtn {
+    .leftnavicons {
+        margin-top: 0;
+        padding-top: 0;
+        max-width: none;
+    }
+
+    .navbtn, .leftnavicons  .navbtn.ico {
         width: 10rem;
         font-size: 1.5rem;
         height: 2rem;
         text-align: center;
+        width: calc(64px + 16px);
+        height: calc(64px + 16px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .qustBtn {
@@ -43,7 +54,31 @@
         background-color: #6b31aca3;
     }
 
-    .navbtn img {
+    .navbtn p {
+        display: none;
+    }
+
+    .navbtn img, .navbtn.ico img {
+        width: 64px;
+        height: 64px;
+    }
+
+    #list-awards-head input {
+        width: 36px;
+        height: 36px;
+    }
+
+    .award-item img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .awardslist img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .qustBtn.navbtn {
         display: none;
     }
 }
