@@ -83,6 +83,7 @@ const SatUsers = {
             "metromoscow_e2_cool",
             "twosided_e3_winner",
             "euro4modern_e1_p1_winner",
+            "euro4modern_e1_p2_winner",
         ],
         "events": [
             "euam1799_e1",
@@ -1058,11 +1059,12 @@ const SatAwards = {
         "type": "conqueror",
         "score": 5
     },
-    "ww1_e2_winside": {
-        "event": "ww1_e2",
-        "name": "Italian Empire",
-        "img": "ww1_e2_p1_italy.png",
-        "type": "win side"
+    "euro4modern_e1_p2_winner": {
+        "event": "euro4modern_e1_p2",
+        "name": "World of Totoska",
+        "img": "euro4modern_e1_p2_winner.png",
+        "type": "winner",
+        "score": 12
     },
 };
 
@@ -1222,7 +1224,7 @@ const SatEvents = {
     },
     cw_e1: {
         name: 'Cold War: Euro4',
-        date: '31.10.2025',
+        date: '01.11.2025',
         time: '20:00',
         map: 'parkourcat_euro4_vg_1956',
     },
