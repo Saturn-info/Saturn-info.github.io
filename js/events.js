@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
         else if (info.img) card.style.backgroundImage = `url("img/events/${info.img}")`;
         card.style.backgroundSize = "cover";
         card.style.backgroundPosition = "center";
-        card.style.borderRadius = "0.4rem";
+        card.style.borderRadius = "var(--br)";
         card.style.padding = "1rem";
         card.style.marginBottom = "1rem";
         card.style.color = "#fff";
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (pastSatEvents.length && futureSatEvents.length) {
         const divider = document.createElement("div");
         divider.innerHTML = `
-            <div class="ads" style="padding: 1rem; background: #333; color: #fff; text-align: center; border-radius: 0.5rem;">
+            <div class="ads" style="padding: 1rem; background: #333; color: #fff; text-align: center; border-radius: var(--br);">
                 🌟 Here will be advertising of <a href="https://eeditor-ws.vercel.app/">EEditor - best scenario editor for Warnament</a> 🌟
                 <br>
                 <br>

@@ -65,7 +65,7 @@ class LangMgr {
                 "donate": "Донат",
 
                 "score": "Счёт",
-                "ratio": "Соотношение",
+                "ratio": "Счёт",
                 "game": "Ник в игре",
                 "awards": "Медальки",
                 "events": "Ивенты",

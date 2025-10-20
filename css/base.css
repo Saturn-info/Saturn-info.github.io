@@ -57,7 +57,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #b62fe8;
+    color: #2f4ee8;
 }
 
 .langbtn {
@@ -65,14 +65,53 @@ a {
 }
 
 #eventsCount {
-    border-radius: 50%;
-    width: 32px;
-    height: calc(32px - 5px);
+    border-radius: var(--br);
+    width: 20px;
+    height: calc(20px - 5px);
     padding: 0;
     padding-top: 5px;
     margin-left: 5px;
+    font-size: 10px;
 }
 
 #eventsCount.active {
     background-color: #ff6a0067;
+}
+
+.squareMedal {
+    background-image: url(../img/background.svg);
+    background-size: 100%;
+    max-height: 25px;
+}
+
+.squareMedal.winner {
+    background-image: url(../img/award/background/winner.png);
+}
+.squareMedal.strongDefender {
+    background-image: url(../img/award/background/shield.png);
+}
+.squareMedal.greatPower {
+    background-image: url(../img/award/background/great.png);
+}
+.squareMedal.winSide {
+    background-image: url(../img/award/background/winSide.png);
+}
+.squareMedal.none {
+    background: none;
+}
+
+table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+td {
+  vertical-align: top !important;
+}
+
+td div {
+  display: inline-block !important;
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  box-sizing: border-box !important;
 }

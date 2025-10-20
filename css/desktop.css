@@ -17,10 +17,17 @@
         background-color: #00000000;
         text-align: center;
         background: none;
-        display: inline-flex;
-        justify-content: flex-start;
         padding-left: 1rem;
         min-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbtndiv {
+        display: inline-flex;
+        justify-content: left;
+        width: 75%;
     }
 
     .leftnav, .rightnav {
@@ -33,7 +40,7 @@
     }
 
     .navbtn p {
-        padding-top: 5px;
+        /*padding-top: 5px;*/
         padding-left: 5px;
     }
 

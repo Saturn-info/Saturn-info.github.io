@@ -44,6 +44,7 @@ class leaderboard {
             // Score column
             const tdScore = document.createElement('td');
             tdScore.textContent = user.score;
+            tdScore.style.display = 'none';
             tr.appendChild(tdScore);
             
             // Ratio column
@@ -79,11 +80,29 @@ class leaderboard {
             sortedAwards.forEach(awardKey => {
                 const award = SatAwards[awardKey];
                 if (award) {
+                    const div = document.createElement('div');
                     const img = document.createElement('img');
+                    if (SatTypesImg.includes(award.imgType)) img.src = `img/award/${award.img}`
+                    else {
+                        img.src = 'img/award/blank.png';
+                        div.classList.add('squareMedal');
+                    }
+                    div.classList.add('squareMedal');
+                    if (award.imgType === 'metro' || award.imgType === 'special') {
+                        div.classList.add('none');
+                    } else if (award.type === 'winSide') {
+                        if (award.imgType === undefined) {
+                            div.classList.add('winSide');
+                        }
+                    } else div.classList.add(`${award.type}`);
                     img.src = `img/award/${award.img}`;
                     img.title = `${award.event} ${award.name}`;
                     img.onclick = () => window.leaderboard.showAward(awardKey); // функция, а не строка
-                    tdAwards.appendChild(img);
+                    /*div.style.width = '25px';
+                    div.style.height = '25px';
+                    //div.appendChild(img);*/
+                    div.appendChild(img);
+                    tdAwards.appendChild(div);
                 }
             });
             tr.appendChild(tdAwards);
