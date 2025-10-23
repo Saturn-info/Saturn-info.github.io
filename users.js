@@ -21,6 +21,7 @@ const SatUsers = {
             "twosides_e3_winnerside",
             "euro4modern_e1_p1_germany",
             "ww1_e2_france",
+            "su_e1_win",
         ],
         "events": [
             "euam1799_e1",
@@ -39,6 +40,7 @@ const SatUsers = {
             "twosides_e3",
             "euro4modern_e1_p1",
             "ww1_e2",
+            "su_e1",
         ]
     },
     "trid": {
@@ -84,6 +86,7 @@ const SatUsers = {
             "twosides_e3_winner",
             "euro4modern_e1_p1_winner",
             "euro4modern_e1_p2_winner",
+            "su_e1_mid"
         ],
         "events": [
             "euam1799_e1",
@@ -96,6 +99,7 @@ const SatUsers = {
             "tigerland_e2",
             "twosides_e3",
             "euro4modern_e1_p1",
+            "su_e1",
         ]
     },
     "talant": {
@@ -359,11 +363,13 @@ const SatUsers = {
         "gamename": "ETOYAIVAN",
         "awards": [
             "ww2_e1_winnerside",
+            "su_e1_34",
         ],
         "events": [
             "ukraine_e1",
             "ww2_e1",
             "euro4modern_e1_p1",
+            "su_e1",
         ]
     },
     "timur333": {
@@ -519,9 +525,11 @@ const SatUsers = {
         "gamename": "lurus",
         "awards": [
             "euro4modern_e1_p1_france",
+            "su_e1_almostwin",
         ],
         "events": [
             "euro4modern_e1_p1",
+            "su_e1",
         ]
     },
     "honse": {
@@ -1116,6 +1124,37 @@ const SatAwards = {
         imgType: 'star',
         score: 12,
     },
+    "su_e1_win": {
+        event: "su_e1",
+        name: "EG1 Win - Ukraine",
+        img: "egsuwin.png",
+        type: "winner",
+        imgType: "circle",
+    },
+    "su_e1_almostwin": {
+        event: "su_e1",
+        name: "EG1 2rd - Uzbekistan",
+        img: "egsumid.png",
+        type: "other",
+        imgType: "circle",
+        score: 9,
+    },
+    "su_e1_mid": {
+        event: "su_e1",
+        name: "EG1 3th - Russia",
+        img: "egsumid.png",
+        type: "other",
+        imgType: "circle",
+        score: 7,
+    },
+    "su_e1_34": {
+        event: "su_e1",
+        name: "EG1 4-5 places",
+        img: "egsulow.png",
+        type: "other",
+        imgType: "circle",
+        score: 4,
+    },
 };
 
 const SatTypesImg = [
@@ -1124,6 +1163,7 @@ const SatTypesImg = [
     'metro',
     'special',
     'normalBorders',
+    'circle',
 ];
 
 const SatTypes = {
@@ -1282,8 +1322,8 @@ const SatEvents = {
     },
     cw_e1: {
         name: 'Cold War: Euro4',
-        date: '01.11.2025',
-        time: '20:00',
+        date: '24.10.2025',
+        time: '19:00',
         map: 'parkourcat_euro4_vg_1956',
     },
 }
