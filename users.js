@@ -22,6 +22,7 @@ const SatUsers = {
             "euro4modern_e1_p1_germany",
             "ww1_e2_france",
             "su_e1_win",
+            "cw_e1_eenot",
         ],
         "events": [
             "euam1799_e1",
@@ -41,6 +42,7 @@ const SatUsers = {
             "euro4modern_e1_p1",
             "ww1_e2",
             "su_e1",
+            "cw_e1",
         ]
     },
     "trid": {
@@ -129,6 +131,7 @@ const SatUsers = {
         "events": [
             "euam1799_e1",
             "eusat2014_e1",
+            "cw_e1",
         ]
     },
     "mgebratok": {
@@ -185,6 +188,7 @@ const SatUsers = {
             "tigerland_e2",
             "euro4modern_e1_p1",
             "ww1_e2",
+            "cw_e1",
         ]
     },
     "namexxxx": {
@@ -217,6 +221,7 @@ const SatUsers = {
             "ww1_e1_germany",
             "twosides_e3_france",
             "euro4modern_e1_p1_poland",
+            "cw_e1_germany",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -230,6 +235,7 @@ const SatUsers = {
             "twosides_e3",
             "euro4modern_e1_p1",
             "ww1_e2",
+            "cw_e1",
         ]
     },
     "derf11": {
@@ -272,6 +278,7 @@ const SatUsers = {
             //"metromoscow_e1_def",
             "ww1_e1_ingsoc",
             "twosides_e3_germany",
+            "cw_e1_winner",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -283,6 +290,7 @@ const SatUsers = {
             //"metromoscow_e1",
             "ww1_e1",
             "twosides_e3",
+            "cw_e1",
         ]
     },
     "shelzyy": {
@@ -370,6 +378,7 @@ const SatUsers = {
             "ww2_e1",
             "euro4modern_e1_p1",
             "su_e1",
+            "cw_e1",
         ]
     },
     "timur333": {
@@ -444,6 +453,7 @@ const SatUsers = {
         ],
         "events": [
             "euro4modern_e1_p1",
+            "cw_e1",
         ]
     },
     "tungg": {
@@ -526,10 +536,12 @@ const SatUsers = {
         "awards": [
             "euro4modern_e1_p1_france",
             "su_e1_almostwin",
+            "cw_e1_yugoslavia",
         ],
         "events": [
             "euro4modern_e1_p1",
             "su_e1",
+            "cw_e1",
         ]
     },
     "honse": {
@@ -551,9 +563,11 @@ const SatUsers = {
         "gamename": "Public",
         "awards": [
             "ww1_e2_winside",
+            "cw_e1_winside",
         ],
         "events": [
             "ww1_e2",
+            "cw_e1",
         ]
     },
     "rooog22": {
@@ -1116,6 +1130,12 @@ const SatAwards = {
         type: "conqueror",
         score: 5
     },
+    "ww1_e2_winside": {
+        event: "ww1_e2",
+        name: "WW1 Part 2 Winside",
+        img: "blank.png",
+        type: "winSide"
+    },
     "euro4modern_e1_p2_winner": {
         event: "euro4modern_e1_p2",
         name: "World of Totoska",
@@ -1154,6 +1174,42 @@ const SatAwards = {
         type: "other",
         imgType: "circle",
         score: 4,
+    },
+    "cw_e1_winner": {
+        event: "cw_e1",
+        name: "Ottomans of Eastern Europe",
+        img: "cwe1moad.png",
+        type: "winner",
+        imgType: "star"
+    },
+    "cw_e1_winside": {
+        event: "cw_e1",
+        name: "Mamluk Sultanate",
+        img: "cwe1public.png",
+        type: "winSide",
+        imgType: "normalBorders",
+    },
+    "cw_e1_eenot": {
+        event: "cw_e1",
+        name: "Stambul & Ankara is Mine!",
+        img: "siklehammer.png",
+        type: "strongDefender",
+        imgType: "shield",
+        score: 6,
+    },
+    "cw_e1_yugoslavia": {
+        event: "cw_e1",
+        name: "Yugoslavia",
+        img: "cwe1yugoslavia.png",
+        type: "winSide",
+        imgType: "normalBorders",
+    },
+    "cw_e1_germany": {
+        event: "cw_e1",
+        name: "Fourth Reich",
+        img: "cwe1germany.png",
+        type: "greatPower",
+        imgType: "normalBorders",
     },
 };
 

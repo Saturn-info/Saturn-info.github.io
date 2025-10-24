@@ -1,11 +1,16 @@
 class leaderboard {
 
     calcScoreAward(id) {
+        try {
         if (SatAwards[id].score) {
             return SatAwards[id].score
         } else {
             return SatTypes[SatAwards[id].type]
         }
+        } catch (e) {
+            alert(e);
+            alert(id);
+        } 
     }
 
     update() {
