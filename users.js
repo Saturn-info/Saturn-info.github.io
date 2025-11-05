@@ -23,6 +23,7 @@ const SatUsers = {
             "ww1_e2_france",
             "su_e1_win",
             "cw_e1_eenot",
+            "ue_e1_second",
         ],
         "events": [
             "euam1799_e1",
@@ -43,6 +44,7 @@ const SatUsers = {
             "ww1_e2",
             "su_e1",
             "cw_e1",
+            "ue_e1",
         ]
     },
     "trid": {
@@ -537,11 +539,13 @@ const SatUsers = {
             "euro4modern_e1_p1_france",
             "su_e1_almostwin",
             "cw_e1_yugoslavia",
+            "ue_e1_winner"
         ],
         "events": [
             "euro4modern_e1_p1",
             "su_e1",
             "cw_e1",
+            "ue_e1",
         ]
     },
     "honse": {
@@ -1211,6 +1215,21 @@ const SatAwards = {
         type: "greatPower",
         imgType: "normalBorders",
     },
+    "ue_e1_winner": {
+        event: "ue_e1",
+        name: "EG Winner",
+        img: "egsuwin.png",
+        type: "winner",
+        imgType: "circle",
+    },
+    "ue_e1_second": {
+        event: "ue_e1",
+        name: "EG Silver",
+        img: "egsumid.png",
+        type: "greatPower",
+        imgType: "circle",
+        score: 8,
+    },
 };
 
 const SatTypesImg = [
@@ -1381,5 +1400,12 @@ const SatEvents = {
         date: '24.10.2025',
         time: '19:00',
         map: 'parkourcat_euro4_vg_1956',
+    },
+    ue_e1: {
+        name: 'EG Ukraine',
+        date: '05.11.2025',
+        time: '20:00',
+        img: 'ukraine_economic.png',
+        discord: '1431986709238779997',
     },
 }
