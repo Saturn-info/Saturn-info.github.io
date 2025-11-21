@@ -24,6 +24,7 @@ const SatUsers = {
             "su_e1_win",
             "cw_e1_eenot",
             "ue_e1_second",
+            "ww2_e2_america",
         ],
         "events": [
             "euam1799_e1",
@@ -45,6 +46,7 @@ const SatUsers = {
             "su_e1",
             "cw_e1",
             "ue_e1",
+            "ww2_e2",
         ]
     },
     "trid": {
@@ -90,7 +92,8 @@ const SatUsers = {
             "twosides_e3_winner",
             "euro4modern_e1_p1_winner",
             "euro4modern_e1_p2_winner",
-            "su_e1_mid"
+            "su_e1_mid",
+            "ww2_e2_china",
         ],
         "events": [
             "euam1799_e1",
@@ -104,6 +107,7 @@ const SatUsers = {
             "twosides_e3",
             "euro4modern_e1_p1",
             "su_e1",
+            "ww2_e2",
         ]
     },
     "talant": {
@@ -174,6 +178,7 @@ const SatUsers = {
             "metromoscow_e2_cool",
             "euro4modern_e1_p1_turkey",
             "ww1_e2_winner",
+            "ww2_e2_winner",
         ],
         "events": [
             "euam2025_e1",
@@ -191,6 +196,7 @@ const SatUsers = {
             "euro4modern_e1_p1",
             "ww1_e2",
             "cw_e1",
+            "ww2_e2",
         ]
     },
     "namexxxx": {
@@ -281,6 +287,7 @@ const SatUsers = {
             "ww1_e1_ingsoc",
             "twosides_e3_germany",
             "cw_e1_winner",
+            "ww2_e2_germany",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -293,6 +300,7 @@ const SatUsers = {
             "ww1_e1",
             "twosides_e3",
             "cw_e1",
+            "ww2_e2",
         ]
     },
     "shelzyy": {
@@ -452,10 +460,12 @@ const SatUsers = {
         "gamename": "PsychoPomp",
         "awards": [
             "euro4modern_e1_p1_italy",
+            "ww2_e2_raj",
         ],
         "events": [
             "euro4modern_e1_p1",
             "cw_e1",
+            "ww2_e2",
         ]
     },
     "tungg": {
@@ -584,6 +594,18 @@ const SatUsers = {
         ],
         "events": [
             "ww1_e2",
+        ]
+    },
+    "artem": {
+        "id": "artem",
+        "discord": "",
+        "discordid": "",
+        "gamename": "artemkaisaev778",
+        "awards": [
+            "ww2_e2_austrilia",
+        ],
+        "events": [
+            "ww2_e2",
         ]
     },
 };
@@ -1230,6 +1252,51 @@ const SatAwards = {
         imgType: "circle",
         score: 8,
     },
+    "ww2_e2_america": {
+        event: "ww2_e2",
+        name: "American Soviets",
+        img: "ww2e2brazil.png",
+        type: "conqueror",
+        imgType: "normalBorders",
+        score: 9
+    },
+    "ww2_e2_winner": {
+        event: "ww2_e2",
+        name: "Great French Colonial Empire",
+        img: "ww2e2french.png",
+        type: "winner",
+        imgType: "normalBorders",
+    },
+    "ww2_e2_china": {
+        event: "ww2_e2",
+        name: "Chinese Empire",
+        img: "ww2e2china.png",
+        type: "greatPower",
+        imgType: "normalBorders",
+    },
+    "ww2_e2_germany": {
+        event: "ww2_e2",
+        name: "Great Germany",
+        img: "ww2e2germany.png",
+        type: "greatPower",
+        imgType: "normalBorders",
+    },
+    "ww2_e2_austrilia": {
+        event: "ww2_e2",
+        name: "Oceanian State",
+        img: "ww2e2australia.png",
+        type: "greatPower",
+        imgType: "normalBorders",
+        score: 6
+    },
+    "ww2_e2_raj": {
+        event: "ww2_e2",
+        name: "German Raj",
+        img: "ww2e2raj.png",
+        type: "winSide",
+        imgType: "normalBorders",
+        score: 2
+    },
 };
 
 const SatTypesImg = [
@@ -1407,5 +1474,11 @@ const SatEvents = {
         time: '20:00',
         img: 'ukraine_economic.png',
         discord: '1431986709238779997',
+    },
+    ww2_e2: {
+        name: 'World War II: World RP',
+        date: '21.11.2025',
+        map: 'zachary_worldt_vg_ww2',
+        discord: '1439334037318664354',
     },
 }
