@@ -25,7 +25,8 @@ const SatUsers = {
             "cw_e1_eenot",
             "ue_e1_second",
             "ww2_e2_america",
-            "ww2_e3_europe",
+            "ww2_e3_p1_europe",
+            "inter_e1_p1_ua",
         ],
         "events": [
             "euam1799_e1",
@@ -48,7 +49,8 @@ const SatUsers = {
             "cw_e1",
             "ue_e1",
             "ww2_e2",
-            "ww2_e3",
+            "ww2_e3_p1",
+            "inter_e1_p1",
         ]
     },
     "trid": {
@@ -63,6 +65,7 @@ const SatUsers = {
             "kaiserreich_e2_p1_scandinavia",
             "metromoscow_e1_ganza",
             "twosides_e3_winnerside",
+            "inter_e1_p1_persia",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -74,6 +77,7 @@ const SatUsers = {
             "metromoscow_e1",
             "ww1_e1",
             "twosides_e3",
+            "inter_e1_p1",
         ]
     },
     "totoska": {
@@ -96,7 +100,7 @@ const SatUsers = {
             "euro4modern_e1_p2_winner",
             "su_e1_mid",
             "ww2_e2_china",
-            "ww2_e3_winner",
+            "ww2_e3_p1_winner",
         ],
         "events": [
             "euam1799_e1",
@@ -111,7 +115,7 @@ const SatUsers = {
             "euro4modern_e1_p1",
             "su_e1",
             "ww2_e2",
-            "ww2_e3",
+            "ww2_e3_p1",
         ]
     },
     "talant": {
@@ -183,6 +187,7 @@ const SatUsers = {
             "euro4modern_e1_p1_turkey",
             "ww1_e2_winner",
             "ww2_e2_winner",
+            "inter_e1_p1_ottomans",
         ],
         "events": [
             "euam2025_e1",
@@ -201,7 +206,8 @@ const SatUsers = {
             "ww1_e2",
             "cw_e1",
             "ww2_e2",
-            "ww2_e3",
+            "ww2_e3_p1",
+            "inter_e1_p1",
         ]
     },
     "namexxxx": {
@@ -235,6 +241,7 @@ const SatUsers = {
             "twosides_e3_france",
             "euro4modern_e1_p1_poland",
             "cw_e1_germany",
+            "inter_e1_p1_auit",
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -249,6 +256,7 @@ const SatUsers = {
             "euro4modern_e1_p1",
             "ww1_e2",
             "cw_e1",
+            "inter_e1_p1",
         ]
     },
     "derf11": {
@@ -403,12 +411,12 @@ const SatUsers = {
         "gamename": "timur333",
         "awards": [
             "ww2_e1_winnerside",
-            "ww2_e3_australia",
+            "ww2_e3_p1_australia",
         ],
         "events": [
             "ww2_e1",
             "metromoscow_e1",
-            "ww2_e3",
+            "ww2_e3_p1",
         ]
     },
     "goida": {
@@ -455,11 +463,11 @@ const SatUsers = {
         "gamename": "Plagers2",
         "awards": [
             "euro4modern_e1_p1_algeria",
-            "ww2_e3_inka",
+            "ww2_e3_p1_inka",
         ],
         "events": [
             "euro4modern_e1_p1",
-            "ww2_e3",
+            "ww2_e3_p1",
         ]
     },
     "psychopomp": {
@@ -470,11 +478,13 @@ const SatUsers = {
         "awards": [
             "euro4modern_e1_p1_italy",
             "ww2_e2_raj",
+            "inter_e1_p1_iberia",
         ],
         "events": [
             "euro4modern_e1_p1",
             "cw_e1",
             "ww2_e2",
+            "inter_e1_p1",
         ]
     },
     "tungg": {
@@ -559,14 +569,16 @@ const SatUsers = {
             "su_e1_almostwin",
             "cw_e1_yugoslavia",
             "ue_e1_winner",
-            "ww2_e3_europe",
+            "ww2_e3_p1_europe",
+            "inter_e1_p1_ru",
         ],
         "events": [
             "euro4modern_e1_p1",
             "su_e1",
             "cw_e1",
             "ue_e1",
-            "ww2_e3",
+            "ww2_e3_p1",
+            "inter_e1_p1",
         ]
     },
     "honse": {
@@ -576,11 +588,11 @@ const SatUsers = {
         "gamename": "honser",
         "awards": [
             "ww1_e2_turkey",
-            "ww2_e3_ukraj",
+            "ww2_e3_p1_ukraj",
         ],
         "events": [
             "ww1_e2",
-            "ww2_e3",
+            "ww2_e3_p1",
         ]
     },
     "stewardconstruct": {
@@ -627,10 +639,11 @@ const SatUsers = {
         "discordid": "1402946763492556843",
         "gamename": "Greg",
         "awards": [
-            "ww2_e3_ukraj",
+            "ww2_e3_p1_ukraj",
         ],
         "events": [
-            "ww2_e3",
+            "ww2_e3_p1",
+            "inter_e1_p1",
         ]
     },
 };
@@ -1322,38 +1335,98 @@ const SatAwards = {
         imgType: "normalBorders",
         score: 2
     },
-    "ww2_e3_europe": {
-        event: "ww2_e3",
+    "ww2_e3_p1_europe": {
+        event: "ww2_e3_p1",
         name: "European Federation",
         img: "ww2e3europe.png",
         type: "conqueror",
         imgType: "star"
     },
-    "ww2_e3_winner": {
-        event: "ww2_e3",
+    "ww2_e3_p1_winner": {
+        event: "ww2_e3_p1",
         name: "United States of Northern America",
         img: "ww2e3usa.png",
         type: "winner",
         imgType: "star"
     },
-    "ww2_e3_australia": {
-        event: "ww2_e3",
+    "ww2_e3_p1_australia": {
+        event: "ww2_e3_p1",
         name: "Australia",
         img: "ww2e3australia.png",
         type: "greatPower",
         imgType: "normalBorders"
     },
-    "ww2_e3_ukraj": {
-        event: "ww2_e3",
+    "ww2_e3_p1_ukraj": {
+        event: "ww2_e3_p1",
         name: "WW2 conqueror",
         img: "blank.png",
         type: "conqueror",
         imgType: "normalBorders"
     },
-    "ww2_e3_inka": {
-        event: "ww2_e3",
+    "ww2_e3_p1_inka": {
+        event: "ww2_e3_p1",
         name: "Inkan Empire",
         img: "ww2e3inka.png",
+        type: "strongDefender",
+        imgType: "shield"
+    },
+    "inter_e1_p1_ua": {
+        event: "inter_e1_p1",
+        name: "Ukrainian Soviet Federation",
+        img: "intere1ua.png",
+        type: "winner",
+        imgType: "normalBorders",
+        score: 12
+    },
+    "inter_e1_p1_ru": {
+        event: "inter_e1_p1",
+        name: "Soviet Union",
+        img: "intere1ru.png",
+        type: "winner",
+        imgType: "normalBorders"
+    },
+    "inter_e1_p1_persia": {
+        event: "inter_e1_p1",
+        name: "Persian Empire",
+        img: "intere1persia.png",
+        type: "greatPower",
+        imgType: "normalBorders",
+        score: 6
+    },
+    "inter_e1_p1_ottomans": {
+        event: "inter_e1_p1",
+        name: "Imperial Ankara Government",
+        img: "intere1ottomans.png",
+        type: "greatPower",
+        imgType: "normalBorders"
+    },
+    "inter_e1_p1_iberia": {
+        event: "inter_e1_p1",
+        name: "Inkan",
+        img: "intere1iberia.png",
+        type: "greatPower",
+        imgType: "normalBorders"
+    },
+    "inter_e1_p1_finland": {
+        event: "inter_e1_p1",
+        name: "Finish Empire",
+        img: "intere1finland.png",
+        type: "conqueror",
+        imgType: "normalBorders",
+        score: 7
+    },
+    "inter_e1_p1_auit": {
+        event: "inter_e1_p1",
+        name: "Austria-Italia",
+        img: "intere1auit.png",
+        type: "greatPower",
+        imgType: "normalBorders",
+        score: 5
+    },
+    "inter_e1_p1_belarus": {
+        event: "inter_e1_p1",
+        name: "Belarusian Soviet Socialist Republic",
+        img: "intere1be.png",
         type: "strongDefender",
         imgType: "shield"
     },
@@ -1541,10 +1614,16 @@ const SatEvents = {
         map: 'zachary_worldt_vg_ww2',
         discord: '1439334037318664354',
     },
-    ww2_e3: {
+    ww2_e3_p1: {
         name: 'World War II: World WG',
         date: '28.11.2025',
         map: 'zachary_worldt_vg_ww2',
         discord: '1443644617999519816',
+    },
+    inter_e1_p1: {
+        name: 'Interwar: Euro4 WG',
+        date: '30.11.2025',
+        map: 'parkourcat_euro4_vg_interwar',
+        discord: '1443986374117294201',
     },
 }

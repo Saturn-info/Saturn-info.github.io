@@ -1,16 +1,17 @@
 class leaderboard {
 
     calcScoreAward(id) {
-        try {
-        if (SatAwards[id].score) {
-            return SatAwards[id].score
-        } else {
-            return SatTypes[SatAwards[id].type]
+        if (!SatAwards[id]) {
+            console.warn(`Award not found: ${id}`);
+            return 0;
         }
-        } catch (e) {
-            alert(e);
-            alert(id);
-        } 
+        if (SatAwards[id].score) {
+            return SatAwards[id].score;
+        } else if (SatAwards[id].type && SatTypes[SatAwards[id].type]) {
+            return SatTypes[SatAwards[id].type];
+        }
+        console.warn(`Award score/type not found for: ${id}`);
+        return 0;
     }
 
     update() {
