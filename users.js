@@ -27,6 +27,7 @@ const SatUsers = {
             "ww2_e2_america",
             "ww2_e3_p1_europe",
             "inter_e1_p1_ua",
+            "tigerland_e3_west",
         ],
         "events": [
             "euam1799_e1",
@@ -51,6 +52,7 @@ const SatUsers = {
             "ww2_e2",
             "ww2_e3_p1",
             "inter_e1_p1",
+            "tigerland_e3",
         ]
     },
     "trid": {
@@ -101,6 +103,7 @@ const SatUsers = {
             "su_e1_mid",
             "ww2_e2_china",
             "ww2_e3_p1_winner",
+            "tigerland_e3_winner",
         ],
         "events": [
             "euam1799_e1",
@@ -116,6 +119,7 @@ const SatUsers = {
             "su_e1",
             "ww2_e2",
             "ww2_e3_p1",
+            "tigerland_e3",
         ]
     },
     "talant": {
@@ -188,6 +192,7 @@ const SatUsers = {
             "ww1_e2_winner",
             "ww2_e2_winner",
             "inter_e1_p1_ottomans",
+            "tigerland_e3_east",
         ],
         "events": [
             "euam2025_e1",
@@ -208,6 +213,7 @@ const SatUsers = {
             "ww2_e2",
             "ww2_e3_p1",
             "inter_e1_p1",
+            "tigerland_e3",
         ]
     },
     "namexxxx": {
@@ -571,6 +577,7 @@ const SatUsers = {
             "ue_e1_winner",
             "ww2_e3_p1_europe",
             "inter_e1_p1_ru",
+            "tigerland_e3_north",
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -579,6 +586,7 @@ const SatUsers = {
             "ue_e1",
             "ww2_e3_p1",
             "inter_e1_p1",
+            "tigerland_e3",
         ]
     },
     "honse": {
@@ -1430,6 +1438,34 @@ const SatAwards = {
         type: "strongDefender",
         imgType: "shield"
     },
+    "tigerland_e3_winner": {
+        event: "tigerland_e3",
+        name: "Empire of Tigerland",
+        img: "tigerland_e3_winner.png",
+        type: "winner",
+        imgType: "normalBorders"
+    },
+    "tigerland_e3_west": {
+        event: "tigerland_e3",
+        name: "Western Democracy",
+        img: "tigerland_e3_west.png",
+        type: "conqueror",
+        imgType: "normalBorders"
+    },
+    "tigerland_e3_east": {
+        event: "tigerland_e3",
+        name: "Eastern Democracy",
+        img: "tigerland_e3_east.png",
+        type: "conqueror",
+        imgType: "normalBorders"
+    },
+    "tigerland_e3_north": {
+        event: "tigerland_e3",
+        name: "Severopolossk",
+        img: "tigerland_e3_north.png",
+        type: "greatPower",
+        imgType: "normalBorders"
+    },
 };
 
 const SatTypesImg = [
@@ -1452,6 +1488,11 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    tigerland_e3: {
+        name: 'Napoleonʼs Ries: EuNa',
+        date: '12.12.2025',
+        map: 'chuckcha_tigerland_v3_civilwar-jalhund-en',
+    },
     euam1799_e1: {
         name: 'Napoleonʼs Ries: EuNa',
         date: '31.08.2025',
