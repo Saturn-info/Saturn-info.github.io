@@ -1488,8 +1488,25 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    generals_e1: {
+        name: 'Europe - Generals',
+        date: '25.01.2026',
+        map: 'eenot_test',
+    },
+    twosides_e4: {
+        name: 'Twosides 4',
+        date: '23.01.2026',
+        map: 'chitterss_world_v4_twosides',
+        discord: '1460684503520514169',
+    },
+    aotsm_e1: {
+        name: 'Age of the Steam Machines',
+        date: '16.01.2026',
+        map: 'estebanf259_euromagnus_v1_aotsm-en',
+        discord: '1460682082010398791',
+    },
     tigerland_e3: {
-        name: 'Napoleonʼs Ries: EuNa',
+        name: 'Tigerland',
         date: '12.12.2025',
         map: 'chuckcha_tigerland_v3_civilwar-jalhund-en',
     },
