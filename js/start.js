@@ -58,8 +58,8 @@ async function writeMessageInDiscord(inputText) {
     const mentionsString = userMentions ? userMentions.join(' ') : '';
 
     const nwfText = `# The event has started!\nJoin Saturn Universal Server\n\n${mentionsString}`;
-    // const saturnText = `<@&1257092656497033380>\n🇬🇧 Event Started\n<:flag_su:1417146725352865882> Ивент Начался`;
-    const saturnText = `<@794675642037567498>\n🇬🇧 Event Started\n<:flag_su:1417146725352865882> Ивент Начался`;
+    const saturnText = `<@&1257092656497033380>\n🇬🇧 Event Started\n<:flag_su:1417146725352865882> Ивент Начался`;
+    // const saturnText = `<@794675642037567498>\n🇬🇧 Event Started\n<:flag_su:1417146725352865882> Ивент Начался`;
 
     const webhooks = [
         {
