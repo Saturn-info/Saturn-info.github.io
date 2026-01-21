@@ -8,15 +8,16 @@
         gtag('js', new Date());
         gtag('config', 'G-9KNCHM5MNE');</script>
 
-        <title>Donate Info | Saturn</title>
+        <title>Leaderboard | Saturn</title>
         <meta charset="UTF-8">
         <link rel="icon" href="img/ico3.png">
         <script src="users.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/donate.js"></script>
+        <script src="js/leaderboard.js"></script>
 
         <script src="js/lang.js"></script>
         <script src="js/translator.js"></script>
+        <script src="js/info.js"></script>
         <script src="js/events.js"></script>
 
         <link rel="stylesheet" href="https://ee-apps.github.io/framework/eelibs/import.css">
@@ -36,9 +37,9 @@
         <nav class="navpanel">
             <div class="leftnav">
                 <a class="navbtn" href="index.html"><div class="navbtndiv"><img src="https://ee-apps.github.io/framework/img/ui/home.svg"><p data-lang="home">Home</p></div></a>
-                <a class="navbtn" href="leaderboard.html"><div class="navbtndiv"><img src="img/icons/2/medal.svg"><p data-lang="leaderboard">Leaderboard</p></div></a>
+                <div class="navbtn active" href="leaderboard.html"><div class="navbtndiv"><img src="img/icons/2/medal.svg"><p data-lang="leaderboard">Leaderboard</p></div></div>
                 <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><div class="navbtndiv"><img src="img/icons/2/discord.svg"><p data-lang="discord">Discord</p></div></a>
-                <div class="navbtn active" href="donate.html"><div class="navbtndiv"><img src="img/icons/2/money.svg"><p data-lang="donate">Donate-info</p></div></div>
+                <a class="navbtn" href="donate.html"><div class="navbtndiv"><img src="img/icons/2/money.svg"><p data-lang="donate">Donate-info</p></div></a>
                 <a class="navbtn" href="events.html"><div class="navbtndiv"><img src="img/icons/2/calendar.svg"><p data-lang="events">Events</p><p id=eventsCount></p></div></a>
             </div>
             <div class="rightnav">
@@ -51,11 +52,21 @@
                 <a class="navbtn ico" href="https://warnament.fandom.com/wiki/"><div class="navbtndiv"><img src="img/icons/fandom.png"><p>Wiki</p></div></a>
             </div>
         </nav>
-        <div class="content" id="donateru">
-            <p data-lang="donatetext"></p>
-        </div>
-        <div class="content" id="donateoptions">
-            <p data-lang="donateoptions"></p>
+        <div class="content">
+            <div class="list-container" id="leadertable"><table class="list-table">
+                <thead>
+                    <tr>
+                        <th data-lang="score" style="border-radius: var(--br) 0 0 0; display: none;">Score</th>
+                        <th data-lang="ratio" style="border-radius: var(--br) 0 0 0;">Ratio</th>
+                        <th data-lang="discord">Discord</th>
+                        <th data-lang="game">Game</th>
+                        <th data-lang="awards">Awards</th>
+                        <th data-lang="events" style="border-radius: 0 var(--br) 0 0;">Events</th>
+                    </tr>
+                </thead>
+                <tbody id="leadertablebody">
+                </tbody>
+            </table></div>
         </div>
         <div id="modal">
 

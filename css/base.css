@@ -1,3 +1,7 @@
+:root {
+    --ac-text: 6d3dcf;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -114,4 +118,8 @@ td div {
   max-width: 100% !important;
   word-wrap: break-word !important;
   box-sizing: border-box !important;
+}
+
+#langDropdown img {
+	width: 35px;
 }

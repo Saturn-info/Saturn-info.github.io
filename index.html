@@ -8,20 +8,18 @@
         gtag('js', new Date());
         gtag('config', 'G-9KNCHM5MNE');</script>
 
-        <title>Leaderboard | Saturn</title>
+        <title>Saturn</title>
         <meta charset="UTF-8">
         <link rel="icon" href="img/ico3.png">
         <script src="users.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/leaderboard.js"></script>
 
         <script src="js/lang.js"></script>
         <script src="js/translator.js"></script>
         <script src="js/info.js"></script>
         <script src="js/events.js"></script>
 
-        <link rel="stylesheet" href="https://eeditor-ws.github.io/css/!.css">
-        <link rel="stylesheet" href="https://eeditor-ws.github.io/css/elib/orange.css">
+        <link rel="stylesheet" href="https://ee-apps.github.io/framework/eelibs/import.css">
+        <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/theme.css">
         <link rel="stylesheet" href="css/random.css">
@@ -29,11 +27,16 @@
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/mobile.css">
         <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/donate.css">
+        <link rel="stylesheet" href="css/events.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/start.css">
     </head>
     <body>
         <nav class="navpanel">
             <div class="leftnav">
-                <div class="navbtn active"><div class="navbtndiv"><img src="img/icons/2/medal.svg"><p data-lang="leaderboard">Leaderboard</p></div></div>
+                <div class="navbtn active" href="index.html"><div class="navbtndiv"><img src="https://ee-apps.github.io/framework/img/ui/home.svg"><p data-lang="home">Home</p></div></div>
+                <a class="navbtn" href="leaderboard.html"><div class="navbtndiv"><img src="img/icons/2/medal.svg"><p data-lang="leaderboard">Leaderboard</p></div></a>
                 <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><div class="navbtndiv"><img src="img/icons/2/discord.svg"><p data-lang="discord">Discord</p></div></a>
                 <a class="navbtn" href="donate.html"><div class="navbtndiv"><img src="img/icons/2/money.svg"><p data-lang="donate">Donate-info</p></div></a>
                 <a class="navbtn" href="events.html"><div class="navbtndiv"><img src="img/icons/2/calendar.svg"><p data-lang="events">Events</p><p id=eventsCount></p></div></a>
@@ -48,21 +51,42 @@
                 <a class="navbtn ico" href="https://warnament.fandom.com/wiki/"><div class="navbtndiv"><img src="img/icons/fandom.png"><p>Wiki</p></div></a>
             </div>
         </nav>
-        <div class="content">
-            <div class="list-container" id="leadertable"><table class="list-table">
-                <thead>
-                    <tr>
-                        <th data-lang="score" style="border-radius: var(--br) 0 0 0; display: none;">Score</th>
-                        <th data-lang="ratio" style="border-radius: var(--br) 0 0 0;">Ratio</th>
-                        <th data-lang="discord">Discord</th>
-                        <th data-lang="game">Game</th>
-                        <th data-lang="awards">Awards</th>
-                        <th data-lang="events" style="border-radius: 0 var(--br) 0 0;">Events</th>
-                    </tr>
-                </thead>
-                <tbody id="leadertablebody">
-                </tbody>
-            </table></div>
+        <div class="content" id="homeContent">
+            <section class="card hero" style="background: linear-gradient(135deg, rgba(52,152,219,.25), rgba(36,36,36,.8)); border:1px solid var(--bc); border-radius:var(--br); padding:24px; max-width:1100px;">
+                <div style="display:flex; gap:24px; align-items:center; flex-wrap:wrap;">
+                <div style="flex:1 1 380px;">
+                    <h1 style="margin:0 0 8px 0;">Saturn</h1>
+                    <p style="color:var(--text-secondary); margin:0 0 16px 0;">Universal Multiplayer Server for <b>Warnament</b></p>
+                    <p>«Saturn» — is not just a server, but a whole world of possibilities in the cross-platform grand strategy Warnament. Unique modifications, constant events and a lively community make every session truly exciting.</p>
+                    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
+                    <a href="events.html" class="btn" style="padding:10px 14px; border-radius:var(--br); background:var(--background-secondary); border:1px solid var(--bc);">Events</a>
+                    <a href="leaderboard.html" class="btn" style="padding:10px 14px; border-radius:var(--br); background:var(--background-secondary); border:1px solid var(--bc);">Leaderboard</a>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="connect" style="width:100%; max-width:1100px; margin-top:24px;">
+                <div class="card" style="padding:24px; border:1px solid var(--bc); border-radius:var(--br); background:var(--background-primary);">
+                <h2>How to connect</h2>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px;">
+                    <div>
+                    <h4>Server</h4>
+                    <p>IP: <b>149.154.64.142:9011</b></p>
+                    <button onclick="navigator.clipboard.writeText('149.154.64.142:9011')">Copy IP</button>
+                    </div>
+                    <div>
+                    <h4>Discord</h4>
+                    <p>Join the community and events</p>
+                    <a href="https://discord.gg/JNv4RSgasP">discord.gg/JNv4RSgasP</a>
+                    </div>
+                    <div>
+                    <h4>Official website</h4>
+                    <a href="https://saturn-info.github.io/">saturn-info.github.io</a>
+                    </div>
+                </div>
+                </div>
+            </section>
         </div>
         <div id="modal">
 

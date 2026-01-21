@@ -279,8 +279,8 @@ const SatUsers = {
         ]
     },
     "penguin": {
-        "id": "penguin",
-        "discord": "Great Leader Penguin of the DPRP",
+        "id": "LeaderPinguin",
+        "discord": "LeaderPenguin of the DPR",
         "discordid": "1260611002240860202",
         "gamename": "",
         "awards": [

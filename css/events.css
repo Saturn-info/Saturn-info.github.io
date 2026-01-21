@@ -42,19 +42,19 @@
     z-index: 2;
 }
 
-.list-container {
+#eventstable {
     overflow-x: hidden;
     display: grid;
 }
 
 @media (min-width: 1000px) {
-    .list-container {
+    #eventstable {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1300px) {
-    .list-container {
+    #eventstable {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -91,6 +91,7 @@
     cursor: pointer;
     display: block;
     align-content: center;
+    padding: 0;
 }
 
 .extrabtn img {

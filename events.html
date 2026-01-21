@@ -22,39 +22,36 @@
         <script src="js/info.js"></script>
         <script src="js/leaderboard.js"></script>
 
-        <link rel="stylesheet" href="https://eeditor-ws.github.io/css/!.css">
+        <link rel="stylesheet" href="https://ee-apps.github.io/framework/eelibs/import.css">
+        <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/theme.css">
         <link rel="stylesheet" href="css/random.css">
         <link rel="stylesheet" href="css/list.css">
         <link rel="stylesheet" href="css/modal.css">
-        <link rel="stylesheet" href="css/events.css">
         <link rel="stylesheet" href="css/mobile.css">
         <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/donate.css">
+        <link rel="stylesheet" href="css/events.css">
+        <link rel="stylesheet" href="css/start.css">
     </head>
     <body>
         <nav class="navpanel">
             <div class="leftnav">
-                <a class="navbtn" href="index.html"><img src="img/icons/2/medal.svg"><p data-lang="leaderboard">Leaderboard</p></a>
-                <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><img src="img/icons/2/discord.svg"><p data-lang="discord">Discord</p></a>
-                <a class="navbtn" href="donate.html"><img src="img/icons/2/money.svg"><p data-lang="donate">Donate-info</p></a>
-                <a class="navbtn active" href="events.html"><img src="img/icons/2/calendar.svg"><p data-lang="events">Events</p><p id=eventsCount></p></a>
+                <a class="navbtn" href="index.html"><div class="navbtndiv"><img src="https://ee-apps.github.io/framework/img/ui/home.svg"><p data-lang="home">Home</p></div></a>
+                <a class="navbtn" href="leaderboard.html"><div class="navbtndiv"><img src="img/icons/2/medal.svg"><p data-lang="leaderboard">Leaderboard</p></div></a>
+                <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><div class="navbtndiv"><img src="img/icons/2/discord.svg"><p data-lang="discord">Discord</p></div></a>
+                <a class="navbtn" href="donate.html"><div class="navbtndiv"><img src="img/icons/2/money.svg"><p data-lang="donate">Donate-info</p></div></a>
+                <div class="navbtn active" href="events.html"><div class="navbtndiv"><img src="img/icons/2/calendar.svg"><p data-lang="events">Events</p><p id=eventsCount></p></div></div>
             </div>
             <div class="rightnav">
-                <!--div class="accountico">
-                    <img class="account-button-avatar" src="" alt="" style="display: none; width: 24px; height: 24px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                    <svg class="account-button-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div-->
-                <div class="qustBtn navbtn" onclick="showTypesInfo()"><img src="img/icons/2/info.svg"><p data-lang="medalsqe">Медали</p></div>
-                <div class="langBtn navbtn" onclick="if (localStorage.getItem('SaturnLang') === 'ru') { window.langMgr.setLang('en') } else { window.langMgr.setLang('ru') }"><img src="img/icons/2/planet.svg"><p>Language</p></div>
+                <div class="qustBtn navbtn" onclick="showTypesInfo()"><div class="navbtndiv"><img src="img/icons/2/info.svg"><p data-lang="medalsqe">Медали</p></div></div>
+                <div class="langBtn navbtn" onclick="if (localStorage.getItem('SaturnLang') === 'ru') { window.langMgr.setLang('en') } else { window.langMgr.setLang('ru') }"><div class="navbtndiv"><img src="img/icons/2/planet.svg"><p>Language</p></div></div>
             </div>
             <div class="leftnavicons">
-                <a class="navbtn ico" href="https://nwf-info.github.io"><img src="img/icons/nwf.png"><p>NWF</p></a>
-                <a class="navbtn ico" href="https://eeditor-ws.github.io"><img src="img/icons/eeditor.svg"><p>EEditor</p></a>
-                <a class="navbtn ico" href="https://warnament.fandom.com/wiki/"><img src="img/icons/fandom.png"><p>Wiki</p></a>
+                <a class="navbtn ico" href="https://nwf-info.github.io"><div class="navbtndiv"><img src="img/icons/nwf.png"><p>NWF</p></div></a>
+                <a class="navbtn ico" href="https://eeditor-ws.github.io"><div class="navbtndiv"><img src="img/icons/eeditor.svg"><p>EEditor</p></div></a>
+                <a class="navbtn ico" href="https://warnament.fandom.com/wiki/"><div class="navbtndiv"><img src="img/icons/fandom.png"><p>Wiki</p></div></a>
             </div>
         </nav>
         <div class="content">

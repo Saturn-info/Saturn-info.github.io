@@ -1,24 +1,18 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KNCHM5MNE"></script><script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-9KNCHM5MNE');</script>
-
-        <title>Donate Info | Saturn</title>
+        <title>Events | Saturn</title>
         <meta charset="UTF-8">
         <link rel="icon" href="img/ico3.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+        <script src="https://nwf-info.github.io/users.js"></script>
+        <script src="https://nwf-info.github.io/js/events.js"></script>
         <script src="users.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/donate.js"></script>
-
-        <script src="js/lang.js"></script>
-        <script src="js/translator.js"></script>
         <script src="js/events.js"></script>
+        
+        <script src="js/start.js"></script>
 
+        <link rel="stylesheet" href="eelibs/import.css">
         <link rel="stylesheet" href="https://ee-apps.github.io/framework/eelibs/import.css">
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/base.css">
@@ -32,13 +26,13 @@
         <link rel="stylesheet" href="css/events.css">
         <link rel="stylesheet" href="css/start.css">
     </head>
-    <body>
+    <body style="background-color: #333; color: white;">
         <nav class="navpanel">
             <div class="leftnav">
                 <a class="navbtn" href="index.html"><div class="navbtndiv"><img src="https://ee-apps.github.io/framework/img/ui/home.svg"><p data-lang="home">Home</p></div></a>
                 <a class="navbtn" href="leaderboard.html"><div class="navbtndiv"><img src="img/icons/2/medal.svg"><p data-lang="leaderboard">Leaderboard</p></div></a>
                 <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><div class="navbtndiv"><img src="img/icons/2/discord.svg"><p data-lang="discord">Discord</p></div></a>
-                <div class="navbtn active" href="donate.html"><div class="navbtndiv"><img src="img/icons/2/money.svg"><p data-lang="donate">Donate-info</p></div></div>
+                <a class="navbtn" href="donate.html"><div class="navbtndiv"><img src="img/icons/2/money.svg"><p data-lang="donate">Donate-info</p></div></a>
                 <a class="navbtn" href="events.html"><div class="navbtndiv"><img src="img/icons/2/calendar.svg"><p data-lang="events">Events</p><p id=eventsCount></p></div></a>
             </div>
             <div class="rightnav">
@@ -51,14 +45,28 @@
                 <a class="navbtn ico" href="https://warnament.fandom.com/wiki/"><div class="navbtndiv"><img src="img/icons/fandom.png"><p>Wiki</p></div></a>
             </div>
         </nav>
-        <div class="content" id="donateru">
-            <p data-lang="donatetext"></p>
-        </div>
-        <div class="content" id="donateoptions">
-            <p data-lang="donateoptions"></p>
-        </div>
-        <div id="modal">
-
+        <div class="content">
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" placeholder="Enter your message" required></textarea>
+                <div class="img-group">
+                    <input  type="url"  id="fileUrl"   >
+                    <input  type="file" id="fileUpload">
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="submit" onclick="writeMessageInDiscord(document.getElementById('message').value)">Send Message</button>
+                <button type="button" onclick="document.getElementById('message').value = ''">Clear Message</button>
+                <input type="password" id="accessKey" placeholder="access key">
+            </div>
         </div>
     </body>
+    <script>
+        const savedKey = localStorage.getItem('satNwfWebhookAccessKey');
+        if (savedKey) {
+            const keyInput = document.getElementById('accessKey');
+            if (keyInput.tagName === 'INPUT') keyInput.value = savedKey;
+            else keyInput.textContent = savedKey;
+        }
+    </script>
 </html>
