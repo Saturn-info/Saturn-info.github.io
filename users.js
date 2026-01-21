@@ -28,6 +28,8 @@ const SatUsers = {
             "ww2_e3_p1_europe",
             "inter_e1_p1_ua",
             "tigerland_e3_west",
+            'aotsm_e1_great',
+            "e1444_e1_eenot",
         ],
         "events": [
             "euam1799_e1",
@@ -53,6 +55,8 @@ const SatUsers = {
             "ww2_e3_p1",
             "inter_e1_p1",
             "tigerland_e3",
+            "e1444_e1",
+            'aotsm_e1',
         ]
     },
     "trid": {
@@ -104,6 +108,7 @@ const SatUsers = {
             "ww2_e2_china",
             "ww2_e3_p1_winner",
             "tigerland_e3_winner",
+            "e1444_e1_turkey",
         ],
         "events": [
             "euam1799_e1",
@@ -120,6 +125,7 @@ const SatUsers = {
             "ww2_e2",
             "ww2_e3_p1",
             "tigerland_e3",
+            "e1444_e1",
         ]
     },
     "talant": {
@@ -279,15 +285,17 @@ const SatUsers = {
         ]
     },
     "penguin": {
-        "id": "LeaderPinguin",
+        "id": "penguin",
         "discord": "LeaderPenguin of the DPR",
         "discordid": "1260611002240860202",
-        "gamename": "",
+        "gamename": "LeaderPinguin",
         "awards": [
             "euam2025_e1_belarus",
+            "e1444_e1_penguin",
         ],
         "events": [
             "euam2025_e1",
+            "e1444_e1",
         ]
     },
     "moad": {
@@ -485,12 +493,14 @@ const SatUsers = {
             "euro4modern_e1_p1_italy",
             "ww2_e2_raj",
             "inter_e1_p1_iberia",
+            "e1444_e1_hungary",
         ],
         "events": [
             "euro4modern_e1_p1",
             "cw_e1",
             "ww2_e2",
             "inter_e1_p1",
+            "e1444_e1",
         ]
     },
     "tungg": {
@@ -578,6 +588,7 @@ const SatUsers = {
             "ww2_e3_p1_europe",
             "inter_e1_p1_ru",
             "tigerland_e3_north",
+            "e1444_e1_lurus",
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -587,6 +598,7 @@ const SatUsers = {
             "ww2_e3_p1",
             "inter_e1_p1",
             "tigerland_e3",
+            "e1444_e1",
         ]
     },
     "honse": {
@@ -648,12 +660,28 @@ const SatUsers = {
         "gamename": "Greg",
         "awards": [
             "ww2_e3_p1_ukraj",
+            'aotsm_e1_winner',
         ],
         "events": [
             "ww2_e3_p1",
             "inter_e1_p1",
+            'aotsm_e1',
         ]
     },
+    "hanzen": {
+        id: 'hanzen',
+        discord: 'Hanzen',
+        discordid: '1264587555261775924',
+        gamename: '',
+        awards: [
+            'aotsm_e1_great',
+            'e1444_e1_sweden',
+        ],
+        events: [
+            'aotsm_e1',
+            'e1444_e1',
+        ]
+    }
 };
 
 const SatAwards = {
@@ -1466,6 +1494,63 @@ const SatAwards = {
         type: "greatPower",
         imgType: "normalBorders"
     },
+    "aotsm_e1_winner": {
+        event: 'aotsm_e1',
+        name: 'AotSM winner',
+        img: 'winner.png',
+        type: 'winner',
+        imgType: 'star'
+    },
+    "aotsm_e1_great": {
+        event: 'aotsm_e1',
+        name: 'AotSM great power',
+        img: 'great.png',
+        type: 'greatPower',
+        imgType: 'star'
+    },
+    "e1444_e1_eenot": {
+        event: "e1444_e1",
+        name: "Soviet Steppe",
+        img: 'e1444_e1_eenot.png',
+        type: "winner",
+        imgType: 'normalBorders',
+        score: 11
+    },
+    "e1444_e1_penguin": {
+        event: "e1444_e1",
+        name: "Soviet Eastslavia",
+        img: 'e1444_e1_eenot.png',
+        type: 'greatPower',
+        imgType: 'normalBorders',
+        score: 8
+    },
+    "e1444_e1_hungary": {
+        event: "e1444_e1",
+        name: "Greater Hungary",
+        img: 'great.png',
+        type: 'greatPower',
+        imgType: 'star'
+    },
+    'e1444_e1_turkey': {
+        event: "e1444_e1",
+        name: 'Ottoman Empire',
+        img: 'great.png',
+        type: 'greatPower',
+        imgType: 'star'
+    },
+    'e1444_e1_sweden': {
+        event: 'e1444_e1',
+        name: 'Scandinavia',
+        img: 'great.png',
+        type: 'greatPower',
+        imgType: 'star'
+    },
+    'e1444_e1_lurus': {
+        event: 'e1444_e1',
+        name: '',
+        img: 'blank.png',
+        type: 'strongDefender'
+    }
 };
 
 const SatTypesImg = [
@@ -1498,6 +1583,12 @@ const SatEvents = {
         date: '23.01.2026',
         map: 'chitterss_world_v4_twosides',
         discord: '1460684503520514169',
+    },
+    e1444_e1: {
+        name: '1444',
+        date: '21.01.2026',
+        map: 'trid_eurosat_v5_1444',
+        discord: '1462810920987398235',
     },
     aotsm_e1: {
         name: 'Age of the Steam Machines',
