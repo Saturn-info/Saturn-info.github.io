@@ -30,6 +30,8 @@ const SatUsers = {
             "tigerland_e3_west",
             'aotsm_e1_great',
             "e1444_e1_eenot",
+            'twosides_e4_eenot',
+            'generals_e1_at',
         ],
         "events": [
             "euam1799_e1",
@@ -57,6 +59,7 @@ const SatUsers = {
             "tigerland_e3",
             "e1444_e1",
             'aotsm_e1',
+            'twosides_e4',
         ]
     },
     "trid": {
@@ -199,6 +202,7 @@ const SatUsers = {
             "ww2_e2_winner",
             "inter_e1_p1_ottomans",
             "tigerland_e3_east",
+            'generals_e1_at',
         ],
         "events": [
             "euam2025_e1",
@@ -1550,6 +1554,21 @@ const SatAwards = {
         name: '',
         img: 'blank.png',
         type: 'strongDefender'
+    },
+    'twosides_e4_eenot': {
+        event: 'twosides_e4',
+        name: 'South America',
+        img: 'winner.png',
+        type: 'winner',
+        imgType: 'star'
+    },
+    'generals_e1_at': {
+        event: 'generals_e1',
+        name: '',
+        img: 'blank.png',
+        type: 'other',
+        imgType: 'special',
+        score: 5
     }
 };
 
