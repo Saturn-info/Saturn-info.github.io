@@ -705,7 +705,7 @@ const SatAwards = {
     "euam1799_e1_win": {
         event: "euam1799_e1",
         name: "Winner",
-        img: "winner-sat.png",
+        img: 'winner-sat.png',
         type: "winner",
         imgType: 'star',
     },
@@ -719,7 +719,7 @@ const SatAwards = {
     "kaiserreich_e1_p1_win": {
         event: "kaiserreich_e1_p1",
         name: "Winner",
-        img: "winner-sat.png",
+        img: 'winner-sat.png',
         type: "winner",
         imgType: 'star',
     },
@@ -839,7 +839,7 @@ const SatAwards = {
         event: "kaiserreich_e2_p1",
         name: "Kaiserreich2 Winner",
         //img: "kaiser21ottoman.png",
-        img: "winner-sat.png",
+        img: 'winner-sat.png',
         type: "winner",
         imgType: 'star',
     },
@@ -867,7 +867,7 @@ const SatAwards = {
     "eusat2014_e1_winner": {
         event: "eusat2014_e1",
         name: "Eusat2014 Winner",
-        img: "winner-sat.png",
+        img: 'winner-sat.png',
         type: "winner",
         imgType: 'star',
         score: 8,
@@ -1509,14 +1509,14 @@ const SatAwards = {
     "aotsm_e1_winner": {
         event: 'aotsm_e1',
         name: 'AotSM winner',
-        img: 'winner.png',
+        img: 'winner-sat.png',
         type: 'winner',
         imgType: 'star'
     },
     "aotsm_e1_great": {
         event: 'aotsm_e1',
         name: 'AotSM great power',
-        img: 'great.png',
+        img: 'great-sat.png',
         type: 'greatPower',
         imgType: 'star'
     },
@@ -1539,21 +1539,21 @@ const SatAwards = {
     "e1444_e1_hungary": {
         event: "e1444_e1",
         name: "Greater Hungary",
-        img: 'great.png',
+        img: 'great-sat.png',
         type: 'greatPower',
         imgType: 'star'
     },
     'e1444_e1_turkey': {
         event: "e1444_e1",
         name: 'Ottoman Empire',
-        img: 'great.png',
+        img: 'great-sat.png',
         type: 'greatPower',
         imgType: 'star'
     },
     'e1444_e1_sweden': {
         event: 'e1444_e1',
         name: 'Scandinavia',
-        img: 'great.png',
+        img: 'great-sat.png',
         type: 'greatPower',
         imgType: 'star'
     },
@@ -1566,14 +1566,14 @@ const SatAwards = {
     'twosides_e4_eenot': {
         event: 'twosides_e4',
         name: 'South America',
-        img: 'winner.png',
+        img: 'winner-sat.png',
         type: 'winner',
         imgType: 'star'
     },
     'twosides_e4_ottomanism': {
         event: 'twosides_e4',
         name: 'Germany',
-        img: 'great.png',
+        img: 'great-sat.png',
         type: 'greatPower',
         imgType: 'star',
         score: 8
@@ -1581,7 +1581,7 @@ const SatAwards = {
     'twosides_e4_lurus': {
         event: 'twosides_e4',
         name: 'USA',
-        img: 'great.png',
+        img: 'great-sat.png',
         type: 'greatPower',
         imgType: 'star'
     },

@@ -109,7 +109,7 @@ async function writeMessageInDiscord(inputText) {
     ];
 
     for (const hook of webhooks) {
-        if (hook.content == 'doNotSend' || hook.name == 'Events System') return;
+        if (hook.content == 'doNotSend' /*|| hook.name == 'Events System'*/) return;
 
         const formData = new FormData();
         const payload = {
