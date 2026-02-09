@@ -78,7 +78,7 @@ async function writeMessageInDiscord(inputText) {
         break;
         case 'new':
             saturnText = `${mentionSaturn}\n🇬🇧 New event ${document.getElementById('eventChannelSaturn').value}\n<:flag_su:1417146725352865882> Новый ивент ${document.getElementById('eventChannelSaturn').value}`;
-            nwfText = `${mentionNwf} \n# ${document.getElementById('eventChannelNwf').value} is now open for signup! \n Make a ticket in the Signup channel to join2`;
+            nwfText = `${mentionNwf} \n# ${document.getElementById('eventChannelNwf').value} is now open for signup! \n Make a ticket in the Signup channel to join`;
         break;
         case 'end':
             saturnText = 'doNotSend';
