@@ -62,6 +62,6 @@
     }
 
     .list-container {
-        height: calc(100dvh - 48px);
+        height: calc(100dvh - 48px - 155px);
     }
 }

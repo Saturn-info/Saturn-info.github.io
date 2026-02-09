@@ -1,7 +1,7 @@
 const SatUsers = {
     "eenot": {
         "id": "eenot",
-        "discord": "ЕЕнот / RRaccoon",
+        "discord": "ЕЕнот",
         "discordid": "794675642037567498",
         "gamename": "eenot (rracc)",
         "awards": [
@@ -292,7 +292,7 @@ const SatUsers = {
     },
     "penguin": {
         "id": "penguin",
-        "discord": "LeaderPenguin of the DPR",
+        "discord": "Leader Penguin of the DPR",
         "discordid": "1260611002240860202",
         "gamename": "LeaderPinguin",
         "awards": [
@@ -705,7 +705,7 @@ const SatAwards = {
     "euam1799_e1_win": {
         event: "euam1799_e1",
         name: "Winner",
-        img: "winner.png",
+        img: "winner-sat.png",
         type: "winner",
         imgType: 'star',
     },
@@ -719,7 +719,7 @@ const SatAwards = {
     "kaiserreich_e1_p1_win": {
         event: "kaiserreich_e1_p1",
         name: "Winner",
-        img: "winner.png",
+        img: "winner-sat.png",
         type: "winner",
         imgType: 'star',
     },
@@ -839,7 +839,7 @@ const SatAwards = {
         event: "kaiserreich_e2_p1",
         name: "Kaiserreich2 Winner",
         //img: "kaiser21ottoman.png",
-        img: "winner.png",
+        img: "winner-sat.png",
         type: "winner",
         imgType: 'star',
     },
@@ -867,7 +867,7 @@ const SatAwards = {
     "eusat2014_e1_winner": {
         event: "eusat2014_e1",
         name: "Eusat2014 Winner",
-        img: "winner.png",
+        img: "winner-sat.png",
         type: "winner",
         imgType: 'star',
         score: 8,

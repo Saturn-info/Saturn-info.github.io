@@ -58,6 +58,7 @@ class LangMgr {
                 "medals_greatinfo": "Top 2/3 in the leaderboard, or a country directly or through vassalage controls +-1/3 of the map's land",
                 "medals_sideinfo": "Winner's ally or vassal",
                 "medals_definfo": "A country that held a very strong/long defense",
+                "leadertable": "Table of Leaders",
             },
             "ru": {
                 "leaderboard": "Медали",
@@ -126,6 +127,7 @@ class LangMgr {
                 "medals_greatinfo":  "Топ-2/3 в таблице лидеров, или страна прямо или через вассалитет контролирует +-1/3 земли карты",
                 "medals_sideinfo":   "Союзник или вассал Победителя",
                 "medals_definfo":    "Страна, державшая очень сильную/долгую оборону",
+                "leadertable":       "Таблица Лидеров",
             },
         };
         if (localStorage.getItem('SaturnLang')) {

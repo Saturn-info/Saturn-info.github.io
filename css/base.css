@@ -24,6 +24,7 @@ body {
     margin: 8px;
     display: flex;
     justify-content: center;
+    padding: var(--ds);
 }
 
 .leftnav {
@@ -122,4 +123,60 @@ td div {
 
 #langDropdown img {
 	width: 35px;
+}
+
+.list-container#leadertable {
+    padding: 0;
+}
+
+#fromWhereInfo {
+    padding: var(--ds);
+    margin: var(--dss) 0;
+    background-color: var(--bg-sec-great);
+    border-radius: var(--br);
+
+    button {
+        border-radius: var(--br);
+        background-color: var(--bg-pri-great);
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100px;
+        height: calc(24px + 8px * 2);
+        transition: var(--tr-in);
+
+        &:hover {
+            background-color: var(--bg-sec-hover);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .imgcont {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &.active {
+            border-radius: var(--brs);
+            background: linear-gradient(135deg, #0f4569, #518eb6, #1993e5);
+
+            &.saturn {
+                background: linear-gradient(135deg, #3e0f69, #8551b6, #9719e5);
+            }
+            &.nwf {
+                background: linear-gradient(135deg, #690f0f, #b65151, #e51919);
+            }
+
+            .imgcont {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
 }

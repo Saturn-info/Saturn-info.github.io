@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
             img.style.cursor = "pointer";
 
             img.onclick = () => {
-                window.leaderboard.showAward(awardId);
+                window.leaderboardSat.showAward(awardId);
                 //alert(`🏅 ${obj.award.name}\nПолучили: ${obj.players.join(", ")}`);
             };
 

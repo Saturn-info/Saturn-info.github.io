@@ -10,7 +10,7 @@
 .leftnavicons .navbtn img {
     width: 32px;
     height: 32px;
-    border-radius: var(--br);
+    border-radius: var(--brs);
 }
 
 .leftnavicons .navbtn {
