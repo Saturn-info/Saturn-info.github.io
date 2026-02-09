@@ -47,8 +47,23 @@
         </nav>
         <div class="content">
             <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" rows="4" placeholder="Enter your message" required></textarea>
+                <label>Type of message</label>
+                <div class="button-group typeOfMessage">
+                    <button id="startEvent" class="active">Start</button>
+                    <button id="reStartEvent">RE-Start</button>
+                    <button id="newEvent">New</button>
+                    <button id="endEvent">End</button>
+                    <button id="customEvent">custom</button>
+                </div>
+                <div class="form-group">
+                    <input  type="url" id="eventChannelNwf"    placeholder="paste link of event's NWF channel">
+                    <input  type="url" id="eventChannelSaturn" placeholder="paste link of event's Saturn channel">
+                    <textarea          id="customText"         placeholder="write custom text"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">List of players:</label>
+                <textarea id="message" rows="4" placeholder="Paste list of players" required></textarea>
                 <div class="img-group">
                     <input  type="url"  id="fileUrl"   >
                     <input  type="file" id="fileUpload">

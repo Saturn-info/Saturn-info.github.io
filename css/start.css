@@ -41,3 +41,27 @@
     display: inline-flex;
     justify-content: space-evenly;
 }
+
+.typeOfMessage button {
+    background-color: var(--bg-pri-great);
+
+    &:hover {
+        background-color: var(--bg-pri-hover);
+    }
+
+    &.active {
+        background-color: var(--ac-bg);
+
+        &:hover {
+            background-color: var(--ac-bg-hover);
+        }
+    }
+}
+
+#customText, #eventChannelSaturn, #eventChannelNwf {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
