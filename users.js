@@ -203,6 +203,7 @@ const SatUsers = {
             "inter_e1_p1_ottomans",
             "tigerland_e3_east",
             'generals_e1_at',
+            'twosides_e4_ottomanism',
         ],
         "events": [
             "euam2025_e1",
@@ -224,6 +225,7 @@ const SatUsers = {
             "ww2_e3_p1",
             "inter_e1_p1",
             "tigerland_e3",
+            'twosides_e4',
         ]
     },
     "namexxxx": {
@@ -296,10 +298,12 @@ const SatUsers = {
         "awards": [
             "euam2025_e1_belarus",
             "e1444_e1_penguin",
+            'twosides_e4_penguin',
         ],
         "events": [
             "euam2025_e1",
             "e1444_e1",
+            'twosides_e4',
         ]
     },
     "moad": {
@@ -498,6 +502,7 @@ const SatUsers = {
             "ww2_e2_raj",
             "inter_e1_p1_iberia",
             "e1444_e1_hungary",
+            'twosides_e4_psycho',
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -505,6 +510,7 @@ const SatUsers = {
             "ww2_e2",
             "inter_e1_p1",
             "e1444_e1",
+            'twosides_e4',
         ]
     },
     "tungg": {
@@ -593,6 +599,7 @@ const SatUsers = {
             "inter_e1_p1_ru",
             "tigerland_e3_north",
             "e1444_e1_lurus",
+            'twosides_e4_lurus',
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -603,6 +610,7 @@ const SatUsers = {
             "inter_e1_p1",
             "tigerland_e3",
             "e1444_e1",
+            'twosides_e4',
         ]
     },
     "honse": {
@@ -1561,6 +1569,35 @@ const SatAwards = {
         img: 'winner.png',
         type: 'winner',
         imgType: 'star'
+    },
+    'twosides_e4_ottomanism': {
+        event: 'twosides_e4',
+        name: 'Germany',
+        img: 'great.png',
+        type: 'greatPower',
+        imgType: 'star',
+        score: 8
+    },
+    'twosides_e4_lurus': {
+        event: 'twosides_e4',
+        name: 'USA',
+        img: 'great.png',
+        type: 'greatPower',
+        imgType: 'star'
+    },
+    'twosides_e4_psycho': {
+        event: 'twosides_e4',
+        name: 'Mexico',
+        img: 'shield.png',
+        type: 'strongDefender',
+        imgType: 'star',
+        score: 6
+    },
+    'twosides_e4_penguin': {
+        event: 'twosides_e4',
+        name: 'Argentine',
+        img: 'blank.png',
+        type: 'winSide'
     },
     'generals_e1_at': {
         event: 'generals_e1',
