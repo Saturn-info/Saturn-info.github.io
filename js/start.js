@@ -2,10 +2,10 @@ const webcryptSaturn = 'U2FsdGVkX1+K6wRzUNLW+S15s3aOJzwcGmI71FLXvJM3fo93gRgbEg+M
 //const webcryptNwf = 'U2FsdGVkX1++72YxU/I6QCpgHsMHeMPvQ8XrY5jVSo3h6GZvaqd4a1PeOooPS4KHXd4awDQX906J1W/wjwTOjAVFpCNkiNREc7fB02VtMjWYeKn77owThGeLAvGl6M1qxOBhh0Pou4ZGKRYIOj17u7zJK3tk+p5kSVM54xwevf0YDWDtDu1e82Gs+xdHH3ym';
 const webcryptNwf = 'U2FsdGVkX19miTxawSrcqhhqsENYiA/CsCx+IuHsIrKf4pckAZRKsvzzcI2im84lBSYI+C7pYL6DAE1KbpltQ1oyFKwjYGT4GgIU0//khpq/a7OoQlUEWJ1VIxbevXBtXn4MbvfvYXoAAkuU4ZZuxjKFNDluAKQeXh+vCdst0SlHab0Dz7WO7NH1mxxTAOKj';
 
-//const mentionSaturn = '<@&1257092656497033380>';
-const mentionSaturn = '<@794675642037567498>';
-//const mentionNwf = '@everyone';
-const mentionNwf = '<@794675642037567498>';
+const mentionSaturn = '<@&1257092656497033380>';
+//const mentionSaturn = '<@794675642037567498>';
+const mentionNwf = '@everyone';
+//const mentionNwf = '<@794675642037567498>';
 
 let textType = 'start';
 let saturnText = '';
