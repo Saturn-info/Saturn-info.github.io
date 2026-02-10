@@ -734,14 +734,14 @@ const SatAwards = {
         event: "kaiserreich_e1_p1",
         name: "Roman Empire",
         img: "kaiserroman.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
     },
     "kaiserreich_e1_p1_german": {
         event: "kaiserreich_e1_p1",
         name: "German Emire",
         img: "kaisergerman.png",
-        type: "greatPower"
+        type: "great"
     },
     "kaiserreich_e1_p1_westrussia": {
         event: "kaiserreich_e1_p1",
@@ -755,14 +755,14 @@ const SatAwards = {
         event: "kaiserreich_e1_p1",
         name: "Great Sweden",
         img: "kaisersweden.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
     },
     "euam2025_e1_russia": {
         event: "euam2025_e1",
         name: "Russia",
         img: "russiaempire.png",
-        type: "greatPower"
+        type: "great"
     },
     "euam2025_e1_ukraine": {
         event: "euam2025_e1",
@@ -775,7 +775,7 @@ const SatAwards = {
         event: "euam2025_e1",
         name: "Made America Great Again",
         img: "americagreat.png",
-        type: "greatPower",
+        type: "great",
         imgType: "special",
     },
     "euam2025_e1_belarus": {
@@ -861,7 +861,7 @@ const SatAwards = {
         event: "kaiserreich_e2_p1",
         name: "Russian Bastion",
         img: "kaiser21russia.png",
-        type: "greatPower",
+        type: "great",
         imgType: "shield",
     },
     "eusat2014_e1_winner": {
@@ -876,7 +876,7 @@ const SatAwards = {
         event: "eusat2014_e1",
         name: "Eastern Center",
         img: "odkb.png",
-        type: "greatPower"
+        type: "great"
     },
     "eusat2014_e1_defender": {
         event: "eusat2014_e1",
@@ -896,7 +896,7 @@ const SatAwards = {
         event: "twosides_e1",
         name: "Greater British Colonial Empire",
         img: "ts_british.png",
-        type: "greatPower"
+        type: "great"
     },
     "twosides_e1_china": {
         event: "twosides_e1",
@@ -1060,7 +1060,7 @@ const SatAwards = {
         event: "metromoscow_e2",
         name: "",
         img: "metromoscow_e2_cool.png",
-        type: "greatPower",
+        type: "great",
         "imgType": "metro",
         score: 2
     },
@@ -1105,7 +1105,7 @@ const SatAwards = {
         event: "ww1_e1",
         name: "South American Union",
         img: "ww1_e1_brazil.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
         score: 5,
     },
@@ -1151,13 +1151,13 @@ const SatAwards = {
         event: "twosides_e3",
         name: "French Colonial Empire",
         img: "twosides_e3_france.png",
-        type: "greatPower"
+        type: "great"
     },
     "twosides_e3_germany": {
         event: "twosides_e3",
         name: "German Colonial Empire",
         img: "twosides_e3_germany.png",
-        type: "greatPower"
+        type: "great"
     },
     "euro4modern_e1_p1_winner": {
         event: "euro4modern_e1_p1",
@@ -1169,14 +1169,14 @@ const SatAwards = {
         event: "euro4modern_e1_p1",
         name: "Great Germany",
         img: "euro4modern_e1_p1_germany.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
     },
     "euro4modern_e1_p1_france": {
         event: "euro4modern_e1_p1",
         name: "Westeurope",
         img: "euro4modern_e1_p1_france.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
     },
     "euro4modern_e1_p1_turkey": {
@@ -1226,13 +1226,13 @@ const SatAwards = {
         event: "ww1_e2",
         name: "Crazy France",
         img: "ww1_e2_p1_france.png",
-        type: "greatPower"
+        type: "great"
     },
     "ww1_e2_turkey": {
         event: "ww1_e2",
         name: "Great Turkey",
         img: "ww1_e2_p1_turkey.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
     },
     "ww1_e2_scandinavia": {
@@ -1320,7 +1320,7 @@ const SatAwards = {
         event: "cw_e1",
         name: "Fourth Reich",
         img: "cwe1germany.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
     },
     "ue_e1_winner": {
@@ -1334,7 +1334,7 @@ const SatAwards = {
         event: "ue_e1",
         name: "EG Silver",
         img: "egsumid.png",
-        type: "greatPower",
+        type: "great",
         imgType: "circle",
         score: 8,
     },
@@ -1357,21 +1357,21 @@ const SatAwards = {
         event: "ww2_e2",
         name: "Chinese Empire",
         img: "ww2e2china.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
     },
     "ww2_e2_germany": {
         event: "ww2_e2",
         name: "Great Germany",
         img: "ww2e2germany.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
     },
     "ww2_e2_austrilia": {
         event: "ww2_e2",
         name: "Oceanian State",
         img: "ww2e2australia.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
         score: 6
     },
@@ -1401,7 +1401,7 @@ const SatAwards = {
         event: "ww2_e3_p1",
         name: "Australia",
         img: "ww2e3australia.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders"
     },
     "ww2_e3_p1_ukraj": {
@@ -1437,7 +1437,7 @@ const SatAwards = {
         event: "inter_e1_p1",
         name: "Persian Empire",
         img: "intere1persia.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
         score: 6
     },
@@ -1445,14 +1445,14 @@ const SatAwards = {
         event: "inter_e1_p1",
         name: "Imperial Ankara Government",
         img: "intere1ottomans.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders"
     },
     "inter_e1_p1_iberia": {
         event: "inter_e1_p1",
         name: "Inkan",
         img: "intere1iberia.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders"
     },
     "inter_e1_p1_finland": {
@@ -1467,7 +1467,7 @@ const SatAwards = {
         event: "inter_e1_p1",
         name: "Austria-Italia",
         img: "intere1auit.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders",
         score: 5
     },
@@ -1503,7 +1503,7 @@ const SatAwards = {
         event: "tigerland_e3",
         name: "Severopolossk",
         img: "tigerland_e3_north.png",
-        type: "greatPower",
+        type: "great",
         imgType: "normalBorders"
     },
     "aotsm_e1_winner": {
@@ -1517,7 +1517,7 @@ const SatAwards = {
         event: 'aotsm_e1',
         name: 'AotSM great power',
         img: 'great-sat.png',
-        type: 'greatPower',
+        type: 'great',
         imgType: 'star'
     },
     "e1444_e1_eenot": {
@@ -1532,7 +1532,7 @@ const SatAwards = {
         event: "e1444_e1",
         name: "Soviet Eastslavia",
         img: 'e1444_e1_eenot.png',
-        type: 'greatPower',
+        type: 'great',
         imgType: 'normalBorders',
         score: 8
     },
@@ -1540,21 +1540,21 @@ const SatAwards = {
         event: "e1444_e1",
         name: "Greater Hungary",
         img: 'great-sat.png',
-        type: 'greatPower',
+        type: 'great',
         imgType: 'star'
     },
     'e1444_e1_turkey': {
         event: "e1444_e1",
         name: 'Ottoman Empire',
         img: 'great-sat.png',
-        type: 'greatPower',
+        type: 'great',
         imgType: 'star'
     },
     'e1444_e1_sweden': {
         event: 'e1444_e1',
         name: 'Scandinavia',
         img: 'great-sat.png',
-        type: 'greatPower',
+        type: 'great',
         imgType: 'star'
     },
     'e1444_e1_lurus': {
@@ -1574,7 +1574,7 @@ const SatAwards = {
         event: 'twosides_e4',
         name: 'Germany',
         img: 'great-sat.png',
-        type: 'greatPower',
+        type: 'great',
         imgType: 'star',
         score: 8
     },
@@ -1582,7 +1582,7 @@ const SatAwards = {
         event: 'twosides_e4',
         name: 'USA',
         img: 'great-sat.png',
-        type: 'greatPower',
+        type: 'great',
         imgType: 'star'
     },
     'twosides_e4_psycho': {
@@ -1621,7 +1621,7 @@ const SatTypesImg = [
 const SatTypes = {
     "winner": 10,
     "conqueror": 8,
-    "greatPower": 7,
+    "great": 7,
     "winSide": 5,
     "ratio": 5,
     "strongDefender": 4,

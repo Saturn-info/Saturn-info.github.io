@@ -157,25 +157,197 @@ class leaderboardSat {
             const tdAwards = document.createElement('td');
             tdAwards.classList.add('awardslist');
 
-            // Сортируем все награды пользователя: сначала по источнику, потом по ценности
-            const sortedAwards = [...user.awards].sort((a, b) => {
-                const typeA = this.getAwardType(a);
-                const typeB = this.getAwardType(b);
+            // Проверяем режим отображения
+            if (window.leaderboardSat.fromWhereUsers !== 'saturn') {
+                // === Режим группировки: SAT и NWF награды отдельными блоками ===
                 
-                // SAT награды идут первыми
-                if (typeA === 'sat' && typeB !== 'sat') return -1;
-                if (typeA !== 'sat' && typeB === 'sat') return 1;
-                
-                // Внутри одного источника - сортируем по ценности
-                if (typeA === 'sat' && typeB === 'sat') {
-                    return this.calcScoreAwardSat(b) - this.calcScoreAwardSat(a);
-                } else if (typeA === 'nwf' && typeB === 'nwf' && window.leaderboardNwf) {
-                    return window.leaderboardNwf.calcScoreAward(b) - window.leaderboardNwf.calcScoreAward(a);
-                }
-                return 0;
-            });
+                // ---------- SAT награды ----------
+                const satAwardCounts = {};
+                user.satAwards.forEach(awardKey => {
+                    const award = SatAwards?.[awardKey];
+                    if (award && award.type) {
+                        if (!satAwardCounts[award.type]) {
+                            let image;
+                            console.log(award.type);
+                            if (award.type == 'strongDefender') image = 'shield'
+                            else if (award.type == 'other') image = 'blank'
+                            else if (award.type == 'winner') image = 'winner-sat'
+                            else if (award.type == 'great') image = 'great-sat'
+                            else image = award.type;
 
-            sortedAwards.forEach(awardKey => {
+                            console.log(image);
+                            satAwardCounts[award.type] = { 
+                                count: 0, 
+                                event: award.event,
+                                name: award.name,
+                                img: `${image}.png`
+                            };
+                        }
+                        satAwardCounts[award.type].count++;
+                    }
+                });
+                
+                let satDivAwards = document.createElement('div');
+                let nwfDivAwards = document.createElement('div');
+                tdAwards.appendChild(satDivAwards);
+                tdAwards.appendChild(nwfDivAwards);
+
+                // Отображаем сгруппированные SAT награды
+                Object.keys(satAwardCounts).sort((a, b) => {
+                    // Сортируем по ценности (если есть в SatTypes)
+                    return (SatTypes?.[b] || 0) - (SatTypes?.[a] || 0);
+                }).forEach(type => {
+                    const awardData = satAwardCounts[type];
+                    
+                    const awardDiv = document.createElement('div');
+                    awardDiv.classList.add('award-item');
+                    awardDiv.style.display = 'inline-flex';
+                    awardDiv.style.alignItems = 'center';
+                    awardDiv.style.marginRight = '8px';
+                    
+                    const img = document.createElement('img');
+                    img.src = `img/award/${awardData.img}`;
+                    img.title = `${awardData.name} ${SatEvents?.[awardData.event]?.name || awardData.event || ''}`;
+                    img.onclick = (e) => {
+                        e.stopPropagation();
+                        // Найти первую награду этого типа
+                        const awardKey = user.satAwards.find(aw => SatAwards[aw]?.type === type);
+                        if (awardKey) this.showAward(awardKey);
+                    };
+                    img.classList.add('smallAwardIcon');
+                    
+                    const countSpan = document.createElement('span');
+                    countSpan.textContent = `×${awardData.count}`;
+                    countSpan.style.marginLeft = '4px';
+                    countSpan.style.fontWeight = 'bold';
+                    
+                    awardDiv.appendChild(img);
+                    awardDiv.appendChild(countSpan);
+                    satDivAwards.appendChild(awardDiv);
+                });
+                
+                // Разделитель между блоками (опционально)
+                /*if (Object.keys(satAwardCounts).length > 0 && user.nwfAwards.length > 0) {
+                    const separator = document.createElement('span');
+                    separator.style.margin = '0 8px';
+                    separator.textContent = '•';
+                    tdAwards.appendChild(separator);
+                }*/
+                
+                // ---------- NWF награды ----------
+                const nwfAwardCounts = {};
+                user.nwfAwards.forEach(awardKey => {
+                    const award = window.leaderboardNwf?.awards?.(awardKey);
+                    if (award && NwfTypes?.[award.type]) {
+                        if (!nwfAwardCounts[award.type]) {
+                            nwfAwardCounts[award.type] = { 
+                                count: 0, 
+                                event: award.event,
+                                name: NwfTypes[award.type].name
+                            };
+                        }
+                        nwfAwardCounts[award.type].count++;
+                    }
+                });
+                
+                // Отображаем сгруппированные NWF награды
+                Object.keys(nwfAwardCounts).sort((a, b) => {
+                    // Сортируем по ценности (если есть в NwfTypes)
+                    return (NwfTypes?.[b]?.score || 0) - (NwfTypes?.[a]?.score || 0);
+                }).forEach(type => {
+
+                    const awardData = nwfAwardCounts[type];
+                    
+                    const awardDiv = document.createElement('div');
+                    awardDiv.classList.add('award-item');
+                    awardDiv.style.display = 'inline-flex';
+                    awardDiv.style.alignItems = 'center';
+                    awardDiv.style.marginRight = '8px';
+                    
+                    const img = document.createElement('img');
+                    img.src = `img/award/${type}.png`;
+                    img.title = `${awardData.name} ${NwfEvents?.[awardData.event]?.name || awardData.event || ''}`;
+                    img.onclick = (e) => {
+                        e.stopPropagation();
+                        // Найти первую награду этого типа для показа
+                        const awardKey = user.nwfAwards.find(aw => {
+                            const awData = window.leaderboardNwf?.awards?.(aw);
+                            return awData?.type === type;
+                        });
+                        if (awardKey && window.leaderboardNwf?.showAward) {
+                            window.leaderboardNwf.showAward(awardKey);
+                        }
+                    };
+                    img.classList.add('smallAwardIcon');
+                    
+                    const countSpan = document.createElement('span');
+                    countSpan.textContent = `×${awardData.count}`;
+                    countSpan.style.marginLeft = '4px';
+                    countSpan.style.fontWeight = 'bold';
+                    
+                    awardDiv.appendChild(img);
+                    awardDiv.appendChild(countSpan);
+                    nwfDivAwards.appendChild(awardDiv);
+                });
+
+                if (Object.keys(satAwardCounts).length > 0) satDivAwards.className = 'didAwards';
+                if (Object.keys(nwfAwardCounts).length > 0) nwfDivAwards.className = 'didAwards';
+                
+            } else {
+                // === Режим отображения только SAT: показываем по-одиночке ===// Сортируем все награды пользователя: сначала по источнику, потом по ценности
+                const sortedAwards = [...user.awards].sort((a, b) => {
+                    const typeA = this.getAwardType(a);
+                    const typeB = this.getAwardType(b);
+                    
+                    // SAT награды идут первыми
+                    if (typeA === 'sat' && typeB !== 'sat') return -1;
+                    if (typeA !== 'sat' && typeB === 'sat') return 1;
+                    
+                    // Внутри одного источника - сортируем по ценности
+                    if (typeA === 'sat' && typeB === 'sat') {
+                        return this.calcScoreAwardSat(b) - this.calcScoreAwardSat(a);
+                    } else if (typeA === 'nwf' && typeB === 'nwf' && window.leaderboardNwf) {
+                        return window.leaderboardNwf.calcScoreAward(b) - window.leaderboardNwf.calcScoreAward(a);
+                    }
+                    return 0;
+                });
+
+                sortedAwards.forEach(awardKey => {
+                    const awardType = this.getAwardType(awardKey);
+                    
+                    // SAT награда
+                    if (awardType === 'sat') {
+                        const award = SatAwards?.[awardKey];
+                        if (!award) return;
+                        
+                        const div = document.createElement('div');
+                        div.classList.add('squareMedal');
+                        
+                        if (award.imgType === 'metro' || award.imgType === 'special') {
+                            div.classList.add('none');
+                        } else if (award.type === 'winSide' && !award.imgType) {
+                            div.classList.add('winSide');
+                        } else if (award.type) {
+                            div.classList.add(award.type);
+                        }
+                        
+                        const img = document.createElement('img');
+                        img.src = SatTypesImg?.includes(award.imgType) 
+                            ? `img/award/${award.img}` 
+                            : 'img/award/blank.png';
+                        img.title = `${award.event || ''} ${award.name || ''}`.trim();
+                        img.alt = award.name || 'SAT Award';
+                        img.onclick = (e) => {
+                            e.stopPropagation();
+                            this.showAward(awardKey);
+                        };
+                        div.appendChild(img);
+                        tdAwards.appendChild(div);
+                    }
+                });
+            }
+
+            /*sortedAwards.forEach(awardKey => {
                 const awardType = this.getAwardType(awardKey);
                 
                 // SAT награда
@@ -221,7 +393,7 @@ class leaderboardSat {
                         tdAwards.appendChild(img);
                     }
                 }
-            });
+            });*/
 
             tr.appendChild(tdAwards);
 
