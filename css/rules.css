@@ -1,0 +1,10 @@
+body div.content {
+    justify-content: unset;
+}
+
+#rulesDiv {
+    padding: var(--ds);
+    margin: var(--dss) 0;
+    background-color: var(--bg-sec-great);
+    border-radius: var(--br);
+}

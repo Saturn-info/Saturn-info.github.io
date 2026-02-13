@@ -32,6 +32,7 @@ const SatUsers = {
             "e1444_e1_eenot",
             'twosides_e4_eenot',
             'generals_e1_at',
+            'e1444_e2_eenot',
         ],
         "events": [
             "euam1799_e1",
@@ -112,6 +113,7 @@ const SatUsers = {
             "ww2_e3_p1_winner",
             "tigerland_e3_winner",
             "e1444_e1_turkey",
+            'e1444_e2_conqueror',
         ],
         "events": [
             "euam1799_e1",
@@ -204,6 +206,7 @@ const SatUsers = {
             "tigerland_e3_east",
             'generals_e1_at',
             'twosides_e4_ottomanism',
+            'e1444_e2_conqueror',
         ],
         "events": [
             "euam2025_e1",
@@ -260,6 +263,7 @@ const SatUsers = {
             "euro4modern_e1_p1_poland",
             "cw_e1_germany",
             "inter_e1_p1_auit",
+            'e1444_e2_great',
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -503,6 +507,7 @@ const SatUsers = {
             "inter_e1_p1_iberia",
             "e1444_e1_hungary",
             'twosides_e4_psycho',
+            'e1444_e2_great',
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -688,12 +693,24 @@ const SatUsers = {
         awards: [
             'aotsm_e1_great',
             'e1444_e1_sweden',
+            'e1444_e2_great',
         ],
         events: [
             'aotsm_e1',
             'e1444_e1',
         ]
-    }
+    },
+    "sjosten": {
+        id: 'sjosten',
+        discord: 'Sjösten',
+        discordid: '1190382734087041175',
+        gamename: '',
+        awards: [
+            'e1444_e2_scandinavia',
+        ],
+        events: [
+        ]
+    },
 };
 
 const SatAwards = {
@@ -1606,7 +1623,37 @@ const SatAwards = {
         type: 'other',
         imgType: 'special',
         score: 5
-    }
+    },
+    'e1444_e2_eenot': {
+        event: 'e1444_e2',
+        name: '1444 2 Winner',
+        img: 'winner-sat.png',
+        type: 'winner',
+        imgType: 'star',
+        score: 12
+    },
+    'e1444_e2_conqueror': {
+        event: 'e1444_e2',
+        name: '1444 2 Conqueror',
+        img: 'conqueror.png',
+        imgType: 'star',
+        type: 'conqueror',
+    },
+    'e1444_e2_sweden': {
+        event: 'e1444_e2',
+        name: '1444 2 Scandinavia',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great'
+    },
+    'e1444_e2_great': {
+        event: 'e1444_e2',
+        name: '1444 2 Great Power',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 5
+    },
 };
 
 const SatTypesImg = [
@@ -1629,6 +1676,12 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    e1444_e2: {
+        name: '1444 E2',
+        date: '13.02.2026',
+        map: 'trid_eurosat_v5_1444',
+        discord: '1470019099084980395',
+    },
     generals_e1: {
         name: 'Europe - Generals',
         date: '25.01.2026',

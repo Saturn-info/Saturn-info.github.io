@@ -59,6 +59,7 @@ class LangMgr {
                 "medals_sideinfo": "Winner's ally or vassal",
                 "medals_definfo": "A country that held a very strong/long defense",
                 "leadertable": "Table of Leaders",
+                "rules": "Rules",
             },
             "ru": {
                 "leaderboard": "Медали",
@@ -128,6 +129,7 @@ class LangMgr {
                 "medals_sideinfo":   "Союзник или вассал Победителя",
                 "medals_definfo":    "Страна, державшая очень сильную/долгую оборону",
                 "leadertable":       "Таблица Лидеров",
+                "rules":             "Правила",
             },
         };
         if (localStorage.getItem('SaturnLang')) {

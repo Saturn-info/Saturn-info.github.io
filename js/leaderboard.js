@@ -122,7 +122,9 @@ class leaderboardSat {
             }
             
             // Для чистых SAT-пользователей - оригинальная логика
-            return (user.events?.length > 0) ? user.score / user.events.length : 0;
+            //return (user.events?.length > 0) ? user.score / user.events.length : 0;
+            const length = (user.events.length > user.awards.length) ? user.events.length : user.awards.length;
+            return user.score / length;
         };
 
         usersArray.sort((a, b) => calculateRatio(b) - calculateRatio(a));

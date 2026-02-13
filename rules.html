@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KNCHM5MNE"></script><script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9KNCHM5MNE');</script>
+
+        <title>Leaderboard | Saturn</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/ico3.png">
+        <script src="users.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/rules.js"></script>
+
+        <script src="js/lang.js"></script>
+        <script src="js/translator.js"></script>
+        <script src="js/info.js"></script>
+        <script src="js/events.js"></script>
+        <link rel="stylesheet" href="css/rules.css">
+
+        <link rel="stylesheet" href="https://ee-apps.github.io/framework/eelibs/import.css">
+        <link rel="stylesheet" href="css/admin.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/random.css">
+        <link rel="stylesheet" href="css/list.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/donate.css">
+        <link rel="stylesheet" href="css/events.css">
+        <link rel="stylesheet" href="css/start.css">
+    </head>
+    <body>
+        <nav class="navpanel">
+            <div class="leftnav">
+                <a class="navbtn" href="index.html"><div class="navbtndiv"><img src="https://ee-apps.github.io/framework/img/ui/home.svg"><p data-lang="home">Home</p></div></a>
+                <a class="navbtn" href="leaderboard.html"><div class="navbtndiv"><img src="img/icons/2/medal.svg"><p data-lang="leaderboard">Leaderboard</p></div></a>
+                <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><div class="navbtndiv"><img src="img/icons/2/discord.svg"><p data-lang="discord">Discord</p></div></a>
+                <a class="navbtn" href="donate.html"><div class="navbtndiv"><img src="img/icons/2/money.svg"><p data-lang="donate">Donate-info</p></div></a>
+                <a class="navbtn" href="events.html"><div class="navbtndiv"><img src="img/icons/2/calendar.svg"><p data-lang="events">Events</p><p id=eventsCount></p></div></a>
+                <div class="navbtn active" href="rules.html"><div class="navbtndiv"><img src="img/icons/2/rules.svg"><p data-lang="rules">Rules</p></div></div>
+            </div>
+            <div class="rightnav">
+                <div class="qustBtn navbtn" onclick="showTypesInfo()"><div class="navbtndiv"><img src="img/icons/2/info.svg"><p data-lang="medalsqe">Медали</p></div></div>
+                <div class="langBtn navbtn" onclick="if (localStorage.getItem('SaturnLang') === 'ru') { window.langMgr.setLang('en') } else { window.langMgr.setLang('ru') }"><div class="navbtndiv"><img src="img/icons/2/planet.svg"><p>Language</p></div></div>
+            </div>
+            <div class="leftnavicons">
+                <a class="navbtn ico" href="https://nwf-info.github.io"><div class="navbtndiv"><img src="img/icons/nwf.png"><p>NWF</p></div></a>
+                <a class="navbtn ico" href="https://eeditor-ws.github.io"><div class="navbtndiv"><img src="img/icons/eeditor.svg"><p>EEditor</p></div></a>
+                <a class="navbtn ico" href="https://warnament.fandom.com/wiki/"><div class="navbtndiv"><img src="img/icons/fandom.png"><p>Wiki</p></div></a>
+            </div>
+        </nav>
+        <div class="content">
+            <h1 style="padding-left: var(--ds);" data-lang="rules">Таблица Лидеров</h1>
+            <div class="button-group" id="fromWhereInfo">
+                <button class="active" data-where="all"><div class="imgcont"><img src="img/ui/check/checked.svg"></div>All</button>
+                <button class="wg" data-where="wg"><div class="imgcont"><img src="img/ui/check/checked.svg"></div>WG</button>
+                <button class="rp" data-where="rp"><div class="imgcont"><img src="img/ui/check/checked.svg"></div>RP</button>
+                <button class="eg" data-where="eg"><div class="imgcont"><img src="img/ui/check/checked.svg"></div>EG</button>
+            </div>
+            <div id="rulesDiv">
+                <div id="rulesText"></div>
+            </div>
+        </div>
+        <div id="modal">
+
+        </div>
+    </body>
+</html>

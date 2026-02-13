@@ -172,6 +172,15 @@ td div {
             &.nwf {
                 background: linear-gradient(135deg, #690f0f, #b65151, #e51919);
             }
+            &.wg {
+                background: linear-gradient(135deg, #690f0f, #b65151, #e51919);
+            }
+            &.rp {
+                background: linear-gradient(135deg, #0f0f69, #5169b6, #1919e5);
+            }
+            &.eg {
+                background: linear-gradient(135deg, #69660f, #b6a951, #e5ca19);
+            }
 
             .imgcont {
                 width: 24px;
