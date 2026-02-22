@@ -95,17 +95,17 @@ async function writeMessageInDiscord(inputText) {
 
     const webhooks = [
         {
+            url: webhookNwfURL,
+            name: 'Events System',
+            avatar: 'http://nwf-info.github.io/img/ico2e.png',
+            content: nwfText
+        },
+        {
             url: webhookSaturnURL,
             name: 'Saturn Events System',
             avatar: 'http://saturn-info.github.io/img/newicon.png',
             content: saturnText
         },
-        {
-            url: webhookNwfURL,
-            name: 'Events System',
-            avatar: 'http://nwf-info.github.io/img/ico2e.png',
-            content: nwfText
-        }
     ];
 
     for (const hook of webhooks) {

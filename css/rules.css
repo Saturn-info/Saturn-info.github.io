@@ -2,9 +2,34 @@ body div.content {
     justify-content: unset;
 }
 
-#rulesDiv {
+#rulesDiv, #rulesDivNwf {
     padding: var(--ds);
     margin: var(--dss) 0;
     background-color: var(--bg-sec-great);
     border-radius: var(--br);
+    overflow-y: scroll;
+    height: calc(100dvh - 48px - 155px - 50px);
+    min-width: 0;
+    width: 0;
+
+    &.active {
+        width: unset;
+    }
+
+
+
+    .textCont {
+        min-height: 0;
+        overflow-y: hidden;
+        height: 0;
+
+        &.active {
+            height: unset;
+        }
+    }
+
+    h1 {
+        margin: 0;
+    }
 }
+
