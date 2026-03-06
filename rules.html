@@ -79,4 +79,33 @@
 
         </div>
     </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const where = params.get('rule');
+
+            // Проверяем, есть ли такой параметр вообще
+            if (where) {
+
+                // 1. Обновляем состояние
+                window.rules.fromWhereUsers = where;
+                window.rules.update(where);
+
+                // 2. Обновляем интерфейс
+                const fromWhereBtns = document.querySelectorAll('#fromWhereInfo button');
+
+                // Сначала убираем активный класс у всех
+                fromWhereBtns.forEach(el => el.classList.remove('active'));
+
+                // Находим кнопку, которая соответствует значению (рекомендую использовать data-атрибуты)
+                // Например: <button data-value="google">Google</button>
+                const targetBtn = document.querySelector(`#fromWhereInfo button.${where}`);
+
+                if (targetBtn) {
+                    targetBtn.classList.add('active');
+                }
+            }
+        })
+    </script>
 </html>
