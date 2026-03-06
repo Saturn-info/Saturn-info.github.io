@@ -33,6 +33,7 @@ const SatUsers = {
             'twosides_e4_eenot',
             'generals_e1_at',
             'e1444_e2_eenot',
+            'euro4modern_e2_esit',
         ],
         "events": [
             "euam1799_e1",
@@ -61,6 +62,7 @@ const SatUsers = {
             "e1444_e1",
             'aotsm_e1',
             'twosides_e4',
+            'euro4modern_e2_p1',
         ]
     },
     "trid": {
@@ -114,6 +116,7 @@ const SatUsers = {
             "tigerland_e3_winner",
             "e1444_e1_turkey",
             'e1444_e2_conqueror',
+            'euro4modern_e2_esit',
         ],
         "events": [
             "euam1799_e1",
@@ -131,6 +134,7 @@ const SatUsers = {
             "ww2_e3_p1",
             "tigerland_e3",
             "e1444_e1",
+            'euro4modern_e2_p1',
         ]
     },
     "talant": {
@@ -327,6 +331,7 @@ const SatUsers = {
             "twosides_e3_germany",
             "cw_e1_winner",
             "ww2_e2_germany",
+            'euro4modern_e2_gb',
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -340,6 +345,7 @@ const SatUsers = {
             "twosides_e3",
             "cw_e1",
             "ww2_e2",
+            'euro4modern_e2_p1',
         ]
     },
     "shelzyy": {
@@ -530,35 +536,11 @@ const SatUsers = {
             "euro4modern_e1_p1",
         ]
     },
-    "trueruler": {
-        "id": "trueruler",
-        "discord": "",
-        "discordid": "",
-        "gamename": "TrueRuler",
-        "awards": [
-            "euro4modern_e1_p1_winside",
-        ],
-        "events": [
-            "euro4modern_e1_p1",
-        ]
-    },
     "negr1007": {
         "id": "negr1007",
         "discord": "",
         "discordid": "",
         "gamename": "Hegr1007",
-        "awards": [
-            "euro4modern_e1_p1_winside",
-        ],
-        "events": [
-            "euro4modern_e1_p1",
-        ]
-    },
-    "strateg": {
-        "id": "strateg",
-        "discord": "",
-        "discordid": "",
-        "gamename": "StrateG",
         "awards": [
             "euro4modern_e1_p1_winside",
         ],
@@ -605,6 +587,7 @@ const SatUsers = {
             "tigerland_e3_north",
             "e1444_e1_lurus",
             'twosides_e4_lurus',
+            'euro4modern_e2_isris',
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -616,6 +599,7 @@ const SatUsers = {
             "tigerland_e3",
             "e1444_e1",
             'twosides_e4',
+            'euro4modern_e2_p1',
         ]
     },
     "honse": {
@@ -626,10 +610,12 @@ const SatUsers = {
         "awards": [
             "ww1_e2_turkey",
             "ww2_e3_p1_ukraj",
+            'euro4modern_e2_winner',
         ],
         "events": [
             "ww1_e2",
             "ww2_e3_p1",
+            'euro4modern_e2_p1',
         ]
     },
     "stewardconstruct": {
@@ -678,11 +664,13 @@ const SatUsers = {
         "awards": [
             "ww2_e3_p1_ukraj",
             'aotsm_e1_winner',
+            'euro4modern_e2_af',
         ],
         "events": [
             "ww2_e3_p1",
             "inter_e1_p1",
             'aotsm_e1',
+            'euro4modern_e2_p1',
         ]
     },
     "hanzen": {
@@ -698,6 +686,7 @@ const SatUsers = {
         events: [
             'aotsm_e1',
             'e1444_e1',
+            'euro4modern_e2_p1',
         ]
     },
     "sjosten": {
@@ -711,6 +700,15 @@ const SatUsers = {
         events: [
         ]
     },
+    'razdan': {
+        id: 'razdan',
+        discord: 'RazdanGaming',
+        discordid: '',
+        gamename: 'Razdan',
+        awards: [
+            'euro4modern_e2_isris',
+        ]
+    }
 };
 
 const SatAwards = {
@@ -1654,6 +1652,44 @@ const SatAwards = {
         type: 'great',
         score: 5
     },
+    'euro4modern_e2_winner': {
+        event: 'euro4modern_e2_p1',
+        name: 'Euro4 Modern Winner',
+        img: 'winner-sat.png',
+        imgType: 'star',
+        type: 'winner'
+    },
+    'euro4modern_e2_esit': {
+        event: 'euro4modern_e2_p1',
+        name: 'Euro4 Modern Spain-Italy',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 8
+    },
+    'euro4modern_e2_isris': {
+        event: 'euro4modern_e2_p1',
+        name: 'Euro4 Modern Israel-ISIS axis',
+        img: 'shield.png',
+        imgType: 'star',
+        type: 'strongDefender'
+    },
+    'euro4modern_e2_af': {
+        event: 'euro4modern_e2_p1',
+        name: 'Euro4 Modern Africa Power',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 8
+    },
+    'euro4modern_e2_gb': {
+        event: 'euro4modern_e2_p1',
+        name: 'Euro4 Modern Great Power',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 6
+    },
 };
 
 const SatTypesImg = [
@@ -1676,6 +1712,12 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    euro4modern_e2_p1: {
+        name: 'Modern Euro4',
+        date: '06.03.2026',
+        map: 'parkourcat_euro4_vg_modernlurus',
+        discord: '1477790617487544571',
+    },
     e1444_e2: {
         name: '1444 E2',
         date: '13.02.2026',
