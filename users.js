@@ -34,6 +34,7 @@ const SatUsers = {
             'generals_e1_at',
             'e1444_e2_eenot',
             'euro4modern_e2_esit',
+            'rpww2_e1_p1_eenot'
         ],
         "events": [
             "euam1799_e1",
@@ -117,6 +118,7 @@ const SatUsers = {
             "e1444_e1_turkey",
             'e1444_e2_conqueror',
             'euro4modern_e2_esit',
+            'rpww2_e1_p1_great',
         ],
         "events": [
             "euam1799_e1",
@@ -332,6 +334,7 @@ const SatUsers = {
             "cw_e1_winner",
             "ww2_e2_germany",
             'euro4modern_e2_gb',
+            'rpww2_e1_p1_conqueror',
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -588,6 +591,7 @@ const SatUsers = {
             "e1444_e1_lurus",
             'twosides_e4_lurus',
             'euro4modern_e2_isris',
+            'rpww2_e1_p1_winner',
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -682,6 +686,7 @@ const SatUsers = {
             'aotsm_e1_great',
             'e1444_e1_sweden',
             'e1444_e2_great',
+            'rpww2_e1_p1_great',
         ],
         events: [
             'aotsm_e1',
@@ -703,12 +708,30 @@ const SatUsers = {
     'razdan': {
         id: 'razdan',
         discord: 'RazdanGaming',
-        discordid: '',
+        discordid: '554313159591067650',
         gamename: 'Razdan',
         awards: [
             'euro4modern_e2_isris',
         ]
-    }
+    },
+    'castoktz': {
+        id: 'castoktz',
+        discord: 'Castoktz',
+        discordid: '1249092055972577321',
+        gamename: 'Castoktz',
+        awards: [
+            'rpww2_e1_p1_pl',
+        ]
+    },
+    'theair': {
+        id: 'theair',
+        discord: 'The Air',
+        discordid: '1398840901412978760',
+        gamename: 'TheAir',
+        awards: [
+            'rpww2_e1_p1_great',
+        ]
+    },
 };
 
 const SatAwards = {
@@ -1690,6 +1713,44 @@ const SatAwards = {
         type: 'great',
         score: 6
     },
+    'rpww2_e1_p1_winner': {
+        event: 'rpww2_e1_p1',
+        name: 'RP WW2 Part 1 Winner',
+        img: 'winner-sat.png',
+        imgType: 'star',
+        type: 'winner'
+    },
+    'rpww2_e1_p1_conqueror': {
+        event: 'rpww2_e1_p1',
+        name: 'RP WW2 Part 1 Conqueror',
+        img: 'conqueror.png',
+        imgType: 'star',
+        type: 'conqueror',
+        score: 8
+    },
+    'rpww2_e1_p1_great': {
+        event: 'rpww2_e1_p1',
+        name: 'RP WW2 Part 1 Great Power',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great'
+    },
+    'rpww2_e1_p1_pl': {
+        event: 'rpww2_e1_p1',
+        name: 'RP WW2 Part 1 Poland',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 6
+    },
+    'rpww2_e1_p1_eenot': {
+        event: 'rpww2_e1_p1',
+        name: 'RP WW2 Part 1 France',
+        img: 'winSide.png',
+        imgType: 'star',
+        type: 'winSide',
+        score: 7
+    },
 };
 
 const SatTypesImg = [
@@ -1712,6 +1773,18 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    asiakaiser_e1: {
+        name: 'Asia Kaiserreich',
+        date: '20.03.2026',
+        img: 'asia_kaiserreich.png',
+        discord: '1482828066894909631',
+    },
+    rpww2_e1_p1: {
+        name: 'RP WW2 World',
+        date: '15.03.2026',
+        img: 'world_ww2.png',
+        discord: '1479567476504137739',
+    },
     euro4modern_e2_p1: {
         name: 'Modern Euro4',
         date: '06.03.2026',
