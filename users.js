@@ -34,7 +34,8 @@ const SatUsers = {
             'generals_e1_at',
             'e1444_e2_eenot',
             'euro4modern_e2_esit',
-            'rpww2_e1_p1_eenot'
+            'rpww2_e1_p1_eenot',
+            'asiakaiser_e1_sec',
         ],
         "events": [
             "euam1799_e1",
@@ -79,6 +80,7 @@ const SatUsers = {
             "metromoscow_e1_ganza",
             "twosides_e3_winnerside",
             "inter_e1_p1_persia",
+            'asiakaiser_e1_great',
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -119,6 +121,7 @@ const SatUsers = {
             'e1444_e2_conqueror',
             'euro4modern_e2_esit',
             'rpww2_e1_p1_great',
+            'asiakaiser_e1_great',
         ],
         "events": [
             "euam1799_e1",
@@ -416,6 +419,7 @@ const SatUsers = {
         "gamename": "stalin",
         "awards": [
             "ww2_e1_winnerside",
+            'asiakaiser_e1_great',
         ],
         "events": [
             "ww2_e1",
@@ -517,6 +521,7 @@ const SatUsers = {
             "e1444_e1_hungary",
             'twosides_e4_psycho',
             'e1444_e2_great',
+            'asiakaiser_e1_verygreat',
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -615,6 +620,7 @@ const SatUsers = {
             "ww1_e2_turkey",
             "ww2_e3_p1_ukraj",
             'euro4modern_e2_winner',
+            'asiakaiser_e1_verygreat',
         ],
         "events": [
             "ww1_e2",
@@ -669,6 +675,7 @@ const SatUsers = {
             "ww2_e3_p1_ukraj",
             'aotsm_e1_winner',
             'euro4modern_e2_af',
+            'asiakaiser_e1_win',
         ],
         "events": [
             "ww2_e3_p1",
@@ -687,6 +694,7 @@ const SatUsers = {
             'e1444_e1_sweden',
             'e1444_e2_great',
             'rpww2_e1_p1_great',
+            'asiakaiser_e1_great',
         ],
         events: [
             'aotsm_e1',
@@ -702,8 +710,6 @@ const SatUsers = {
         awards: [
             'e1444_e2_scandinavia',
         ],
-        events: [
-        ]
     },
     'razdan': {
         id: 'razdan',
@@ -730,6 +736,7 @@ const SatUsers = {
         gamename: 'TheAir',
         awards: [
             'rpww2_e1_p1_great',
+            'asiakaiser_e1_winside',
         ]
     },
 };
@@ -1751,6 +1758,45 @@ const SatAwards = {
         type: 'winSide',
         score: 7
     },
+    'asiakaiser_e1_win': {
+        event: 'asiakaiser_e1',
+        name: 'Asia Kaiserreich Winner',
+        img: 'winner-sat.png',
+        imgType: 'star',
+        type: 'winner',
+        score: 4
+    },
+    'asiakaiser_e1_sec': {
+        event: 'asiakaiser_e1',
+        name: 'Asia Kaiserreich Greatest Power',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 9
+    },
+    'asiakaiser_e1_verygreat': {
+        event: 'asiakaiser_e1',
+        name: 'Asia Kaiserreich Very Great',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great'
+    },
+    'asiakaiser_e1_great': {
+        event: 'asiakaiser_e1',
+        name: 'Asia Kaiserreich Great Power',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 6
+    },
+    'asiakaiser_e1_afgan': {
+        event: 'asiakaiser_e1',
+        name: 'Asia Kaiserreich Winner Side',
+        img: 'winSide.png',
+        imgType: 'star',
+        type: 'winSide',
+        score: 3
+    },
 };
 
 const SatTypesImg = [
@@ -1773,10 +1819,16 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    asiatno_e1: {
+        name: 'Asia The New Order',
+        date: '27.03.2026',
+        map: 'eenot_asia_v1_tno',
+        discord: '1484615546509983836',
+    },
     asiakaiser_e1: {
         name: 'Asia Kaiserreich',
         date: '20.03.2026',
-        img: 'asia_kaiserreich.png',
+        map: 'eenot_asia_v1_kaiserreich',
         discord: '1482828066894909631',
     },
     rpww2_e1_p1: {
