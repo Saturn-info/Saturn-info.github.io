@@ -37,6 +37,7 @@ const SatUsers = {
             'rpww2_e1_p1_eenot',
             'asiakaiser_e1_sec',
             'rpww2_e1_p2_eenot',
+            'eurohist1453_win'
         ],
         "events": [
             "euam1799_e1",
@@ -123,6 +124,7 @@ const SatUsers = {
             'euro4modern_e2_esit',
             'rpww2_e1_p1_great',
             'asiakaiser_e1_great',
+            'eurohist1453_great'
         ],
         "events": [
             "euam1799_e1",
@@ -741,6 +743,15 @@ const SatUsers = {
             'rpww2_e1_p1_great',
             'asiakaiser_e1_winside',
             'rpww2_e1_p2_great',
+        ]
+    },
+    'oggy': {
+        id: 'oggy',
+        discord: 'Oggy',
+        discordid: '751326490376798208',
+        gamename: 'oggy',
+        awards: [
+            'eurohist1453_sogreat',
         ]
     },
 };
@@ -1831,6 +1842,29 @@ const SatAwards = {
         type: 'great',
         score: 5
     },
+    'eurohist1453_win': {
+        event: 'eurohist1453',
+        name: 'RP WW2 Part 2 Great',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great'
+    },
+    'eurohist1453_great': {
+        event: 'eurohist1453',
+        name: 'Eurohist 1453 Great',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 8
+    },
+    'eurohist1453_sogreat': {
+        event: 'eurohist1453',
+        name: 'Eurohist 1453 Great',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 5
+    },
 };
 
 const SatTypesImg = [
@@ -1858,6 +1892,12 @@ const SatEvents = {
         date: '27.03.2026',
         map: 'eenot_asia_v1_tno',
         discord: '1484615546509983836',
+    },
+    eurohist1453: {
+        name: 'Eurohist 1453',
+        date: '25.03.2026',
+        img: 'eurohist_1453',
+        discord: '1484987701051785246',
     },
     asiakaiser_e1: {
         name: 'Asia Kaiserreich',
