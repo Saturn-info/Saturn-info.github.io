@@ -36,6 +36,7 @@ const SatUsers = {
             'euro4modern_e2_esit',
             'rpww2_e1_p1_eenot',
             'asiakaiser_e1_sec',
+            'rpww2_e1_p2_eenot',
         ],
         "events": [
             "euam1799_e1",
@@ -621,6 +622,7 @@ const SatUsers = {
             "ww2_e3_p1_ukraj",
             'euro4modern_e2_winner',
             'asiakaiser_e1_verygreat',
+            'rpww2_e1_p2_vg',
         ],
         "events": [
             "ww1_e2",
@@ -676,6 +678,7 @@ const SatUsers = {
             'aotsm_e1_winner',
             'euro4modern_e2_af',
             'asiakaiser_e1_win',
+            'rpww2_e1_p2_win',
         ],
         "events": [
             "ww2_e3_p1",
@@ -737,6 +740,7 @@ const SatUsers = {
         awards: [
             'rpww2_e1_p1_great',
             'asiakaiser_e1_winside',
+            'rpww2_e1_p2_great',
         ]
     },
 };
@@ -1797,6 +1801,36 @@ const SatAwards = {
         type: 'winSide',
         score: 3
     },
+    'rpww2_e1_p2_win': {
+        event: 'rpww2_e1_p2',
+        name: 'RP WW2 Part 2 Winner',
+        img: 'winner-sat.png',
+        imgType: 'star',
+        type: 'winner'
+    },
+    'rpww2_e1_p2_vg': {
+        event: 'rpww2_e1_p2',
+        name: 'RP WW2 Part 2 Very Great',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great'
+    },
+    'rpww2_e1_p2_eenot': {
+        event: 'rpww2_e1_p2',
+        name: 'RP WW2 Part 2 Almost Winner',
+        img: 'winSide.png',
+        imgType: 'star',
+        type: 'winSide',
+        score: 8
+    },
+    'rpww2_e1_p2_great': {
+        event: 'rpww2_e1_p2',
+        name: 'RP WW2 Part 2 Great',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 5
+    },
 };
 
 const SatTypesImg = [
@@ -1830,6 +1864,12 @@ const SatEvents = {
         date: '20.03.2026',
         map: 'eenot_asia_v1_kaiserreich',
         discord: '1482828066894909631',
+    },
+    rpww2_e1_p2: {
+        name: 'RP WW2 World 2',
+        date: '22.03.2026',
+        img: 'world_ww2.png',
+        discord: '1479567476504137739',
     },
     rpww2_e1_p1: {
         name: 'RP WW2 World',
