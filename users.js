@@ -1875,7 +1875,7 @@ const SatAwards = {
     'asiatno_e1_win': {
         event: 'asiatno_e1',
         name: 'Asia TNO Soviet Union 3.0',
-        img: 'winner-sat.png',
+        img: 'asia_tno_su.png',
         imgType: 'star',
         type: 'winner',
         score: 15
@@ -1883,7 +1883,7 @@ const SatAwards = {
     'asiatno_e1_conqueror': {
         event: 'asiatno_e1',
         name: 'Asia TNO Mongols-Ottomans',
-        img: 'conqueror.png',
+        img: 'asia_tno_tr.png',
         imgType: 'star',
         type: 'conqueror',
         score: 7
@@ -1891,7 +1891,7 @@ const SatAwards = {
     'asiatno_e1_great': {
         event: 'asiatno_e1',
         name: 'Asia TNO Great China',
-        img: 'great-sat.png',
+        img: 'asia_tno_china.png',
         imgType: 'star',
         type: 'great',
         score: 8
