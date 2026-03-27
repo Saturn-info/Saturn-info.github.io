@@ -37,7 +37,8 @@ const SatUsers = {
             'rpww2_e1_p1_eenot',
             'asiakaiser_e1_sec',
             'rpww2_e1_p2_eenot',
-            'eurohist1453_win'
+            'eurohist1453_win',
+            'asiatno_e1_win',
         ],
         "events": [
             "euam1799_e1",
@@ -124,7 +125,8 @@ const SatUsers = {
             'euro4modern_e2_esit',
             'rpww2_e1_p1_great',
             'asiakaiser_e1_great',
-            'eurohist1453_great'
+            'eurohist1453_great',
+            'asiatno_e1_win',
         ],
         "events": [
             "euam1799_e1",
@@ -276,6 +278,7 @@ const SatUsers = {
             "cw_e1_germany",
             "inter_e1_p1_auit",
             'e1444_e2_great',
+            'asiatno_e1_great',
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -423,6 +426,7 @@ const SatUsers = {
         "awards": [
             "ww2_e1_winnerside",
             'asiakaiser_e1_great',
+            'asiatno_e1_defender',
         ],
         "events": [
             "ww2_e1",
@@ -625,6 +629,7 @@ const SatUsers = {
             'euro4modern_e2_winner',
             'asiakaiser_e1_verygreat',
             'rpww2_e1_p2_vg',
+            'asiatno_e1_defender',
         ],
         "events": [
             "ww1_e2",
@@ -681,6 +686,7 @@ const SatUsers = {
             'euro4modern_e2_af',
             'asiakaiser_e1_win',
             'rpww2_e1_p2_win',
+            'asiatno_e1_conqueror',
         ],
         "events": [
             "ww2_e3_p1",
@@ -752,6 +758,7 @@ const SatUsers = {
         gamename: 'oggy',
         awards: [
             'eurohist1453_sogreat',
+            'asiatno_e1_defender',
         ]
     },
 };
@@ -1865,6 +1872,37 @@ const SatAwards = {
         type: 'great',
         score: 5
     },
+    'asiatno_e1_win': {
+        event: 'asiatno_e1',
+        name: 'Asia TNO Soviet Union 3.0',
+        img: 'winner-sat.png',
+        imgType: 'star',
+        type: 'winner',
+        score: 15
+    },
+    'asiatno_e1_conqueror': {
+        event: 'asiatno_e1',
+        name: 'Asia TNO Mongols-Ottomans',
+        img: 'conqueror.png',
+        imgType: 'star',
+        type: 'conqueror',
+        score: 7
+    },
+    'asiatno_e1_great': {
+        event: 'asiatno_e1',
+        name: 'Asia TNO Great China',
+        img: 'great-sat.png',
+        imgType: 'star',
+        type: 'great',
+        score: 8
+    },
+    'asiatno_e1_defender': {
+        event: 'asiatno_e1',
+        name: 'Asia TNO Strong Defender',
+        img: 'shield.png',
+        imgType: 'shield',
+        type: 'stongDefender'
+    },
 };
 
 const SatTypesImg = [
@@ -1877,6 +1915,8 @@ const SatTypesImg = [
 ];
 
 const SatTypes = {
+    "world": 25,
+    "ultra": 20,
     "winner": 10,
     "conqueror": 8,
     "great": 7,
