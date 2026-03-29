@@ -864,7 +864,7 @@ const SatAwards = {
         event: "kaiserreich_e1_p2",
         name: "Союз Нерушимый...",
         img: "kaiser2su.png",
-        type: "win"
+        type: "ultra"
     },
     "kaiserreich_e1_p2_rome": {
         event: "kaiserreich_e1_p2",
@@ -1008,7 +1008,7 @@ const SatAwards = {
         event: "ww2_e1",
         name: "World of Soviets",
         img: "ww2_soviet.png",
-        type: "win",
+        type: "ultra",
         imgType: 'star',
     },
     "ww2_e1_france": {
@@ -1149,9 +1149,8 @@ const SatAwards = {
         event: "ww1_e1",
         name: "Great Asian Federation",
         img: "ww1_e1_russia.png",
-        type: "win",
+        type: "ultra",
         imgType: "normalBorders",
-        score: 17,
     },
     "ww1_e1_ingsoc": {
         event: "ww1_e1",
@@ -1204,7 +1203,7 @@ const SatAwards = {
         event: "twosides_e3",
         name: "Eurasian Confeseration",
         img: "twosides_e3_russia.png",
-        type: "win",
+        type: "ultra",
         imgType: 'star',
     },
     "twosides_e3_side": {
@@ -1356,7 +1355,7 @@ const SatAwards = {
         event: "cw_e1",
         name: "Ottomans of Eastern Europe",
         img: "cwe1moad.png",
-        type: "win",
+        type: "ultra",
         imgType: "star"
     },
     "cw_e1_side": {
@@ -1687,7 +1686,7 @@ const SatAwards = {
         imgType: 'star',
         type: 'conqueror',
     },
-    'e1444_e2_sweden': {
+    'e1444_e2_scandinavia': {
         event: 'e1444_e2',
         name: '1444 2 Scandinavia',
         img: 'great-sat.png',
