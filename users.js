@@ -12,13 +12,13 @@ const SatUsers = {
             "eusat2014_e1_defender",
             "ukraine_e1_soviet",
             "ukraine_e1_defenders",
-            "ww2_e1_winner",
+            "ww2_e1_win",
             "ukraine_e2_uasu",
             "metromoscow_e1_eenot",
             "ww1_e1_ingsoc",
             "tigerland_e2_east",
             "metromoscow_e2_cool",
-            "twosides_e3_winnerside",
+            "twosides_e3_side",
             "euro4modern_e1_p1_germany",
             "ww1_e2_france",
             "su_e1_win",
@@ -81,7 +81,7 @@ const SatUsers = {
             "kaiserreich_e1_p2_ukraine",
             "kaiserreich_e2_p1_scandinavia",
             "metromoscow_e1_ganza",
-            "twosides_e3_winnerside",
+            "twosides_e3_side",
             "inter_e1_p1_persia",
             'asiakaiser_e1_great',
         ],
@@ -110,16 +110,16 @@ const SatUsers = {
             "kaiserreich_e1_p2_rome",
             "ukraine_e2_totoska",
             //"metromoscow_e1_def",
-            "ww1_e1_winner",
+            "ww1_e1_win",
             "tigerland_e2_west",
             "metromoscow_e2_cool",
-            "twosides_e3_winner",
-            "euro4modern_e1_p1_winner",
-            "euro4modern_e1_p2_winner",
+            "twosides_e3_win",
+            "euro4modern_e1_p1_win",
+            "euro4modern_e1_p2_win",
             "su_e1_mid",
             "ww2_e2_china",
-            "ww2_e3_p1_winner",
-            "tigerland_e3_winner",
+            "ww2_e3_p1_win",
+            "tigerland_e3_win",
             "e1444_e1_turkey",
             'e1444_e2_conqueror',
             'euro4modern_e2_esit',
@@ -205,17 +205,17 @@ const SatUsers = {
         "awards": [
             "kaiserreich_e1_p1_german",
             "kaiserreich_e2_p1_germany",
-            "eusat2014_e1_winner",
+            "eusat2014_e1_win",
             "twosides_e1_germany",
             "ukraine_e1_zhitomir",
             "ww2_e1_mrvoid",
-            "ukraine_e2_winside",
+            "ukraine_e2_side",
             "metromoscow_e1_def",
             "tigerland_e2_empire",
             "metromoscow_e2_cool",
             "euro4modern_e1_p1_turkey",
-            "ww1_e2_winner",
-            "ww2_e2_winner",
+            "ww1_e2_win",
+            "ww2_e2_win",
             "inter_e1_p1_ottomans",
             "tigerland_e3_east",
             'generals_e1_at',
@@ -333,14 +333,14 @@ const SatUsers = {
         "awards": [
             "kaiserreich_e1_p1_sweden",
             "kaiserreich_e2_p1_win",
-            "eusat2014_e1_winner",
+            "eusat2014_e1_win",
             "twosides_e1_british",
             "ww2_e1_france",
             "ukraine_e2_crimea",
             //"metromoscow_e1_def",
             "ww1_e1_ingsoc",
             "twosides_e3_germany",
-            "cw_e1_winner",
+            "cw_e1_win",
             "ww2_e2_germany",
             'euro4modern_e2_gb',
             'rpww2_e1_p1_conqueror',
@@ -369,8 +369,8 @@ const SatUsers = {
             "kaiserreich_e1_p2_frontline",
             "kaiserreich_e2_p1_russia",
             "ukraine_e1_defenders",
-            "ww2_e1_winnerside",
-            "ukraine_e2_winside",
+            "ww2_e1_side",
+            "ukraine_e2_side",
             "ww1_e1_brazil",
         ],
         "events": [
@@ -424,7 +424,7 @@ const SatUsers = {
         "discordid": "",
         "gamename": "stalin",
         "awards": [
-            "ww2_e1_winnerside",
+            "ww2_e1_side",
             'asiakaiser_e1_great',
             'asiatno_e1_defender',
         ],
@@ -439,7 +439,7 @@ const SatUsers = {
         "discordid": "1404175039229722744",
         "gamename": "ETOYAIVAN",
         "awards": [
-            "ww2_e1_winnerside",
+            "ww2_e1_side",
             "su_e1_34",
         ],
         "events": [
@@ -456,7 +456,7 @@ const SatUsers = {
         "discordid": "1335614450643894295",
         "gamename": "timur333",
         "awards": [
-            "ww2_e1_winnerside",
+            "ww2_e1_side",
             "ww2_e3_p1_australia",
         ],
         "events": [
@@ -483,7 +483,7 @@ const SatUsers = {
         "discordid": "",
         "gamename": "rooog",
         "awards": [
-            "tigerland_e2_winside",
+            "tigerland_e2_side",
         ],
         "events": [
             "tigerland_e2",
@@ -496,7 +496,7 @@ const SatUsers = {
         "discordid": "",
         "gamename": "NoName2",
         "awards": [
-            "tigerland_e2_winside",
+            "tigerland_e2_side",
         ],
         "events": [
             "tigerland_e2",
@@ -545,7 +545,7 @@ const SatUsers = {
         "discordid": "",
         "gamename": "tungg",
         "awards": [
-            "euro4modern_e1_p1_winside",
+            "euro4modern_e1_p1_side",
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -557,7 +557,7 @@ const SatUsers = {
         "discordid": "",
         "gamename": "Hegr1007",
         "awards": [
-            "euro4modern_e1_p1_winside",
+            "euro4modern_e1_p1_side",
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -569,7 +569,7 @@ const SatUsers = {
         "discordid": "",
         "gamename": "ErJar",
         "awards": [
-            "euro4modern_e1_p1_winside",
+            "euro4modern_e1_p1_side",
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -581,7 +581,7 @@ const SatUsers = {
         "discordid": "",
         "gamename": "lev",
         "awards": [
-            "euro4modern_e1_p1_winside",
+            "euro4modern_e1_p1_side",
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -596,14 +596,14 @@ const SatUsers = {
             "euro4modern_e1_p1_france",
             "su_e1_almostwin",
             "cw_e1_yugoslavia",
-            "ue_e1_winner",
+            "ue_e1_win",
             "ww2_e3_p1_europe",
             "inter_e1_p1_ru",
             "tigerland_e3_north",
             "e1444_e1_lurus",
             'twosides_e4_lurus',
             'euro4modern_e2_isris',
-            'rpww2_e1_p1_winner',
+            'rpww2_e1_p1_win',
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -626,7 +626,7 @@ const SatUsers = {
         "awards": [
             "ww1_e2_turkey",
             "ww2_e3_p1_ukraj",
-            'euro4modern_e2_winner',
+            'euro4modern_e2_win',
             'asiakaiser_e1_verygreat',
             'rpww2_e1_p2_vg',
             'asiatno_e1_defender',
@@ -643,8 +643,8 @@ const SatUsers = {
         "discordid": "1114590604668706927",
         "gamename": "Public",
         "awards": [
-            "ww1_e2_winside",
-            "cw_e1_winside",
+            "ww1_e2_side",
+            "cw_e1_side",
         ],
         "events": [
             "ww1_e2",
@@ -682,7 +682,7 @@ const SatUsers = {
         "gamename": "Greg",
         "awards": [
             "ww2_e3_p1_ukraj",
-            'aotsm_e1_winner',
+            'aotsm_e1_win',
             'euro4modern_e2_af',
             'asiakaiser_e1_win',
             'rpww2_e1_p2_win',
@@ -747,7 +747,7 @@ const SatUsers = {
         gamename: 'TheAir',
         awards: [
             'rpww2_e1_p1_great',
-            'asiakaiser_e1_winside',
+            'asiakaiser_e1_side',
             'rpww2_e1_p2_great',
         ]
     },
@@ -767,35 +767,35 @@ const SatAwards = {
     "test1": {
         name: "Тест",
         img: "test.png",
-        type: "winner"
+        type: "win"
     },
     "euam1799_e1_win": {
         event: "euam1799_e1",
-        name: "Winner",
-        img: 'winner-sat.png',
-        type: "winner",
+        name: "win",
+        img: 'win-sat.png',
+        type: "win",
         imgType: 'star',
     },
     "euam1799_e1_france": {
         event: "euam1799_e1",
         name: "France Defender",
         img: "france.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "shield",
     },
     "kaiserreich_e1_p1_win": {
         event: "kaiserreich_e1_p1",
-        name: "Winner",
-        img: 'winner-sat.png',
-        type: "winner",
+        name: "win",
+        img: 'win-sat.png',
+        type: "win",
         imgType: 'star',
     },
     "kaiserreich_e1_p1_ruvassal": {
         event: "kaiserreich_e1_p1",
         name: "Union's Part",
         img: "kaiserunion.png",
-        type: "winSide",
-        score: 4
+        type: "side",
+        score: 5
     },
     "kaiserreich_e1_p1_italy": {
         event: "kaiserreich_e1_p1",
@@ -814,7 +814,7 @@ const SatAwards = {
         event: "kaiserreich_e1_p1",
         name: "Frontline Defender",
         img: "kaisershield.png",
-        type: "strongDefender",
+        type: "def",
         imgType: 'shield',
         score: 1,
     },
@@ -835,7 +835,7 @@ const SatAwards = {
         event: "euam2025_e1",
         name: "Ukraine 1991",
         img: "ukraine91.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "normalBorders",
     },
     "euam2025_e1_america": {
@@ -849,28 +849,28 @@ const SatAwards = {
         event: "euam2025_e1",
         name: "Belarus-Bastion",
         img: "belarusshield.png",
-        type: "strongDefender",
+        type: "def",
         imgType: 'shield',
     },
     "kaiserreich_e1_p2_poland": {
         event: "kaiserreich_e1_p2",
         name: "Polish Bastion",
         img: "polandshield.png",
-        type: "strongDefender",
+        type: "def",
         imgType: 'shield',
-        score: 6
+        score: 9
     },
     "kaiserreich_e1_p2_soviet": {
         event: "kaiserreich_e1_p2",
         name: "Союз Нерушимый...",
         img: "kaiser2su.png",
-        type: "winner"
+        type: "win"
     },
     "kaiserreich_e1_p2_rome": {
         event: "kaiserreich_e1_p2",
         name: "Greatest Roman Empire",
         img: "kaiser2ro.png",
-        type: "winner",
+        type: "win",
         imgType: "normalBorders",
     },
     "kaiserreich_e1_p2_frontline": {
@@ -878,43 +878,43 @@ const SatAwards = {
         name: "Bastion of Soviets",
         // img: "kaiser2bastionsu.png",
         img: "kaisershield.png",
-        type: "strongDefender",
+        type: "def",
         imgType: 'shield',
     },
     "kaiserreich_e1_p2_ukraine": {
         event: "kaiserreich_e1_p2",
         name: "Ukrainian Utopia",
         img: "kaiser2ukraine.png",
-        type: "winSide",
+        type: "side",
         imgType: "special",
     },
     "kaiserreich_e2_p1_ukraine": {
         event: "kaiserreich_e2_p1",
         name: "Great Ukraine",
         img: "kaiser21ukraine.png",
-        type: "winSide",
+        type: "side",
         imgType: "normalBorders",
     },
     "kaiserreich_e2_p1_scandinavia": {
         event: "kaiserreich_e2_p1",
         name: "United Scandinavia",
         img: "kaiser21scandinavia.png",
-        type: "winSide",
+        type: "side",
         imgType: "normalBorders",
     },
     "kaiserreich_e2_p1_win": {
         event: "kaiserreich_e2_p1",
-        name: "Kaiserreich2 Winner",
+        name: "Kaiserreich2 win",
         //img: "kaiser21ottoman.png",
-        img: 'winner-sat.png',
-        type: "winner",
+        img: 'win-sat.png',
+        type: "win",
         imgType: 'star',
     },
     "kaiserreich_e2_p1_galicia": {
         event: "kaiserreich_e2_p1",
         name: "Carpatian Bastion",
         img: "kaiser21galicia.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "shield",
     },
     "kaiserreich_e2_p1_germany": {
@@ -922,7 +922,7 @@ const SatAwards = {
         name: "German Conqueror",
         img: "kaiser21germany.png",
         type: "conqueror",
-        score: 9
+        score: 13
     },
     "kaiserreich_e2_p1_russia": {
         event: "kaiserreich_e2_p1",
@@ -931,13 +931,13 @@ const SatAwards = {
         type: "great",
         imgType: "shield",
     },
-    "eusat2014_e1_winner": {
+    "eusat2014_e1_win": {
         event: "eusat2014_e1",
-        name: "Eusat2014 Winner",
-        img: 'winner-sat.png',
-        type: "winner",
+        name: "Eusat2014 win",
+        img: 'win-sat.png',
+        type: "win",
         imgType: 'star',
-        score: 8,
+        score: 13,
     },
     "eusat2014_e1_russia": {
         event: "eusat2014_e1",
@@ -948,15 +948,15 @@ const SatAwards = {
     "eusat2014_e1_defender": {
         event: "eusat2014_e1",
         name: "East's Defender",
-        img: "shield.png",
-        type: "strongDefender",
+        img: "shield-sat.png",
+        type: "def",
         imgType: 'shield',
     },
     "twosides_e1_germany": {
         event: "twosides_e1",
         name: "Alternative Alternative History",
         img: "ts_germany.png",
-        type: "winner",
+        type: "win",
         imgType: 'special',
     },
     "twosides_e1_british": {
@@ -969,14 +969,14 @@ const SatAwards = {
         event: "twosides_e1",
         name: "United China",
         img: "ts_china.png",
-        type: "winSide"
+        type: "side"
     },
     "ukraine_e1_ukraine": {
         event: "ukraine_e1",
         name: "Wholemap-Ukraine",
         img: "ua_ukraine.png",
-        type: "winner",
-        score: 12
+        type: "win",
+        score: 17
     },
     "ukraine_e1_soviet": {
         event: "ukraine_e1",
@@ -984,20 +984,20 @@ const SatAwards = {
         img: "ua_soviet-beta.png",
         type: "conqueror",
         imgType: 'normal',
-        score: 10,
+        score: 15,
     },
     "ukraine_e1_defenders": {
         event: "ukraine_e1",
         name: "Defenders",
         img: "ua_defenders.png",
-        type: "strongDefender"
+        type: "def"
     },
     "ukraine_e1_partisans": {
         event: "ukraine_e1",
         name: "Partisans - Defenders",
         img: "ua_defender.png",
-        type: "strongDefender",
-        score: 6
+        type: "def",
+        score: 8
     },
     "ukraine_e1_zhitomir": {
         event: "ukraine_e1",
@@ -1005,11 +1005,11 @@ const SatAwards = {
         img: "ua_zhitomir.png",
         type: "conqueror"
     },
-    "ww2_e1_winner": {
+    "ww2_e1_win": {
         event: "ww2_e1",
         name: "World of Soviets",
         img: "ww2_soviet.png",
-        type: "winner",
+        type: "win",
         imgType: 'star',
     },
     "ww2_e1_france": {
@@ -1018,78 +1018,78 @@ const SatAwards = {
         img: "ww2_france.png",
         type: "conqueror"
     },
-    "ww2_e1_winnerside": {
+    "ww2_e1_side": {
         event: "ww2_e1",
         name: "Organization of Warshaw Pact",
         img: "ww2_suallies.png",
-        type: "winSide"
+        type: "side"
     },
     "ww2_e1_mrvoid": {
         event: "ww2_e1",
         name: "Survived in Corsica",
         img: "ww2_mrvoid.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "normalBorders",
-        score: 2,
+        score: 4,
     },
     "ww2_e1_sweden": {
         event: "ww2_e1",
         name: "Sweden Will Not Fall!",
         img: "ww2_sweden.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "shield",
-        score: 5,
+        score: 7,
     },
     // UKRAINE CIVIL WAR ukraine_e2
     "ukraine_e2_uasu": {
         event: "ukraine_e2",
         name: "Soviet Ukraine",
         img: "ukraine_e2_uasu.png",
-        type: "winner",
+        type: "win",
         imgType: 'star',
-        score: 15,
+        score: 25,
     },
     "ukraine_e2_crimea": {
         event: "ukraine_e2",
         name: "Crimia is His",
         img: "ukraine_e2_crimea.png",
-        type: "winner",
+        type: "win",
         imgType: "normalBorders",
     },
     "ukraine_e2_zachary": {
         event: "ukraine_e2",
         name: "УНР",
-        img: "shield.png",
-        type: "strongDefender",
+        img: "shield-sat.png",
+        type: "def",
         imgType: 'shield',
-        score: 8,
+        score: 10,
     },
     "ukraine_e2_totoska": {
         event: "ukraine_e2",
         name: "💪",
         img: "ukraine_e2_totoska.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "shield",
     },
-    "ukraine_e2_winside": {
+    "ukraine_e2_side": {
         event: "ukraine_e2",
         name: "Soviet Side",
         img: "ukraine_e2_soviets.png",
-        type: "winSide",
+        type: "side",
         imgType: "normalBorders",
     },
     "metromoscow_e1_ganza": {
         event: "metromoscow_e1",
         name: "UN from Metro",
         img: "metromoscow_e1_ganza.png",
-        type: "winner",
+        type: "win",
         "imgType": "metro",
     },
     "metromoscow_e1_talant": {
         event: "metromoscow_e1",
         name: "Great West",
         img: "metromoscow_e1_west.png",
-        type: "winner",
+        type: "win",
         "imgType": "metro",
     },
     "metromoscow_e1_zachary": {
@@ -1105,7 +1105,7 @@ const SatAwards = {
         img: "metromoscow_e1_center.png",
         type: "conqueror",
         "imgType": "metro",
-        score: 6
+        score: 9
     },
     "metromoscow_e1_khan": {
         event: "metromoscow_e1",
@@ -1113,7 +1113,7 @@ const SatAwards = {
         img: "metromoscow_e1_south.png",
         type: "conqueror",
         "imgType": "metro",
-        score: 6
+        score: 9
     },
     "metromoscow_e2_khan": {
         event: "metromoscow_e2",
@@ -1121,7 +1121,7 @@ const SatAwards = {
         img: "metromoscow_e2_khan.png",
         type: "conqueror",
         "imgType": "metro",
-        score: 10
+        score: 15
     },
     "metromoscow_e2_cool": {
         event: "metromoscow_e2",
@@ -1129,44 +1129,44 @@ const SatAwards = {
         img: "metromoscow_e2_cool.png",
         type: "great",
         "imgType": "metro",
-        score: 2
+        score: 3
     },
     "metromoscow_e1_vovka": {
         event: "metromoscow_e1",
         name: "-",
         img: "metromoscow_e1_-.png",
-        type: "winSide",
+        type: "side",
         "imgType": "metro",
     },
     "metromoscow_e1_def": {
         event: "metromoscow_e1",
         name: "Metro Defenders",
-        img: "shield.png",
-        type: "strongDefender",
+        img: "shield-sat.png",
+        type: "def",
         imgType: 'shield',
-        score: 3,
+        score: 5,
     },
-    "ww1_e1_winner": {
+    "ww1_e1_win": {
         event: "ww1_e1",
         name: "Great Asian Federation",
         img: "ww1_e1_russia.png",
-        type: "winner",
+        type: "win",
         imgType: "normalBorders",
-        score: 12,
+        score: 17,
     },
     "ww1_e1_ingsoc": {
         event: "ww1_e1",
         name: "INGSOC",
         img: "ww1_e1_ingsoc.png",
         type: "conqueror",
-        score: 7
+        score: 9
     },
     "ww1_e1_germany": {
         event: "ww1_e1",
         name: "German Colonial Empire",
         img: "ww1_e1_germany.png",
         type: "conqueror",
-        score: 9
+        score: 12
     },
     "ww1_e1_brazil": {
         event: "ww1_e1",
@@ -1174,13 +1174,13 @@ const SatAwards = {
         img: "ww1_e1_brazil.png",
         type: "great",
         imgType: "normalBorders",
-        score: 5,
+        score: 7,
     },
     "tigerland_e2_west": {
         event: "tigerland_e2",
         name: "Western Tigerland",
         img: "tigerland_e2_west.png",
-        type: "winner"
+        type: "win"
     },
     "tigerland_e2_east": {
         event: "tigerland_e2",
@@ -1192,27 +1192,27 @@ const SatAwards = {
         event: "tigerland_e2",
         name: "Empire of Tigerland",
         img: "tigerland_e2_empire.png",
-        type: "strongDefender",
-        score: 8
+        type: "def",
+        score: 12
     },
-    "tigerland_e2_winside": {
+    "tigerland_e2_side": {
         event: "tigerland_e2",
-        name: "Tigerland Winnerside",
-        img: "tigerland_e2_winside.png",
-        type: "winSide"
+        name: "Tigerland side",
+        img: "tigerland_e2_side.png",
+        type: "side"
     },
-    "twosides_e3_winner": {
+    "twosides_e3_win": {
         event: "twosides_e3",
         name: "Eurasian Confeseration",
         img: "twosides_e3_russia.png",
-        type: "winner",
+        type: "win",
         imgType: 'star',
     },
-    "twosides_e3_winnerside": {
+    "twosides_e3_side": {
         event: "twosides_e3",
         name: "Eurasian Powers",
-        img: "twosides_e3_winnerside.png",
-        type: "winSide"
+        img: "twosides_e3_side.png",
+        type: "side"
     },
     "twosides_e3_france": {
         event: "twosides_e3",
@@ -1226,11 +1226,11 @@ const SatAwards = {
         img: "twosides_e3_germany.png",
         type: "great"
     },
-    "euro4modern_e1_p1_winner": {
+    "euro4modern_e1_p1_win": {
         event: "euro4modern_e1_p1",
         name: "Great Russian Empire",
         img: "euro4modern_e1_p1_russia.png",
-        type: "winner"
+        type: "win"
     },
     "euro4modern_e1_p1_germany": {
         event: "euro4modern_e1_p1",
@@ -1251,15 +1251,15 @@ const SatAwards = {
         name: "New Ottoman Empire",
         img: "euro4modern_e1_p1_turkey.png",
         type: "conqueror",
-        score: 5
+        score: 7
     },
     "euro4modern_e1_p1_poland": {
         event: "euro4modern_e1_p1",
         name: "Poland - Beaver's Bastion",
         img: "euro4modern_e1_p1_poland.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "shield",
-        score: 6,
+        score: 9,
     },
     "euro4modern_e1_p1_italy": {
         event: "euro4modern_e1_p1",
@@ -1267,13 +1267,13 @@ const SatAwards = {
         img: "euro4modern_e1_p1_italy.png",
         type: "conqueror",
         imgType: "normalBorders",
-        score: 4,
+        score: 6,
     },
-    "euro4modern_e1_p1_winside": {
+    "euro4modern_e1_p1_side": {
         event: "euro4modern_e1_p1",
         name: "Central European Union",
-        img: "euro4modern_e1_p1_winside.png",
-        type: "winSide",
+        img: "euro4modern_e1_p1_side.png",
+        type: "side",
         imgType: "normalBorders",
     },
     "euro4modern_e1_p1_algeria": {
@@ -1281,13 +1281,13 @@ const SatAwards = {
         name: "Algeria",
         img: "euro4modern_e1_p1_algeria.png",
         type: "other",
-        score: 2
+        score: 3
     },
-    "ww1_e2_winner": {
+    "ww1_e2_win": {
         event: "ww1_e2",
         name: "Russian Empire",
         img: "ww1_e2_p1_russia.png",
-        type: "winner"
+        type: "win"
     },
     "ww1_e2_france": {
         event: "ww1_e2",
@@ -1307,27 +1307,26 @@ const SatAwards = {
         name: "Scandinavia",
         img: "ww1_e2_p1_scandinavia.png",
         type: "conqueror",
-        score: 5
+        score: 7
     },
-    "ww1_e2_winside": {
+    "ww1_e2_side": {
         event: "ww1_e2",
-        name: "WW1 Part 2 Winside",
+        name: "WW1 Part 2 side",
         img: "blank.png",
-        type: "winSide"
+        type: "side"
     },
-    "euro4modern_e1_p2_winner": {
+    "euro4modern_e1_p2_win": {
         event: "euro4modern_e1_p2",
         name: "World of Totoska",
-        img: "euro4modern_e1_p2_winner.png",
-        type: "winner",
+        img: "euro4modern_e1_p2_win.png",
+        type: "world",
         imgType: 'star',
-        score: 12,
     },
     "su_e1_win": {
         event: "su_e1",
         name: "EG1 Win - Ukraine",
         img: "egsuwin.png",
-        type: "winner",
+        type: "win",
         imgType: "circle",
     },
     "su_e1_almostwin": {
@@ -1336,7 +1335,7 @@ const SatAwards = {
         img: "egsumid.png",
         type: "other",
         imgType: "circle",
-        score: 9,
+        score: 14,
     },
     "su_e1_mid": {
         event: "su_e1",
@@ -1344,7 +1343,7 @@ const SatAwards = {
         img: "egsumid.png",
         type: "other",
         imgType: "circle",
-        score: 7,
+        score: 10,
     },
     "su_e1_34": {
         event: "su_e1",
@@ -1352,35 +1351,35 @@ const SatAwards = {
         img: "egsulow.png",
         type: "other",
         imgType: "circle",
-        score: 4,
+        score: 6,
     },
-    "cw_e1_winner": {
+    "cw_e1_win": {
         event: "cw_e1",
         name: "Ottomans of Eastern Europe",
         img: "cwe1moad.png",
-        type: "winner",
+        type: "win",
         imgType: "star"
     },
-    "cw_e1_winside": {
+    "cw_e1_side": {
         event: "cw_e1",
         name: "Mamluk Sultanate",
         img: "cwe1public.png",
-        type: "winSide",
+        type: "side",
         imgType: "normalBorders",
     },
     "cw_e1_eenot": {
         event: "cw_e1",
         name: "Stambul & Ankara is Mine!",
         img: "siklehammer.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "shield",
-        score: 6,
+        score: 9,
     },
     "cw_e1_yugoslavia": {
         event: "cw_e1",
         name: "Yugoslavia",
         img: "cwe1yugoslavia.png",
-        type: "winSide",
+        type: "side",
         imgType: "normalBorders",
     },
     "cw_e1_germany": {
@@ -1390,11 +1389,11 @@ const SatAwards = {
         type: "great",
         imgType: "normalBorders",
     },
-    "ue_e1_winner": {
+    "ue_e1_win": {
         event: "ue_e1",
-        name: "EG Winner",
+        name: "EG win",
         img: "egsuwin.png",
-        type: "winner",
+        type: "win",
         imgType: "circle",
     },
     "ue_e1_second": {
@@ -1403,7 +1402,7 @@ const SatAwards = {
         img: "egsumid.png",
         type: "great",
         imgType: "circle",
-        score: 8,
+        score: 12,
     },
     "ww2_e2_america": {
         event: "ww2_e2",
@@ -1411,13 +1410,13 @@ const SatAwards = {
         img: "ww2e2brazil.png",
         type: "conqueror",
         imgType: "normalBorders",
-        score: 9
+        score: 14
     },
-    "ww2_e2_winner": {
+    "ww2_e2_win": {
         event: "ww2_e2",
         name: "Great French Colonial Empire",
         img: "ww2e2french.png",
-        type: "winner",
+        type: "win",
         imgType: "normalBorders",
     },
     "ww2_e2_china": {
@@ -1440,15 +1439,15 @@ const SatAwards = {
         img: "ww2e2australia.png",
         type: "great",
         imgType: "normalBorders",
-        score: 6
+        score: 9
     },
     "ww2_e2_raj": {
         event: "ww2_e2",
         name: "German Raj",
         img: "ww2e2raj.png",
-        type: "winSide",
+        type: "side",
         imgType: "normalBorders",
-        score: 2
+        score: 3
     },
     "ww2_e3_p1_europe": {
         event: "ww2_e3_p1",
@@ -1457,11 +1456,11 @@ const SatAwards = {
         type: "conqueror",
         imgType: "star"
     },
-    "ww2_e3_p1_winner": {
+    "ww2_e3_p1_win": {
         event: "ww2_e3_p1",
         name: "United States of Northern America",
         img: "ww2e3usa.png",
-        type: "winner",
+        type: "win",
         imgType: "star"
     },
     "ww2_e3_p1_australia": {
@@ -1482,22 +1481,22 @@ const SatAwards = {
         event: "ww2_e3_p1",
         name: "Inkan Empire",
         img: "ww2e3inka.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "shield"
     },
     "inter_e1_p1_ua": {
         event: "inter_e1_p1",
         name: "Ukrainian Soviet Federation",
         img: "intere1ua.png",
-        type: "winner",
+        type: "win",
         imgType: "normalBorders",
-        score: 12
+        score: 20
     },
     "inter_e1_p1_ru": {
         event: "inter_e1_p1",
         name: "Soviet Union",
         img: "intere1ru.png",
-        type: "winner",
+        type: "win",
         imgType: "normalBorders"
     },
     "inter_e1_p1_persia": {
@@ -1506,7 +1505,7 @@ const SatAwards = {
         img: "intere1persia.png",
         type: "great",
         imgType: "normalBorders",
-        score: 6
+        score: 9
     },
     "inter_e1_p1_ottomans": {
         event: "inter_e1_p1",
@@ -1528,7 +1527,7 @@ const SatAwards = {
         img: "intere1finland.png",
         type: "conqueror",
         imgType: "normalBorders",
-        score: 7
+        score: 12
     },
     "inter_e1_p1_auit": {
         event: "inter_e1_p1",
@@ -1536,20 +1535,20 @@ const SatAwards = {
         img: "intere1auit.png",
         type: "great",
         imgType: "normalBorders",
-        score: 5
+        score: 7
     },
     "inter_e1_p1_belarus": {
         event: "inter_e1_p1",
         name: "Belarusian Soviet Socialist Republic",
         img: "intere1be.png",
-        type: "strongDefender",
+        type: "def",
         imgType: "shield"
     },
-    "tigerland_e3_winner": {
+    "tigerland_e3_win": {
         event: "tigerland_e3",
         name: "Empire of Tigerland",
-        img: "tigerland_e3_winner.png",
-        type: "winner",
+        img: "tigerland_e3_win.png",
+        type: "win",
         imgType: "normalBorders"
     },
     "tigerland_e3_west": {
@@ -1573,11 +1572,11 @@ const SatAwards = {
         type: "great",
         imgType: "normalBorders"
     },
-    "aotsm_e1_winner": {
+    "aotsm_e1_win": {
         event: 'aotsm_e1',
-        name: 'AotSM winner',
-        img: 'winner-sat.png',
-        type: 'winner',
+        name: 'AotSM win',
+        img: 'win-sat.png',
+        type: 'win',
         imgType: 'star'
     },
     "aotsm_e1_great": {
@@ -1591,9 +1590,9 @@ const SatAwards = {
         event: "e1444_e1",
         name: "Soviet Steppe",
         img: 'e1444_e1_eenot.png',
-        type: "winner",
+        type: "win",
         imgType: 'normalBorders',
-        score: 11
+        score: 17
     },
     "e1444_e1_penguin": {
         event: "e1444_e1",
@@ -1601,7 +1600,7 @@ const SatAwards = {
         img: 'e1444_e1_eenot.png',
         type: 'great',
         imgType: 'normalBorders',
-        score: 8
+        score: 12
     },
     "e1444_e1_hungary": {
         event: "e1444_e1",
@@ -1628,13 +1627,13 @@ const SatAwards = {
         event: 'e1444_e1',
         name: '',
         img: 'blank.png',
-        type: 'strongDefender'
+        type: 'def'
     },
     'twosides_e4_eenot': {
         event: 'twosides_e4',
         name: 'South America',
-        img: 'winner-sat.png',
-        type: 'winner',
+        img: 'win-sat.png',
+        type: 'win',
         imgType: 'star'
     },
     'twosides_e4_ottomanism': {
@@ -1643,7 +1642,7 @@ const SatAwards = {
         img: 'great-sat.png',
         type: 'great',
         imgType: 'star',
-        score: 8
+        score: 12
     },
     'twosides_e4_lurus': {
         event: 'twosides_e4',
@@ -1655,16 +1654,16 @@ const SatAwards = {
     'twosides_e4_psycho': {
         event: 'twosides_e4',
         name: 'Mexico',
-        img: 'shield.png',
-        type: 'strongDefender',
+        img: 'shield-sat.png',
+        type: 'def',
         imgType: 'star',
-        score: 6
+        score: 9
     },
     'twosides_e4_penguin': {
         event: 'twosides_e4',
         name: 'Argentine',
         img: 'blank.png',
-        type: 'winSide'
+        type: 'side'
     },
     'generals_e1_at': {
         event: 'generals_e1',
@@ -1672,15 +1671,15 @@ const SatAwards = {
         img: 'blank.png',
         type: 'other',
         imgType: 'special',
-        score: 5
+        score: 7
     },
     'e1444_e2_eenot': {
         event: 'e1444_e2',
-        name: '1444 2 Winner',
-        img: 'winner-sat.png',
-        type: 'winner',
+        name: '1444 2 win',
+        img: 'win-sat.png',
+        type: 'win',
         imgType: 'star',
-        score: 12
+        score: 17
     },
     'e1444_e2_conqueror': {
         event: 'e1444_e2',
@@ -1702,14 +1701,14 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 5
+        score: 7
     },
-    'euro4modern_e2_winner': {
+    'euro4modern_e2_win': {
         event: 'euro4modern_e2_p1',
-        name: 'Euro4 Modern Winner',
-        img: 'winner-sat.png',
+        name: 'Euro4 Modern win',
+        img: 'win-sat.png',
         imgType: 'star',
-        type: 'winner'
+        type: 'win'
     },
     'euro4modern_e2_esit': {
         event: 'euro4modern_e2_p1',
@@ -1717,14 +1716,14 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 8
+        score: 12
     },
     'euro4modern_e2_isris': {
         event: 'euro4modern_e2_p1',
         name: 'Euro4 Modern Israel-ISIS axis',
-        img: 'shield.png',
+        img: 'shield-sat.png',
         imgType: 'star',
-        type: 'strongDefender'
+        type: 'def'
     },
     'euro4modern_e2_af': {
         event: 'euro4modern_e2_p1',
@@ -1732,7 +1731,7 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 8
+        score: 12
     },
     'euro4modern_e2_gb': {
         event: 'euro4modern_e2_p1',
@@ -1740,14 +1739,14 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 6
+        score: 9
     },
-    'rpww2_e1_p1_winner': {
+    'rpww2_e1_p1_win': {
         event: 'rpww2_e1_p1',
-        name: 'RP WW2 Part 1 Winner',
-        img: 'winner-sat.png',
+        name: 'RP WW2 Part 1 win',
+        img: 'win-sat.png',
         imgType: 'star',
-        type: 'winner'
+        type: 'win'
     },
     'rpww2_e1_p1_conqueror': {
         event: 'rpww2_e1_p1',
@@ -1755,7 +1754,7 @@ const SatAwards = {
         img: 'conqueror.png',
         imgType: 'star',
         type: 'conqueror',
-        score: 8
+        score: 12
     },
     'rpww2_e1_p1_great': {
         event: 'rpww2_e1_p1',
@@ -1770,23 +1769,23 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 6
+        score: 9
     },
     'rpww2_e1_p1_eenot': {
         event: 'rpww2_e1_p1',
         name: 'RP WW2 Part 1 France',
-        img: 'winSide.png',
+        img: 'side-sat.png',
         imgType: 'star',
-        type: 'winSide',
-        score: 7
+        type: 'side',
+        score: 11
     },
     'asiakaiser_e1_win': {
         event: 'asiakaiser_e1',
-        name: 'Asia Kaiserreich Winner',
-        img: 'winner-sat.png',
+        name: 'Asia Kaiserreich win',
+        img: 'win-sat.png',
         imgType: 'star',
-        type: 'winner',
-        score: 4
+        type: 'win',
+        score: 6
     },
     'asiakaiser_e1_sec': {
         event: 'asiakaiser_e1',
@@ -1794,7 +1793,7 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 9
+        score: 14
     },
     'asiakaiser_e1_verygreat': {
         event: 'asiakaiser_e1',
@@ -1809,22 +1808,22 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 6
+        score: 9
     },
     'asiakaiser_e1_afgan': {
         event: 'asiakaiser_e1',
-        name: 'Asia Kaiserreich Winner Side',
-        img: 'winSide.png',
+        name: 'Asia Kaiserreich win Side',
+        img: 'side-sat.png',
         imgType: 'star',
-        type: 'winSide',
-        score: 3
+        type: 'side',
+        score: 4
     },
     'rpww2_e1_p2_win': {
         event: 'rpww2_e1_p2',
-        name: 'RP WW2 Part 2 Winner',
-        img: 'winner-sat.png',
+        name: 'RP WW2 Part 2 win',
+        img: 'win-sat.png',
         imgType: 'star',
-        type: 'winner'
+        type: 'win'
     },
     'rpww2_e1_p2_vg': {
         event: 'rpww2_e1_p2',
@@ -1835,11 +1834,11 @@ const SatAwards = {
     },
     'rpww2_e1_p2_eenot': {
         event: 'rpww2_e1_p2',
-        name: 'RP WW2 Part 2 Almost Winner',
-        img: 'winSide.png',
+        name: 'RP WW2 Part 2 Almost win',
+        img: 'side-sat.png',
         imgType: 'star',
-        type: 'winSide',
-        score: 8
+        type: 'side',
+        score: 13
     },
     'rpww2_e1_p2_great': {
         event: 'rpww2_e1_p2',
@@ -1847,7 +1846,7 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 5
+        score: 7
     },
     'eurohist1453_win': {
         event: 'eurohist1453',
@@ -1862,7 +1861,7 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 8
+        score: 12
     },
     'eurohist1453_sogreat': {
         event: 'eurohist1453',
@@ -1870,15 +1869,14 @@ const SatAwards = {
         img: 'great-sat.png',
         imgType: 'star',
         type: 'great',
-        score: 5
+        score: 7
     },
     'asiatno_e1_win': {
         event: 'asiatno_e1',
         name: 'Asia TNO Soviet Union 3.0',
         img: 'asia_tno_su.png',
         imgType: 'star',
-        type: 'winner',
-        score: 15
+        type: 'ultra'
     },
     'asiatno_e1_conqueror': {
         event: 'asiatno_e1',
@@ -1886,7 +1884,7 @@ const SatAwards = {
         img: 'asia_tno_tr.png',
         imgType: 'star',
         type: 'conqueror',
-        score: 7
+        score: 10
     },
     'asiatno_e1_great': {
         event: 'asiatno_e1',
@@ -1894,12 +1892,12 @@ const SatAwards = {
         img: 'asia_tno_china.png',
         imgType: 'star',
         type: 'great',
-        score: 8
+        score: 12
     },
     'asiatno_e1_defender': {
         event: 'asiatno_e1',
         name: 'Asia TNO Strong Defender',
-        img: 'shield.png',
+        img: 'shield-sat.png',
         imgType: 'shield',
         type: 'stongDefender'
     },
@@ -1917,12 +1915,13 @@ const SatTypesImg = [
 const SatTypes = {
     "world": 25,
     "ultra": 20,
-    "winner": 10,
-    "conqueror": 8,
-    "great": 7,
-    "winSide": 5,
+    "win": 15,
+    "conqueror": 13,
+    "great": 10,
+    "regional": 7,
+    "side": 7,
     "ratio": 5,
-    "strongDefender": 4,
+    "def": 4,
     "other": 1
 };
 

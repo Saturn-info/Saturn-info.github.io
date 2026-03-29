@@ -63,5 +63,8 @@
 
     .list-container {
         height: calc(100dvh - 48px - 155px);
+        &#eventstable {
+            height: calc(100dvh - 48px - 25px)
+        }
     }
 }

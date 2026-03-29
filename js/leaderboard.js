@@ -223,7 +223,7 @@ class leaderboardSat {
                                 type: parsed.type,
                                 event: parsed.event,
                                 name: parsed.type,
-                                img: `${parsed.type}.png`
+                                img: `${parsed.type}-sat.png`
                             };
                         }
                     }
@@ -231,11 +231,13 @@ class leaderboardSat {
                     if (award && award.type) {
                         if (!satAwardCounts[award.type]) {
                             let image;
-                            if (award.type == 'strongDefender') image = 'shield'
-                            else if (award.type == 'other') image = 'blank'
-                            else if (award.type == 'winner') image = 'winner-sat'
-                            else if (award.type == 'great') image = 'great-sat'
-                            else image = award.type;
+                            if      (award.type == 'def')    image = 'shield-sat'
+                            else if (award.type == 'other')             image = 'blank'
+                            else if (award.type == 'win')               image = 'win-sat'
+                            else if (award.type == 'great')             image = 'great-sat'
+                            else if (award.type == 'side')              image = 'side-sat'
+                            else if (award.type == 'world')             image = 'world-sat'
+                            else     image = award.type;
 
                             satAwardCounts[award.type] = { 
                                 count: 0, 

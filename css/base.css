@@ -92,7 +92,7 @@ a {
 .squareMedal.winner {
     background-image: url(../img/award/background/winner.png);
 }
-.squareMedal.strongDefender {
+.squareMedal.def {
     background-image: url(../img/award/background/shield.png);
 }
 .squareMedal.greatPower {
