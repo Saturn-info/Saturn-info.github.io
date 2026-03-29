@@ -343,7 +343,7 @@ const SatUsers = {
             "cw_e1_win",
             "ww2_e2_germany",
             'euro4modern_e2_gb',
-            'rpww2_e1_p1_conqueror',
+            'rpww2_e1p1_win_17',
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -1745,14 +1745,6 @@ const SatAwards = {
         img: 'win-sat.png',
         imgType: 'star',
         type: 'win'
-    },
-    'rpww2_e1_p1_conqueror': {
-        event: 'rpww2_e1_p1',
-        name: 'RP WW2 Part 1 Conqueror',
-        img: 'conqueror.png',
-        imgType: 'star',
-        type: 'conqueror',
-        score: 12
     },
     'rpww2_e1_p1_great': {
         event: 'rpww2_e1_p1',
