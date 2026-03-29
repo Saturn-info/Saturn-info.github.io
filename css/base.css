@@ -115,10 +115,10 @@ td {
 }
 
 td div {
-  display: inline-block !important;
+  /*display: inline-block !important;
   max-width: 100% !important;
   word-wrap: break-word !important;
-  box-sizing: border-box !important;
+  box-sizing: border-box !important;*/
 }
 
 #langDropdown img {
