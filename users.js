@@ -975,8 +975,7 @@ const SatAwards = {
         event: "ukraine_e1",
         name: "Wholemap-Ukraine",
         img: "ua_ukraine.png",
-        type: "win",
-        score: 17
+        type: "world"
     },
     "ukraine_e1_soviet": {
         event: "ukraine_e1",
