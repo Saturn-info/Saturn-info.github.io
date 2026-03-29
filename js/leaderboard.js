@@ -7,9 +7,9 @@ class leaderboardSat {
         // === старый формат ===
         if (SatAwards[id]) {
             if (SatAwards[id].score) {
-                return SatAwards[id].score * 1.5;
+                return SatAwards[id].score /** 1.5*/;
             } else if (SatAwards[id].type && SatTypes[SatAwards[id].type]) {
-                return SatTypes[SatAwards[id].type] * 1.5;
+                return SatTypes[SatAwards[id].type] /** 1.5*/;
             }
             console.warn(`Award score/type not found for: ${id}`);
             return 0;
@@ -19,11 +19,11 @@ class leaderboardSat {
         const parsed = this.parseModernSatAward(id);
         if (parsed) {
             if (parsed.score !== null && !isNaN(parsed.score)) {
-                return parsed.score * 1.5;
+                return parsed.score /** 1.5*/;
             }
 
             if (SatTypes?.[parsed.type]) {
-                return SatTypes[parsed.type] * 1.5;
+                return SatTypes[parsed.type] /** 1.5*/;
             }
 
             console.warn(`Modern SAT type not found: ${parsed.type}`);
