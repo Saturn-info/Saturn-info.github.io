@@ -4,17 +4,54 @@ class leaderboardSat {
     }
 
     calcScoreAwardSat(id) {
-        if (!SatAwards[id]) {
-            console.warn(`Award not found: ${id}`);
+        // === старый формат ===
+        if (SatAwards[id]) {
+            if (SatAwards[id].score) {
+                return SatAwards[id].score * 1.5;
+            } else if (SatAwards[id].type && SatTypes[SatAwards[id].type]) {
+                return SatTypes[SatAwards[id].type] * 1.5;
+            }
+            console.warn(`Award score/type not found for: ${id}`);
             return 0;
         }
-        if (SatAwards[id].score) {
-            return SatAwards[id].score * 1.5;
-        } else if (SatAwards[id].type && SatTypes[SatAwards[id].type]) {
-            return SatTypes[SatAwards[id].type] * 1.5;
+
+        // === новый формат ===
+        const parsed = this.parseModernSatAward(id);
+        if (parsed) {
+            if (parsed.score !== null && !isNaN(parsed.score)) {
+                return parsed.score * 1.5;
+            }
+
+            if (SatTypes?.[parsed.type]) {
+                return SatTypes[parsed.type] * 1.5;
+            }
+
+            console.warn(`Modern SAT type not found: ${parsed.type}`);
+            return 0;
         }
-        console.warn(`Award score/type not found for: ${id}`);
+
+        console.warn(`Award not found: ${id}`);
         return 0;
+    }
+
+    parseModernSatAward(id) {
+        if (typeof id !== 'string') return null;
+
+        const parts = id.split('_');
+        if (parts.length < 3) return null;
+
+        const eventId = parts[0];          // ww1
+        const eventPart = parts[1];        // e1p1
+        const type = parts[2];             // win / great
+        const customScore = parts[3] ? Number(parts[3]) : null;
+
+        if (!eventId || !eventPart || !type) return null;
+
+        return {
+            event: `${eventId}_${eventPart}`, // считаем частью id
+            type,
+            score: customScore
+        };
     }
 
     // Вспомогательный метод для определения типа награды
@@ -22,13 +59,19 @@ class leaderboardSat {
         if (SatAwards?.[awardKey] !== undefined) {
             return 'sat';
         }
-        // Проверяем формат NWF награды (например: "eventname_type")
+
+        // NEW: проверка modern sat
+        if (this.parseModernSatAward(awardKey)) {
+            return 'sat';
+        }
+
         if (typeof awardKey === 'string' && awardKey.includes('_')) {
             const parts = awardKey.split('_');
             if (parts.length >= 2 && NwfTypes?.[parts[1]]) {
                 return 'nwf';
             }
         }
+
         return 'unknown';
     }
 
@@ -46,8 +89,12 @@ class leaderboardSat {
             let satScore = 0;
             (user.awards || []).forEach(award => {
                 if (this.getAwardType(award) === 'sat') {
+                    /* OLD CODE
                     const awardInfo = SatAwards[award];
                     if (awardInfo && SatTypes?.[awardInfo.type]) {
+                        satScore += this.calcScoreAwardSat(award);
+                    }*/
+                   if (this.getAwardType(award) === 'sat') {
                         satScore += this.calcScoreAwardSat(award);
                     }
                 }
@@ -166,18 +213,30 @@ class leaderboardSat {
                 // ---------- SAT награды ----------
                 const satAwardCounts = {};
                 user.satAwards.forEach(awardKey => {
-                    const award = SatAwards?.[awardKey];
+                    let award = SatAwards?.[awardKey];
+
+                    // NEW: fallback для modern SAT
+                    if (!award) {
+                        const parsed = this.parseModernSatAward(awardKey);
+                        if (parsed) {
+                            award = {
+                                type: parsed.type,
+                                event: parsed.event,
+                                name: parsed.type,
+                                img: `${parsed.type}.png`
+                            };
+                        }
+                    }
+
                     if (award && award.type) {
                         if (!satAwardCounts[award.type]) {
                             let image;
-                            console.log(award.type);
                             if (award.type == 'strongDefender') image = 'shield'
                             else if (award.type == 'other') image = 'blank'
                             else if (award.type == 'winner') image = 'winner-sat'
                             else if (award.type == 'great') image = 'great-sat'
                             else image = award.type;
 
-                            console.log(image);
                             satAwardCounts[award.type] = { 
                                 count: 0, 
                                 event: award.event,
@@ -319,8 +378,21 @@ class leaderboardSat {
                     
                     // SAT награда
                     if (awardType === 'sat') {
-                        const award = SatAwards?.[awardKey];
-                        if (!award) return;
+                        let award = SatAwards?.[awardKey];
+
+                        if (!award) {
+                            const parsed = this.parseModernSatAward(awardKey);
+                            if (parsed) {
+                                award = {
+                                    type: parsed.type,
+                                    event: parsed.event,
+                                    name: parsed.type,
+                                    img: `${parsed.type}.png`
+                                };
+                            } else {
+                                return;
+                            }
+                        }
                         
                         const div = document.createElement('div');
                         div.classList.add('squareMedal');
