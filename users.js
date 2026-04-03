@@ -128,7 +128,7 @@ const SatUsers = {
             'asiakaiser_e1_great',
             'eurohist1453_great',
             'asiatno_e1_win',
-            'asiacw_e1_great',
+            'asiacw_e1_regional',
         ],
         "events": [
             "euam1799_e1",
