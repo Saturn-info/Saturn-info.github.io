@@ -39,6 +39,7 @@ const SatUsers = {
             'rpww2_e1_p2_eenot',
             'eurohist1453_win',
             'asiatno_e1_win',
+            'asiacw_e1_win',
         ],
         "events": [
             "euam1799_e1",
@@ -127,6 +128,7 @@ const SatUsers = {
             'asiakaiser_e1_great',
             'eurohist1453_great',
             'asiatno_e1_win',
+            'asiacw_e1_great',
         ],
         "events": [
             "euam1799_e1",
@@ -279,6 +281,7 @@ const SatUsers = {
             "inter_e1_p1_auit",
             'e1444_e2_great',
             'asiatno_e1_great',
+            'asiacw_e1_win_13',
         ],
         "events": [
             "kaiserreich_e1_p1",
@@ -687,6 +690,7 @@ const SatUsers = {
             'asiakaiser_e1_win',
             'rpww2_e1_p2_win',
             'asiatno_e1_conqueror',
+            'asiacw_e1_great',
         ],
         "events": [
             "ww2_e3_p1",
@@ -1916,6 +1920,12 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    asiacw_e1: {
+        name: 'Asia Cold War',
+        date: '03.04.2026',
+        map: 'eenot_asia_v1_cw',
+        discord: '1487441044684538057',
+    },
     asiatno_e1: {
         name: 'Asia The New Order',
         date: '27.03.2026',
