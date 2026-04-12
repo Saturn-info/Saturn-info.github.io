@@ -40,6 +40,7 @@ const SatUsers = {
             'eurohist1453_win',
             'asiatno_e1_win',
             'asiacw_e1_win',
+            'asia1444_e1_eenot',
         ],
         "events": [
             "euam1799_e1",
@@ -691,6 +692,7 @@ const SatUsers = {
             'rpww2_e1_p2_win',
             'asiatno_e1_conqueror',
             'asiacw_e1_great',
+            'asia1444_e1_greg',
         ],
         "events": [
             "ww2_e3_p1",
@@ -763,6 +765,33 @@ const SatUsers = {
         awards: [
             'eurohist1453_sogreat',
             'asiatno_e1_defender',
+        ]
+    },
+    'hamond': {
+        id: 'hamond',
+        discord: 'Hamond 2032',
+        discordid: '1347239235530391552',
+        gamename: 'hamond',
+        awards: [
+            'asia1444_e1_great',
+        ]
+    },
+    'leothegoat': {
+        id: 'leothegoat',
+        discord: 'leothegoat1945',
+        discordid: '1286807407321940061',
+        gamename: 'leothegoat',
+        awards: [
+            'asia1444_e1_great',
+        ]
+    },
+    'lucifer': {
+        id: 'lucifer',
+        discord: '×-Lucifer-×',
+        discordid: '1478581555994562700',
+        gamename: 'lucifer',
+        awards: [
+            'asia1444_e1_side',
         ]
     },
 };
@@ -1895,6 +1924,20 @@ const SatAwards = {
         imgType: 'shield',
         type: 'stongDefender'
     },
+    'asia1444_e1_eenot': {
+        event: 'asia1444_e1',
+        name: 'Asia 1444 Maha Bharat',
+        img: 'asia1444_e1_eenot.png',
+        imgType: 'shield',
+        type: 'ultra'
+    },
+    'asia1444_e1_greg': {
+        event: 'asia1444_e1',
+        name: 'Asia 1444 Great Macedonian Empire',
+        img: 'asia1444_e1_greg.png',
+        imgType: 'shield',
+        type: 'conqueror'
+    },
 };
 
 const SatTypesImg = [
@@ -1920,6 +1963,12 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    asia1444_e1: {
+        name: 'Asia 1444 Event 1',
+        date: '12.04.2026',
+        map: 'eenot_asia_v1_1444',
+        discord: '1487425491995590812',
+    },
     asiacw_e1: {
         name: 'Asia Cold War',
         date: '03.04.2026',
