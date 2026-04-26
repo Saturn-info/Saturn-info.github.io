@@ -521,8 +521,8 @@ const SatUsers = {
             "ww2_e3_p1",
         ]
     },
-    "psychopomp": {
-        "id": "nonpsychopompame2",
+    "psycho": {
+        "id": "psycho",
         "discord": "PsychoPomp",
         "discordid": "1314822053488230501",
         "gamename": "PsychoPomp",
