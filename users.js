@@ -41,6 +41,7 @@ const SatUsers = {
             'asiatno_e1_win',
             'asiacw_e1_win',
             'asia1444_e1_eenot',
+            'bharatiya_e1_win',
         ],
         "events": [
             "euam1799_e1",
@@ -533,6 +534,7 @@ const SatUsers = {
             'twosides_e4_psycho',
             'e1444_e2_great',
             'asiakaiser_e1_verygreat',
+            'bharatiya_e1_great',
         ],
         "events": [
             "euro4modern_e1_p1",
@@ -735,6 +737,7 @@ const SatUsers = {
         gamename: 'Razdan',
         awards: [
             'euro4modern_e2_isris',
+            'bharatiya_e1_regional',
         ]
     },
     'castoktz': {
@@ -1963,6 +1966,12 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    bharatiya_e1: {
+        name: 'Bharatiya',
+        date: '26.04.2026',
+        map: 'eenot_asia_v1_1444',
+        discord: '1495139631648210985',
+    },
     asia1444_e1: {
         name: 'Asia 1444 Event 1',
         date: '12.04.2026',
