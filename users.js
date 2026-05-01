@@ -42,6 +42,7 @@ const SatUsers = {
             'asiacw_e1_win',
             'asia1444_e1_eenot',
             'bharatiya_e1_win',
+            'middleast_e1_ultra',
         ],
         "events": [
             "euam1799_e1",
@@ -131,6 +132,7 @@ const SatUsers = {
             'eurohist1453_great',
             'asiatno_e1_win',
             'asiacw_e1_regional',
+            'middleast_e1_regional',
         ],
         "events": [
             "euam1799_e1",
@@ -695,6 +697,7 @@ const SatUsers = {
             'asiatno_e1_conqueror',
             'asiacw_e1_great',
             'asia1444_e1_greg',
+            'middleast_e1_win',
         ],
         "events": [
             "ww2_e3_p1",
@@ -738,6 +741,7 @@ const SatUsers = {
         awards: [
             'euro4modern_e2_isris',
             'bharatiya_e1_regional',
+            'middleast_e1_great',
         ]
     },
     'castoktz': {
@@ -758,6 +762,7 @@ const SatUsers = {
             'rpww2_e1_p1_great',
             'asiakaiser_e1_side',
             'rpww2_e1_p2_great',
+            'middleast_e1_great',
         ]
     },
     'oggy': {
@@ -795,6 +800,15 @@ const SatUsers = {
         gamename: 'lucifer',
         awards: [
             'asia1444_e1_side',
+        ]
+    },
+    'zamir': {
+        id: 'zamir',
+        discord: 'Zamir12',
+        discordid: '1381682519577198723',
+        gamename: 'Zamir12',
+        awards: [
+            'middleast_e1_regional',
         ]
     },
 };
@@ -1966,6 +1980,12 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    middleast_e1: {
+        name: 'Middle East',
+        date: '01.05.2026',
+        img: 'middleast',
+        discord: '1497919394569916456',
+    },
     bharatiya_e1: {
         name: 'Bharatiya',
         date: '26.04.2026',
