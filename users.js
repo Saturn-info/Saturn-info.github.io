@@ -43,6 +43,7 @@ const SatUsers = {
             'asia1444_e1_eenot',
             'bharatiya_e1_win',
             'middleast_e1_ultra',
+            'interwar_e1_ultra',
         ],
         "events": [
             "euam1799_e1",
@@ -698,6 +699,7 @@ const SatUsers = {
             'asiacw_e1_great',
             'asia1444_e1_greg',
             'middleast_e1_win',
+            'interwar_e1_great',
         ],
         "events": [
             "ww2_e3_p1",
@@ -809,6 +811,15 @@ const SatUsers = {
         gamename: 'Zamir12',
         awards: [
             'middleast_e1_regional',
+        ]
+    },
+    'usc': {
+        id: 'usc',
+        discord: 'USC',
+        discordid: '1431788304491216946',
+        gamename: 'USC',
+        awards: [
+            'interwar_e1_defender',
         ]
     },
 };
@@ -1980,6 +1991,12 @@ const SatTypes = {
 };
 
 const SatEvents = {
+    interwar_e1: {
+        name: 'Euro4 Interwar',
+        date: '19.06.2026',
+        map: 'parkourcat_euro4_vg_interwar',
+        discord: '',
+    },
     middleast_e1: {
         name: 'Middle East',
         date: '01.05.2026',
